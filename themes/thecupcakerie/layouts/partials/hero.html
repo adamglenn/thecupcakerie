@@ -1,0 +1,9 @@
+{{ with site.Data.homepage.hero }}
+  <main class="py-5">
+    <div class="container">
+      <h1>{{ .heading }}</h1>
+      <p class="lead">{{ .lede }}</p>
+      <a href="#">Call to Action</a>
+    </div>
+  </main>
+{{ end }}
