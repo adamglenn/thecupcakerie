@@ -1,6 +1,6 @@
 hero:
-  heading: "Here is my hero."
-  lede: "Here is a lede paragraph."
+  heading: Here is my hero with edits.
+  lede: Here is a lede paragraph.
   cta:
-    text: "Call to Action"
-    url: "https://thecupcakerie.com"
+    text: Call to Action
+    url: https://thecupcakerie.com
