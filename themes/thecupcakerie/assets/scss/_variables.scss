@@ -1,0 +1,77 @@
+// Color
+//==================================================
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+// Primary
+$cc-blue: #002855;
+$cc-gold: #EAAA00;
+
+$cc-accent--old-gold: #7F6310;
+$cc-neutral--off-white: #e9e3e9;
+$cc-neutral--cream: #fdeeff;
+$cc-neutral--tan: #B3A169;
+$cc-neutral--warm-gray-light: #BEB7B3;
+$cc-neutral--warm-gray-medium: #988E8B;
+$cc-neutral--warm-gray-dark: #554741;
+$cc-accent--blue-dark: #1C2B39;
+$cc-accent--blue: #0062A3;
+$cc-accent--blue-light: #9DDAE6;
+$cc-accent--yellow: #FFE539;
+$cc-accent--sunset: #F58672;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "white": $white,
+  "cc-blue": $cc-blue,
+  "cc-gold": $cc-gold,
+  "cc-accent--old-gold": $cc-accent--old-gold,
+  "cc-neutral--off-white": $cc-neutral--off-white,
+  "cc-neutral--cream": $cc-neutral--cream,
+  "cc-neutral--tan": $cc-neutral--tan,
+  "cc-neutral--warm-gray-light": $cc-neutral--warm-gray-light,
+  "cc-neutral--warm-gray-medium": $cc-neutral--warm-gray-medium,
+  "cc-neutral--warm-gray-dark": $cc-neutral--warm-gray-dark,
+  "cc-accent--blue-dark": $cc-accent--blue-dark,
+  "cc-accent--blue": $cc-accent--blue,
+  "cc-accent--blue-light": $cc-accent--blue-light,
+  "cc-accent--yellow": $cc-accent--yellow,
+  "cc-accent--sunset": $cc-accent--sunset
+);

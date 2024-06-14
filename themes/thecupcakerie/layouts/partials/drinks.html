@@ -1,0 +1,28 @@
+{{ $items := $.RegularPages }}
+<main class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 mx-xl-auto">
+        <div class="p-5 shadow">
+          <h1 class="text-center mb-5">Drinks</h1>
+          {{ range $items }}
+            <div class="row">            
+              <div class="row">
+                <div class="col-6">
+                  <h2 class="h6">{{ .Title }}</h2>
+                </div>
+                <div class="col-6 text-end">
+                  <ul class="list-unstyled">
+                    {{ range .Params.options }}
+                      <li>${{ .price }} / {{ .size }}</li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
