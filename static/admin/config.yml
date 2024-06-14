@@ -4,7 +4,7 @@ backend:
 media_folder: assets/img
 public_folder: /img
 collections:
-  - name: "landing-pages"
+  - name: "landingPages"
     label: "Landing Pages"
     files:
       - label: "Home"
@@ -19,7 +19,7 @@ collections:
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'string' }
-  - name: "product-descriptions"
+  - name: "productDescriptions"
     label: "Product Descriptions"
     folder: "content/products"
     create: true
@@ -54,7 +54,7 @@ collections:
         options: ["Hot", "Cold", "Sparkling", "Rosé", "White", "Red"]
         default: "Hot"
       - label: Size and Price
-        name: size-and-price
+        name: sizeAndPrice
         widget: list
         fields:
           - { label: Price, name: price, widget: string }

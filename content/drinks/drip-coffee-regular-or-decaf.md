@@ -2,7 +2,7 @@
 title: Drip Coffee Regular or Decaf
 options: Hot
 size: 8oz.
-size-and-price:
+sizeAndPrice:
   - price: "2.5"
     size: 8oz.
   - price: "3"

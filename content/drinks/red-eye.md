@@ -1,7 +1,7 @@
 ---
 title: Red Eye
 options: Hot
-size-and-price:
+sizeAndPrice:
   - price: "4"
     size: 8oz.
   - price: "5"

@@ -2,9 +2,10 @@
   <div class="container">
     <h2 class="text-center mb-5">Products</h2>
     <div class="row">
-      {{ range .RegularPagesRecursive.ByTitle }}
+      {{ range where .RegularPagesRecursive.ByTitle "Type" "products" }}
         {{ .Type }}
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
       {{ end }}
     </div>
   </div>
