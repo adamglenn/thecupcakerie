@@ -1,0 +1,11 @@
+<main class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Products</h2>
+    <div class="row">
+      {{ range .RegularPagesRecursive.ByTitle }}
+        {{ .Type }}
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ end }}
+    </div>
+  </div>
+</main>

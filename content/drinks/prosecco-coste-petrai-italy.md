@@ -1,7 +1,7 @@
 ---
 title: Prosecco, Coste Petrai, Italy
-type: Sparkling
-options:
+options: Sparkling
+size-and-price:
   - price: "12"
     size: By Glass
 ---

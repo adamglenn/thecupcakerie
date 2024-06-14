@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: static/img
+media_folder: assets/img
 public_folder: /img
 collections:
   - name: "landing-pages"
@@ -19,6 +19,25 @@ collections:
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'string' }
+  - name: "product-descriptions"
+    label: "Product Descriptions"
+    folder: "content/products"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: "Photo"
+        name: "photo"
+        widget: "image"
+      - label: "Icon"
+        name: "icon"
+        widget: "string"
   - name: "drinks"
     label: "Drink Menu"
     folder: "content/drinks"
@@ -30,12 +49,12 @@ collections:
         name: "title"
         widget: "string"
       - label: "Options"
-        name: "type"
+        name: "options"
         widget: "select"
         options: ["Hot", "Cold", "Sparkling", "Rosé", "White", "Red"]
         default: "Hot"
       - label: Size and Price
-        name: options
+        name: size-and-price
         widget: list
         fields:
           - { label: Price, name: price, widget: string }
