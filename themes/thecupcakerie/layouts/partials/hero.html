@@ -1,9 +1,11 @@
 {{ with site.Data.homepage.hero }}
-  <main class="py-5">
-    <div class="container">
-      <h1>{{ .heading }}</h1>
-      <p class="lead">{{ .lede }}</p>
-      <a href="#">Call to Action</a>
+  <main class="ratio ratio-21x9 bg-light">
+    <div class="d-flex align-items-center">
+      <div class="container">
+        <h1>{{ .heading }}</h1>
+        <p class="lead">{{ .lede }}</p>
+        <a class="btn btn-outline-dark" href="#">Call to Action</a>
+      </div>
     </div>
   </main>
 {{ end }}

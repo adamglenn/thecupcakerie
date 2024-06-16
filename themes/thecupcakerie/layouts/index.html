@@ -4,17 +4,6 @@
 
 {{ partial "products.html" . }}
 
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Products</h2>
-    <div class="row">
-      {{ range where .RegularPagesRecursive "Type" "drinks" }}
-        <h2>Test.</h2>
-      {{ end }}
-    </div>
-  </div>
-</section>
-
 {{ range .RegularPagesRecursive.ByTitle }}
   <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 {{ end }}
