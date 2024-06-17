@@ -6,6 +6,7 @@ public_folder: /img
 collections:
   - name: "landingPages"
     label: "Landing Pages"
+    widget: list
     files:
       - label: "Home"
         name: "home"
@@ -80,20 +81,24 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Options"
-        name: "options"
-        widget: "select"
-        options: ["Hot", "Cold", "Sparkling", "Rosé", "White", "Red"]
-        default: "Hot"
-      - label: Size and Price
-        name: sizeAndPrice
+      - label: "Drinks"
+        name: "drinks"
         widget: list
         fields:
-          - { label: Price, name: price, widget: string }
-          - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Options"
+            name: "options"
+            widget: "select"
+            options: ["Hot", "Cold", "Sparkling", "Rosé", "White", "Red"]
+            default: "Hot"
+          - label: Size and Price
+            name: sizeAndPrice
+            widget: list
+            fields:
+              - { label: Price, name: price, widget: string }
+              - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
