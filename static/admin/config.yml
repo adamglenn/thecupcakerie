@@ -77,7 +77,7 @@ collections:
   - name: "drinks"
     label: "Drink Menu"
     folder: "content/drinks"
-    create: true
+    create: false
     editor:
       preview: false
     fields:
