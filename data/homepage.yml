@@ -4,7 +4,7 @@ hero:
 happyHour:
   heading: Join Us for Happy Hour
   hours:
-    - days: Tues. - Sat.
+    - days: M-F
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
