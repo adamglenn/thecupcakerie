@@ -81,8 +81,34 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Drinks"
-        name: "drinks"
+      - label: "Hot Drinks"
+        name: "hotDrinks"
+        widget: list
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: Size and Price
+            name: sizeAndPrice
+            widget: list
+            fields:
+              - { label: Price, name: price, widget: string }
+              - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
+      - label: "Cold Drinks"
+        name: "coldDrinks"
+        widget: list
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: Size and Price
+            name: sizeAndPrice
+            widget: list
+            fields:
+              - { label: Price, name: price, widget: string }
+              - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
+      - label: "Wines by the Glass"
+        name: "winesByTheGlass"
         widget: list
         fields:
           - label: "Title"
@@ -91,8 +117,7 @@ collections:
           - label: "Options"
             name: "options"
             widget: "select"
-            options: ["Hot", "Cold", "Sparkling", "Rosé", "White", "Red"]
-            default: "Hot"
+            options: ["Sparkling", "Rosé", "White", "Red"]
           - label: Size and Price
             name: sizeAndPrice
             widget: list
