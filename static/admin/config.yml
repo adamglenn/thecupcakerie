@@ -30,6 +30,30 @@ collections:
                 fields:
                   - { label: "Days", name: "days", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
+          - label: "Brunch"
+            name: "brunch"
+            widget: object
+            fields:
+              - { label: "Heading", name: 'heading', widget: 'string' }
+              - label: "Hours"
+                name: "hours"
+                widget: list
+                fields:
+                  - { label: "Days", name: "days", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - label: "Call to Action"
+                name: "cta"
+                widget: object
+                fields:
+                  - { label: "Button Text", name: "buttonText", widget: "string" }
+                  - label: "Link"
+                    name: "link"
+                    widget: "relation"
+                    collection: "landingPages"
+                    file: "homepage"
+                    value_field: "name"
+                    search_fields: ["label"]
   - name: "productDescriptions"
     label: "Product Descriptions"
     folder: "content/products"

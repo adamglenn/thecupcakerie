@@ -8,3 +8,10 @@ happyHour:
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
+brunch:
+  heading: Daily Brunch Headling
+  hours:
+    - days: Tues. - Sat.
+      hours: 10AM - 4PM
+    - days: Sun. - Mon.
+      hours: 10AM - 2PM
