@@ -118,12 +118,11 @@ collections:
             name: "options"
             widget: "select"
             options: ["Sparkling", "Rosé", "White", "Red"]
-          - label: Size and Price
-            name: sizeAndPrice
+          - label: Price
+            name: price
             widget: list
             fields:
               - { label: Price, name: price, widget: string }
-              - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
