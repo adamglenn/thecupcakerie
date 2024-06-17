@@ -6,3 +6,5 @@ happyHour:
   hours:
     - days: M-F
       hours: 10AM - 4PM
+    - days: Sun. - Mon.
+      hours: 10AM - 2PM
