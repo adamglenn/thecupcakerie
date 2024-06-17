@@ -19,6 +19,17 @@ collections:
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'string' }
+          - label: "Happy Hour"
+            name: "happyHour"
+            widget: object
+            fields:
+              - { label: "Heading", name: 'heading', widget: 'string' }
+              - label: "Hours"
+                name: "hours"
+                widget: list
+                fields:
+                  - { label: "Days", name: "days", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
   - name: "productDescriptions"
     label: "Product Descriptions"
     folder: "content/products"
