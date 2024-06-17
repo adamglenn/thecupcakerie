@@ -8,7 +8,22 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
+name = 'Food'
+pageRef = '/drinks'
+weight = 20
+
+[[menus.main]]
 name = 'Drinks'
+pageRef = '/drinks'
+weight = 20
+
+[[menus.main]]
+name = 'Catering'
+pageRef = '/drinks'
+weight = 20
+
+[[menus.main]]
+name = 'Reservations'
 pageRef = '/drinks'
 weight = 20
 
@@ -16,11 +31,6 @@ weight = 20
 name = 'Blog'
 pageRef = '/posts'
 weight = 30
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 40
 
 [module]
   [module.hugoVersion]

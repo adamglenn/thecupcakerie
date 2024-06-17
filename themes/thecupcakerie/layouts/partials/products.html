@@ -1,13 +1,23 @@
-<section class="py-5">
+<section class="py-5 bg-light">
   <div class="container">
-    <h2 class="visually-hidden">Products</h2>
+    <h2>Products</h2>
     <div class="row gx-4">
       {{ range where .RegularPagesRecursive.ByTitle "Type" "products" }}
         {{ $image := resources.Get .Params.photo }}
-        <div class="col-xl-4 mb-4">
-          <img class="w-100" src="{{ ( $image.Fill "960x640 Center" ).RelPermalink }}" />
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Description }}</p>
+        <div class="col-xl-6 mb-4">
+          <div class="bg-white shadow">
+            <div class="row gx-0">
+              <div class="col-xl-6">
+                <img class="w-100" src="{{ ( $image.Fill "960x640 Center" ).RelPermalink }}" />
+              </div>
+              <div class="col-xl-6 d-flex align-items-center p-4">
+                <div>
+                  <h3 class="h4">{{ .Title }}</h3>
+                  <p>{{ .Description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       {{ end }}
     </div>
