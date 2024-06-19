@@ -50,3 +50,31 @@ $i: 1;
     opacity: .8;
   }
 }
+
+#drink-tabs .active {
+  background-color: transparent;
+  color: $dark;
+  position: relative;
+  z-index: 0;
+  &:before {
+    background-color: #fe8fd6;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    z-index: -1;
+    mask-image: url('/img/highlighter-3.png');
+    -webkit-mask-image: url('/img/highlighter-3.png');
+  }
+}
