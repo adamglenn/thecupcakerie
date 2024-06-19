@@ -3,7 +3,7 @@
   {{ $coldDrinks := .coldDrinks }}
   <main class="py-5">
     <div class="container">
-      <h1 class="text-center flapjack-regular display-1">Drinks</h1>
+      <h1 class="text-center flapjack-regular display-1 mb-4 mt-5">Drinks</h1>
       <ul id="drink-tabs" role="tablist" class="nav nav-pills justify-content-center mb-5">
         <li class="nav-item">
           <button id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" class="nav-link text-dark active fs-3" type="button" role="tab" aria-controls="profile" aria-selected="true">Drinks</button>
@@ -16,7 +16,7 @@
         <div class="tab-pane fade show active" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
           <div class="row mb-5">
             <div class="col-xl-6 mx-xl-auto">
-              <p class="fs-4">{{ .drinksDescription }}</p>
+              <p class="fs-5">{{ .drinksDescription }}</p>
             </div>
           </div>
           <div class="row">
@@ -71,7 +71,7 @@
         <div class="tab-pane fade" id="wines" role="tabpanel" aria-labelledby="wines-tab">
           <div class="row mb-5">
             <div class="col-xl-6 mx-xl-auto">
-              <p class="fs-4">{{ .winesByTheGlassDescription }}</p>
+              <p class="fs-5">{{ .winesByTheGlassDescription }}</p>
             </div>
           </div>
           <div class="row">
