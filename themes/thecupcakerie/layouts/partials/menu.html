@@ -17,7 +17,7 @@ Renders a menu for the given menu ID.
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 flapjack-regular fs-5">
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
       </div>
@@ -41,7 +41,7 @@ Renders a menu for the given menu ID.
       {{- end }}
     {{- end }}
     <li class="nav-item">
-      <a class="nav-link text-uppercase"
+      <a class="nav-link"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}

@@ -1,36 +1,35 @@
 <section aria-labelledby="brunch-and-happy-hour-label" class="py-5">
   <div class="container py-5">
     <h2 class="visually-hidden">Brunch and Happy Hour</h2>
-    <div class="row gx-xl-0">
-      <div class="col-xl-6 py-xl-5">
-        <div class="row">
+    <div class="row gx-xl-5">
+      <div class="col-xl-6 py-xl-5 mb-5 mb-xl-0">
           {{ with site.Data.homepage.happyHour }}
-            <div class="col-lg-6">
-              <div class="me-xl-n5 pe-5">
-                <h3>{{ .heading }}</h3>
-                <ul class="list-unstyled">
-                  {{ range .hours }}
-                    <li>{{ .days }} {{ .hours }}</li>
-                  {{ end }}
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="p-5 border border-2 border-dark" style="background-image: url('/img/bacon-eggs.svg'); background-size: 250px; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
+              <h3 class="flapjack-regular display-3 lh-1 mb-4">{{ .heading }}</h3>
+              <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase highlighter highlighter-3 highlighter-pink">
+                {{ range .hours }}
+                  <li>{{ .days }} {{ .hours }}</li>
+                {{ end }}
+              </ul>
+              <div class="me-5">
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <a href="#">Check Out Our Tappas Menu</a>              
               </div>
             </div>
-            <div class="col-lg-6">
-              Photo
-            </div>
           {{ end }}
-        </div>
       </div>
       <div class="col-xl-6 py-xl-5">
-        <h3>Daily Brunch Headline</h3>
-        <ul class="list-unstyled">
-          <li>Tues - Sat 10AM - 4PM</li>
-          <li>Sun - Mon 10AM - 2PM</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">Check Out Our Brunch Menu</a>
+        <div class="p-5 border border-2 border-dark" style="background-image: url('/img/bacon-eggs.svg'); background-size: 250px; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
+          <h3 class="flapjack-regular display-3 lh-1 mb-4">Daily Brunch Headline</h3>
+          <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase highlighter highlighter-16 highlighter-pink">
+            <li>Tues - Sat 10AM - 4PM</li>
+            <li>Sun - Mon 10AM - 2PM</li>
+          </ul>
+          <div class="me-5">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Check Out Our Brunch Menu</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

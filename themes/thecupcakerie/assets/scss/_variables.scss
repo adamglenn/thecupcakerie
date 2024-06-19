@@ -1,3 +1,9 @@
+// Typography
+//==================================================
+$monograph-text-regular: 'Monograf-Text-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$monograph-text-bold: 'Monograf-Text-Bold', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$flapjack-regular: 'OTRFlapjack-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+
 // Color
 //==================================================
 
@@ -48,7 +54,7 @@ $cc-accent--blue-dark: #1C2B39;
 $cc-accent--blue: #0062A3;
 $cc-accent--blue-light: #9DDAE6;
 $cc-accent--yellow: #FFE539;
-$cc-accent--sunset: #F58672;
+$cc-accent--sunset: #d63384;
 
 $theme-colors: (
   "primary": $primary,
@@ -75,3 +81,8 @@ $theme-colors: (
   "cc-accent--yellow": $cc-accent--yellow,
   "cc-accent--sunset": $cc-accent--sunset
 );
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+$btn-border-width: 2px;

@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'Monograf-Text-Bold';
+	src: url('/fonts/monograf-text-bold.eot');
+	src: url('/fonts/monograf-text-bold.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/monograf-text-bold.woff2') format('woff2'),
+	     url('/fonts/monograf-text-bold.woff') format('woff'),
+	     url('/fonts/monograf-text-bold.ttf') format('truetype'),
+	     url('/fonts/monograf-text-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Monograf-Text-Regular';
+	src: url('/fonts/monograf-text-regular.eot');
+	src: url('/fonts/monograf-text-regular.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/monograf-text-regular.woff2') format('woff2'),
+	     url('/fonts/monograf-text-regular.woff') format('woff'),
+	     url('/fonts/monograf-text-regular.ttf') format('truetype'),
+	     url('/fonts/monograf-text-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OTRFlapjack-Regular';
+	src: url('/fonts/otr-flapjack-regular.eot');
+	src: url('/fonts/otr-flapjack-regular.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/otr-flapjack-regular.woff2') format('woff2'),
+	     url('/fonts/otr-flapjack-regular.woff') format('woff'),
+	     url('/fonts/otr-flapjack-regular.ttf') format('truetype'),
+	     url('/fonts/otr-flapjack-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.flapjack-regular {
+  font-family: $flapjack-regular !important;
+  text-transform: lowercase !important;
+}
+
+.monograph-text-bold {
+  font-family: $monograph-text-bold !important;
+}
+
+.monograph-text-regular {
+  font-family: $monograph-text-regular !important;
+}

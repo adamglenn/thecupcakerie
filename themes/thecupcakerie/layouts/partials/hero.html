@@ -1,10 +1,17 @@
 {{ with site.Data.homepage.hero }}
-  <main class="ratio ratio-21x9 bg-light">
+  {{ $image := resources.Get .photo }}
+  <main class="ratio ratio-21x9 bg-dark text-white" style="background-image: url('{{ ( $image.Fill "1800x771 Center" ).RelPermalink }}'); background-size: cover; background-attachment: fixed;">
     <div class="d-flex align-items-center">
       <div class="container">
-        <h1>{{ .heading }}</h1>
-        <p class="lead">{{ .lede }}</p>
-        <a class="btn btn-outline-dark" href="#">Call to Action</a>
+        <div class="row">
+          <div class="col-xl-7">
+            <div class="py-5 highlighter highlighter-16 highlighter-hot-pink highlighter-transparent">
+              <h1 class="flapjack-regular display-1 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
+              <p class="lead mb-4 fs-3">{{ .lede }}</p>
+              <a class="btn btn-outline-white" href="#">Call to Action</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

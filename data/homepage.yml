@@ -1,6 +1,7 @@
 hero:
   heading: Here is my heading test.
   lede: Here is my lede.
+  photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
 happyHour:
   heading: Join Us for Happy Hour
   hours:

@@ -4,13 +4,15 @@ backend:
 media_folder: assets/img
 public_folder: /img
 collections:
-  - name: "landingPages"
-    label: "Landing Pages"
-    widget: list
+  - label: "Landing Pages"
+    name: "sitePages"
+    create: true
+    editor:
+      preview: false
     files:
-      - label: "Home"
+      - label: "Home Page"
         name: "home"
-        file: "data/homepage.yml"
+        file: "site/data/homepage.yml"
         editor:
           preview: false
         fields:
@@ -31,6 +33,7 @@ collections:
                 fields:
                   - { label: "Days", name: "days", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
+                required: false
           - label: "Brunch"
             name: "brunch"
             widget: object
@@ -42,6 +45,7 @@ collections:
                 fields:
                   - { label: "Days", name: "days", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
+                required: false
               - { label: "Description", name: "description", widget: "string" }
               - label: "Call to Action"
                 name: "cta"
@@ -51,69 +55,65 @@ collections:
                   - label: "Link"
                     name: "link"
                     widget: "relation"
-                    collection: "landingPages"
-                    file: "homepage"
+                    collection: "sitePages"
                     value_field: "name"
                     search_fields: ["label"]
-  - name: "productDescriptions"
-    label: "Product Descriptions"
-    folder: "content/products"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-      - label: "Photo"
-        name: "photo"
-        widget: "image"
-      - label: "Icon"
-        name: "icon"
-        widget: "string"
-  - name: "drinks"
-    label: "Drink Menu"
-    folder: "content/drinks"
-    create: false
-    editor:
-      preview: false
-    fields:
+                required: false
+          - label: "Products"
+            name: "productDescriptions"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "text"
+              - label: "Photo"
+                name: "photo"
+                widget: "image"
+              - label: "Icon"
+                name: "icon"
+                widget: "string"
       - label: "Drinks"
         name: "drinks"
-        widget: list
+        file: "site/data/drinks.yml"
+        editor:
+          preview: false
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Options"
-            name: "options"
-            widget: "select"
-            options: ["Hot", "Cold"]
-          - label: Size and Price
-            name: sizeAndPrice
-            widget: list
-            fields:
-              - { label: Price, name: price, widget: string }
-              - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
-      - label: "Wines by the Glass"
-        name: "winesByTheGlass"
-        widget: list
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Options"
-            name: "options"
-            widget: "select"
-            options: ["Sparkling", "Rosé", "White", "Red"]
-          - label: Price
-            name: price
-            widget: list
-            fields:
-              - { label: Price, name: price, widget: string }
+          - label: "Drinks"
+            name: "drinks"
+            widget: "list"
+            options:
+              - label: "Name"
+                name: "title"
+                widget: "string"
+              - label: "Options"
+                name: "options"
+                widget: "select"
+                options: ["Hot", "Cold"]
+              - label: Size and Price
+                name: sizeAndPrice
+                widget: list
+                fields:
+                  - { label: Price, name: price, widget: string }
+                  - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
+          - label: "Wines by the Glass"
+            name: "winesByTheGlass"
+            widget: "list"
+            options:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Options"
+                name: "options"
+                widget: "select"
+                options: ["Sparkling", "Rosé", "White", "Red"]
+              - label: Price
+                name: price
+                widget: list
+                fields:
+                  - { label: Price, name: price, widget: string }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
