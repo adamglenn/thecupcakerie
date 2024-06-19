@@ -22,7 +22,7 @@ collections:
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'string' }
-          - label: "Happy Hour"
+          - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object
             fields:
@@ -34,7 +34,7 @@ collections:
                   - { label: "Days", name: "days", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
                 required: false
-          - label: "Brunch"
+          - label: "Brunch Feature"
             name: "brunch"
             widget: object
             fields:
@@ -51,13 +51,14 @@ collections:
                 name: "cta"
                 widget: object
                 fields:
-                  - { label: "Button Text", name: "buttonText", widget: "string" }
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
                   - label: "Link"
                     name: "link"
                     widget: "relation"
                     collection: "sitePages"
                     value_field: "name"
                     search_fields: ["label"]
+                    required: false
                 required: false
           - label: "Products"
             name: "productDescriptions"
@@ -75,45 +76,77 @@ collections:
               - label: "Icon"
                 name: "icon"
                 widget: "string"
+                required: false
       - label: "Drinks"
         name: "drinks"
         file: "site/data/drinks.yml"
         editor:
           preview: false
         fields:
+          - label: "Description"
+            name: "description"
+            widget: "text"
           - label: "Drinks"
             name: "drinks"
             widget: "list"
-            options:
-              - label: "Name"
-                name: "title"
-                widget: "string"
-              - label: "Options"
-                name: "options"
-                widget: "select"
-                options: ["Hot", "Cold"]
-              - label: Size and Price
-                name: sizeAndPrice
-                widget: list
+            fields:
+              - label: "Hot Drinks"
+                name: "hotDrinks"
+                widget: "list"
                 fields:
-                  - { label: Price, name: price, widget: string }
-                  - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz.", "By Glass"] }
+                  - label: "Hot Drink"
+                    name: "hotDrink"
+                    widget: "object"
+                    fields:
+                      - label: "Name"
+                        name: "title"
+                        widget: "string"
+                      - label: Size and Price
+                        name: sizeAndPrice
+                        widget: list
+                        fields:
+                          - { label: Price, name: price, widget: string }
+                          - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz."] }
+              - label: "Cold Drinks"
+                name: "coldDrinks"
+                widget: "list"
+                fields:
+                  - label: "Cold Drink"
+                    name: "coldDrink"
+                    widget: "object"
+                    fields:
+                      - label: "Name"
+                        name: "title"
+                        widget: "string"
+                      - label: Size and Price
+                        name: sizeAndPrice
+                        widget: list
+                        fields:
+                          - { label: Price, name: price, widget: string }
+                          - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz."] }
           - label: "Wines by the Glass"
             name: "winesByTheGlass"
             widget: "list"
-            options:
-              - label: "Title"
-                name: "title"
-                widget: "string"
-              - label: "Options"
-                name: "options"
-                widget: "select"
-                options: ["Sparkling", "Rosé", "White", "Red"]
-              - label: Price
-                name: price
-                widget: list
-                fields:
-                  - { label: Price, name: price, widget: string }
+            fields:
+              - label: "Description"
+                name: "description"
+                widget: "text"
+              - label: "Wines by the Glass"
+                name: "winesByTheGlass"
+                widget: "list"
+                options:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Options"
+                    name: "options"
+                    widget: "select"
+                    options: ["Sparkling", "Rosé", "White", "Red"]
+                  - label: Price
+                    name: price
+                    widget: list
+                    fields:
+                      - { label: Price, name: price, widget: string }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
