@@ -1,0 +1,21 @@
+description: fsa
+drinks:
+  - hotDrinks:
+      - hotDrink:
+          title: Drip Coffee Regular or Decaf
+          sizeAndPrice:
+            - price: "2.50"
+              size: 8oz.
+            - price: "3.00"
+              size: 16oz.
+            - price: "3.50"
+              size: 20oz.
+      - hotDrink:
+          title: Cafe Au Lait
+          sizeAndPrice:
+            - price: "4.00"
+              size: 8oz.
+            - price: "4.50"
+              size: 16oz.
+            - price: "5.00"
+              size: 20oz.
