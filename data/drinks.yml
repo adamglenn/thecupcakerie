@@ -1,0 +1,13 @@
+description: fsa
+drinks: []
+drinksDescription: Drinks description.
+hotDrinks:
+  - title: Drip Coffee Regular or Decaf
+    sizeAndPrice:
+      - price: "2.50"
+        size: 8oz.
+      - price: "3.00"
+        size: 16oz.
+      - price: "3.50"
+        size: 20oz.
+winesByTheGlassDescription: Wines by the Glass description.
