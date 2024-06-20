@@ -183,7 +183,7 @@ collections:
           preview: false
         fields:
           - label: "Breakfast Sandwiches"
-            name: "hotDrinks"
+            name: "breakfastSandwiches"
             widget: "object"
             collapsed: true
             fields:
