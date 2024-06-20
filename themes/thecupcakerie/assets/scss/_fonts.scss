@@ -45,4 +45,7 @@
 
 .monograph-text-regular {
   font-family: $monograph-text-regular !important;
+  strong {
+    font-family: $monograph-text-bold !important;
+  }
 }

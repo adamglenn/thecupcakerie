@@ -14,11 +14,18 @@ Renders a menu for the given menu ID.
   <nav class="navbar navbar-expand-lg navbar-light bg-cc-neutral--off-white sticky-top border-bottom border-2 border-dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span> Menu
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 flapjack-regular fs-5">
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><span class="fab fa-facebook"></span><span class="visually-hidden"> The Cupcakerie on Facebook</span></li>
+          <li class="list-inline-item"><span class="fab fa-instagram"></span><span class="visually-hidden"> The Cupcakerie on Instagram</span></li>
+          <li class="list-inline-item"><span class="fab fa-tiktok"></span><span class="visually-hidden"> The Cupcakerie on Tiktok</span></li>
         </ul>
       </div>
     </div>

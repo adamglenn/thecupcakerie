@@ -3,14 +3,9 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
 name = 'Food'
-pageRef = '/drinks'
-weight = 20
+pageRef = '/food'
+weight = 10
 
 [[menus.main]]
 name = 'Drinks'
@@ -19,18 +14,28 @@ weight = 20
 
 [[menus.main]]
 name = 'Catering'
-pageRef = '/drinks'
-weight = 20
+pageRef = '/catering'
+weight = 30
 
 [[menus.main]]
-name = 'Reservations'
-pageRef = '/drinks'
-weight = 20
+name = 'Parties'
+pageRef = '/parties'
+weight = 40
+
+[[menus.main]]
+name = 'Order'
+pageRef = '/order'
+weight = 50
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 60
 
 [[menus.main]]
 name = 'Blog'
 pageRef = '/posts'
-weight = 30
+weight = 70
 
 [module]
   [module.hugoVersion]
