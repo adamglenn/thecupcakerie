@@ -17,8 +17,9 @@ brunch:
     - days: Sun. - Mon.
       hours: 10AM - 2PM
 products:
-  title: Products
-  description: Products description.
+  title: Stocked and Loaded.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore.
   products:
     - title: Beer
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
