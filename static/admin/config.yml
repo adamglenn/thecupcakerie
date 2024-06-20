@@ -200,10 +200,7 @@ collections:
                   - { label: Title, name: title, widget: string }
                   - { label: Description, name: description, widget: text }
                   - { label: Price, name: price, widget: string }
-              - label: Photo
-                name: photo
-                widget: image
-                required: false
+                  - { label: Photo, name: photo, widget: image, required: false }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
