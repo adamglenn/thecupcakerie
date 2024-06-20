@@ -184,8 +184,8 @@ collections:
         fields:
           - label: "Breakfast Sandwiches"
             name: "hotDrinks"
-            widget: "list"
-            collapse: true
+            widget: "object"
+            collapsed: true
             fields:
               - label: "Title"
                 name: "title"
@@ -193,6 +193,7 @@ collections:
               - label: "Description"
                 name: "description"
                 widget: "text"
+                required: false
               - label: Breakfast Sandwiches
                 name: breakfastSandwiches
                 widget: list
