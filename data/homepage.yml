@@ -25,3 +25,19 @@ products:
         eiusmod tempor incididunt ut labore.
       photoAltText: Pint of beer
       photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Wine
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Cigars
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Gift Baskets
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Coffee
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
