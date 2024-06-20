@@ -16,3 +16,12 @@ brunch:
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
+products:
+  title: Products
+  description: Products description.
+  products:
+    - title: Beer
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photoAltText: Pint of beer
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
