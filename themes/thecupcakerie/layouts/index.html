@@ -8,16 +8,4 @@
 
 {{ partial "products.html" . }}
 
-{{ range .RegularPagesRecursive.ByTitle }}
-  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-{{ end }}
-
-{{ $page := .Site.GetPage "/drinks" }}
-{{ $page.RelPermalink }}
-
-{{ range site.RegularPages }}
-  <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ .Render "summary" }}
-{{ end }}
-
 {{ end }}
