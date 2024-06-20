@@ -1,0 +1,10 @@
+hotDrinks:
+  description: "Served all day or until sold out - Bread choices include: brioche
+    roll, biscuit, sourdough, house-made focaccia, croissant, or gluten-free
+    bread."
+  title: Breakfast Sandwiches
+  breakfastSandwiches:
+    - title: Bacon, Egg & Cheddar Sandwich
+      price: "11.00"
+      description: Crispy bacon, cheddar, and our egg soufflé on your choice of bread.
+      photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
