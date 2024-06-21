@@ -199,7 +199,15 @@ collections:
                 widget: list
                 fields:
                   - { label: Title, name: title, widget: string }
-                  - { label: Designation, name: designation, widget: select, multiple: true, options: ["Gluten Free", "Vegetarian", "Vegan"], required: false }
+                  - label: Designation
+                    name: designation
+                    widget: select
+                    multiple: true
+                    options:
+                      - { label: "Gluten Free", value: "GF" }
+                      - { label: "Vegetarian", value: "V" }
+                      - { label: "Vegan", value: "VE" } 
+                    required: false
                   - { label: Description, name: description, widget: text }
                   - { label: Price, name: price, widget: string }
                   - { label: Photo, name: photo, widget: image, required: false }
