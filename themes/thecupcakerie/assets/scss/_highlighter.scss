@@ -56,7 +56,7 @@ $i: 1;
   }
 }
 
-#drink-tabs .active {
+#drink-tabs .active, #food-tabs .active {
   background-color: transparent;
   color: $dark;
   position: relative;
