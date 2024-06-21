@@ -8,3 +8,6 @@ breakfastSandwiches:
       price: "11.00"
       description: Crispy bacon, cheddar, and our egg soufflé on your choice of bread.
       photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
+    - title: Sausage, Egg & Cheddar Sandwich
+      description: Pork sausage patty, cheddar, and our egg soufflé on your choice of bread.
+      price: "11.00"
