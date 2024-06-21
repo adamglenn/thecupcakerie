@@ -41,6 +41,11 @@
                           {{ end }}
                           <div class="col">
                             <h3 class="h4 flapjack-regular lh-1">{{ .title }}</h3>
+                            <ul>
+                              {{ range .designation }}
+                                <li>{{ . }}</li>
+                              {{ end }}
+                            </ul>
                             <p class="mb-0">{{ .description }}</p>
                           </div>
                         </div>
