@@ -14,11 +14,13 @@
           <button id="charcuterie-boards-tab" data-bs-toggle="tab" data-bs-target="#charcuterie-boards" class="nav-link text-dark fs-3" type="button" role="tab" aria-controls="profile" aria-selected="false">Charcuterie Boards</button>
         </li>
       </ul>
-      <ul class="list-inline mx-auto mb-5">
-        <li class="list-inline-item"><strong>GF</strong> Gluten Free</li>
-        <li class="list-inline-item"><strong>V</strong> Vegetarian</li>
-        <li class="list-inline-item"><div class="d-inline-block"><div class="rounded-circle ratio ratio-1x1 bg-dark text-white"><span class="d-block">VE</span></div></div><div class="d-inline-block">Vegan</div></li>
-      </ul>
+      <div class="d-flex justify-content-center">
+        <ul class="d-inline-block list-inline mx-auto mb-5">
+          <li class="list-inline-item"><strong>GF</strong> Gluten Free</li>
+          <li class="list-inline-item"><strong>V</strong> Vegetarian</li>
+          <li class="list-inline-item"><strong>VE</strong> Vegan</li>
+        </ul>
+      </div>
       <div class="tab-content" id="food-content">
         <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="drinks-tab">
           <div class="row">
@@ -39,7 +41,7 @@
                           {{ end }}
                           <div class="col">
                             <h3 class="h4 flapjack-regular lh-1">{{ .title }}</h3>
-                            <p>{{ .description }}</p>
+                            <p class="mb-0">{{ .description }}</p>
                           </div>
                         </div>
                       </div>
