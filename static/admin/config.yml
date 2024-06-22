@@ -66,6 +66,7 @@ collections:
           - label: "Specials"
             name: "specials"
             widget: "object"
+            collapsed: true
             fields:
               - label: "Heading"
                 name: "heading"
