@@ -3,8 +3,8 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 [[menus.main]]
-name = 'Food'
-pageRef = '/food'
+name = 'Menu'
+pageRef = '/menu'
 weight = 10
 
 [[menus.main]]

@@ -11,7 +11,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav class="navbar navbar-expand-lg navbar-light bg-cc-neutral--off-white sticky-top border-bottom border-2 border-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-cc-white-chocolate sticky-top border-bottom border-2 border-dark">
     <div class="container">
       <button class="navbar-toggler w-100 flapjack-regular py-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span> Menu
@@ -21,9 +21,9 @@ Renders a menu for the given menu ID.
           {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
         <ul class="list-inline mb-0">
-          <li class="list-inline-item"><a href="#" class="text-cc-accent--sunset"><span class="fab fa-facebook"></span><span class="visually-hidden"> The Cupcakerie on Facebook</span></a></li>
-          <li class="list-inline-item"><a href="#" class="text-cc-accent--sunset"><span class="fab fa-instagram"></span><span class="visually-hidden"> The Cupcakerie on Instagram</span></a></li>
-          <li class="list-inline-item"><a href="#" class="text-cc-accent--sunset"><span class="fab fa-tiktok"></span><span class="visually-hidden"> The Cupcakerie on Tiktok</span></a></li>
+          <li class="list-inline-item"><a href="#" class="text-cc-accent--pink"><span class="fab fa-facebook"></span><span class="visually-hidden"> The Cupcakerie on Facebook</span></a></li>
+          <li class="list-inline-item"><a href="#" class="text-cc-accent--pink"><span class="fab fa-instagram"></span><span class="visually-hidden"> The Cupcakerie on Instagram</span></a></li>
+          <li class="list-inline-item"><a href="#" class="text-cc-accent--pink"><span class="fab fa-tiktok"></span><span class="visually-hidden"> The Cupcakerie on Tiktok</span></a></li>
         </ul>
       </div>
     </div>

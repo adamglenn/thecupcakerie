@@ -2,7 +2,7 @@
   {{ $breakfastSandwiches := .breakfastSandwiches }}
   <main class="py-5">
     <div class="container">
-      <h1 class="text-center flapjack-regular display-1 mb-4 mt-5">Food</h1>
+      <h1 class="text-center flapjack-regular display-1 mb-4 mt-5">Menu</h1>
       <ul id="food-tabs" role="tablist" class="nav nav-pills justify-content-center mb-5">
         <li class="nav-item">
           <button id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast" class="nav-link text-dark active fs-3" type="button" role="tab" aria-controls="profile" aria-selected="true">Breakfast</button>
@@ -16,14 +16,14 @@
       </ul>
       <div class="d-flex justify-content-center">
         <ul class="d-inline-block list-inline mx-auto mb-5">
-          <li class="list-inline-item"><strong>GF</strong> Gluten Free</li>
-          <li class="list-inline-item"><strong>V</strong> Vegetarian</li>
-          <li class="list-inline-item"><strong>VE</strong> Vegan</li>
+          <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
+          <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
+          <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
         </ul>
       </div>
       <div class="tab-content" id="food-content">
         <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="drinks-tab">
-          <div class="row">
+          <div class="row gx-xl-5">
             <div class="col-xl-6">
               <h2 class="monograph-text-bold">{{ $breakfastSandwiches.title }}</h2>
               <p>{{ $breakfastSandwiches.description }}</p>
@@ -31,8 +31,8 @@
                 {{ range $breakfastSandwiches.breakfastSandwiches }}
                   {{ $image := resources.Get .photo }}
                   <li class="py-4 border-top border-2 border-dark">
-                    <div class="row">
-                      <div class="col-8">
+                    <div class="row gx-2">
+                      <div class="col-9">
                         <div class="row">
                           {{ if $image }}
                             <div class="col-6">
@@ -41,16 +41,16 @@
                           {{ end }}
                           <div class="col">
                             <h3 class="h4 flapjack-regular lh-1">{{ .title }}</h3>
-                            <ul>
+                            <p class="mb-0">
+                              {{ .description }}
                               {{ range .designation }}
-                                <li>{{ . }}</li>
+                                <strong>({{ . }})</strong>
                               {{ end }}
-                            </ul>
-                            <p class="mb-0">{{ .description }}</p>
+                            </p>
                           </div>
                         </div>
                       </div>
-                      <div class="col-4 text-end">
+                      <div class="col-3 text-end">
                         <ul class="list-unstyled monograph-text-bold">
                           <li>                        
                             ${{ .price }}

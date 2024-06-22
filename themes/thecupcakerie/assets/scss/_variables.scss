@@ -28,7 +28,7 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:    #000;
+$black:    #302828;
 
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -40,21 +40,18 @@ $light:         $gray-100;
 $dark:          $gray-900;
 
 // Primary
-$cc-blue: #002855;
-$cc-gold: #EAAA00;
+$cc-white-chocolate: #FDF7F0;
 
-$cc-accent--old-gold: #7F6310;
-$cc-neutral--off-white: #F7F1F0;
-$cc-neutral--cream: #fdeeff;
-$cc-neutral--tan: #B3A169;
-$cc-neutral--warm-gray-light: #BEB7B3;
-$cc-neutral--warm-gray-medium: #988E8B;
-$cc-neutral--warm-gray-dark: #2D2725;
-$cc-accent--blue-dark: #1C2B39;
-$cc-accent--blue: #0062A3;
-$cc-accent--blue-light: #9DDAE6;
-$cc-accent--yellow: #FFE539;
-$cc-accent--sunset: #d63384;
+$cc-accent--frose: #B71F3A;
+$cc-accent--pink: #F05689;
+$cc-accent--mojito: #72D679;
+$cc-accent--manhattan: #EE2B28;
+$cc-accent--momosa: #FFD13A;
+
+$cc-neutral--vino: #4D1021;
+$cc-neutral--dark-chocolate: #341716;
+$cc-neutral--cohiba: #723B28;
+$cc-neutral--mocha: #EFD9B1;
 
 $theme-colors: (
   "primary": $primary,
@@ -66,20 +63,15 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "white": $white,
-  "cc-blue": $cc-blue,
-  "cc-gold": $cc-gold,
-  "cc-accent--old-gold": $cc-accent--old-gold,
-  "cc-neutral--off-white": $cc-neutral--off-white,
-  "cc-neutral--cream": $cc-neutral--cream,
-  "cc-neutral--tan": $cc-neutral--tan,
-  "cc-neutral--warm-gray-light": $cc-neutral--warm-gray-light,
-  "cc-neutral--warm-gray-medium": $cc-neutral--warm-gray-medium,
-  "cc-neutral--warm-gray-dark": $cc-neutral--warm-gray-dark,
-  "cc-accent--blue-dark": $cc-accent--blue-dark,
-  "cc-accent--blue": $cc-accent--blue,
-  "cc-accent--blue-light": $cc-accent--blue-light,
-  "cc-accent--yellow": $cc-accent--yellow,
-  "cc-accent--sunset": $cc-accent--sunset
+  "cc-white-chocolate": $cc-white-chocolate,
+  "cc-accent--frose": $cc-accent--frose,
+  "cc-accent--pink": $cc-accent--pink,
+  "cc-accent--mojito": $cc-accent--mojito,
+  "cc-accent--manhattan": $cc-accent--manhattan,
+  "cc-accent--momosa": $cc-accent--momosa,
+  "cc-neutral--vino": $cc-neutral--vino,
+  "cc-neutral--dark-chocolate": $cc-neutral--dark-chocolate,
+  "cc-neutral--mocha": $cc-neutral--mocha
 );
 
 $btn-border-radius: 0;

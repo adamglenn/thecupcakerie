@@ -63,6 +63,18 @@ collections:
                     search_fields: ["label"]
                     required: false
                 required: false
+          - label: "Specials"
+            name: "specials"
+            widget: "object"
+            fields:
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Details"
+                name: "details"
+                widget: "list"
+                fields:
+                  - { label: "Line", name: "line", widget: "string" }
           - label: "Products"
             name: "products"
             widget: object
