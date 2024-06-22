@@ -1,0 +1,30 @@
+menus:
+  - menu_name: Breakfast
+    menu:
+      - menu_section: Breakfast Sandwiches
+        menu_section_description: "Served all day or until sold out - Bread choices
+          include: brioche roll, biscuit, sourdough, house-made focaccia,
+          croissant, or gluten-free bread."
+        items:
+          - title: Bacon, Egg & Cheddar Sandwich
+            description: Crispy bacon, cheddar, and our egg soufflé on your choice of bread.
+            options:
+              - price: "11.00"
+            photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
+          - title: Sausage, Egg & Cheddar Sandwich
+            description: Pork sausage patty, cheddar, and our egg soufflé on your choice of
+              bread.
+            options:
+              - price: "11.00"
+          - title: Egg, Cheddar & Avocado Sandwich
+            description: Avocado, cheddar, and our egg soufflé on your choice of bread.
+            options:
+              - price: "11.00"
+      - menu_section: Pastries
+        items:
+          - title: Brown Butter Marshmallow Bar
+            description: Test.
+            designation:
+              - GF
+            options:
+              - price: "4.00"
