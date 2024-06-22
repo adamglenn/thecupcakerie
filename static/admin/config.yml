@@ -198,35 +198,88 @@ collections:
         editor:
           preview: false
         fields:
-          - label: "Breakfast Sandwiches"
-            name: "breakfastSandwiches"
-            widget: "object"
-            collapsed: true
+          - label: "Menus"
+            name: "menus"
+            widget: "list"
             fields:
-              - label: "Title"
-                name: "title"
+              - label: "Menu Name"
+                name: "menu_name"
                 widget: "string"
-              - label: "Description"
-                name: "description"
+              - label: "Menu Description"
+                name: "menu_description"
                 widget: "text"
                 required: false
-              - label: Breakfast Sandwiches
-                name: breakfastSandwiches
-                widget: list
+              - label: "Menu Sections"
+                name: "menu"
+                widget: "list"
                 fields:
-                  - { label: Title, name: title, widget: string }
-                  - label: Designation
-                    name: designation
-                    widget: select
-                    multiple: true
-                    options:
-                      - { label: "Gluten Free", value: "GF" }
-                      - { label: "Vegetarian", value: "V" }
-                      - { label: "Vegan", value: "VE" } 
+                  - label: "Section Title"
+                    name: "menu_section"
+                    widget: "string"
+                  - label: "Section Description"
+                    name: "menu_section_description"
+                    widget: "text"
                     required: false
-                  - { label: Description, name: description, widget: text }
-                  - { label: Price, name: price, widget: string }
-                  - { label: Photo, name: photo, widget: image, required: false }
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    collapsed: true
+                    fields:
+                      - label: "Title"
+                        name: "title"
+                        widget: "string"
+                      - label: "Description"
+                        name: "description"
+                        widget: "text"
+                      - label: "Designation"
+                        name: "designation"
+                        widget: "select"
+                        multiple: true
+                        required: false
+                        options:
+                          - { label: "Gluten Free", value: "GF" }
+                          - { label: "Vegetarian", value: "V" }
+                          - { label: "Vegan", value: "VE" }
+                      - label: "Options"
+                        name: "options"
+                        widget: "list"
+                        fields:
+                          - { label: Size, name: size, widget: select, options: ["8oz.", "16oz.", "20oz.", "24oz."] }
+                          - { label: Price, name: price, widget: string }
+                      - label: Photo
+                        name: photo
+                        widget: image
+                        required: false
+        # fields:
+        #   - label: "Breakfast Sandwiches"
+        #     name: "breakfastSandwiches"
+        #     widget: "object"
+        #     collapsed: true
+        #     fields:
+        #       - label: "Title"
+        #         name: "title"
+        #         widget: "string"
+        #       - label: "Description"
+        #         name: "description"
+        #         widget: "text"
+        #         required: false
+        #       - label: Breakfast Sandwiches
+        #         name: breakfastSandwiches
+        #         widget: list
+        #         fields:
+        #           - { label: Title, name: title, widget: string }
+        #           - label: Designation
+        #             name: designation
+        #             widget: select
+        #             multiple: true
+        #             options:
+        #               - { label: "Gluten Free", value: "GF" }
+        #               - { label: "Vegetarian", value: "V" }
+        #               - { label: "Vegan", value: "VE" } 
+        #             required: false
+        #           - { label: Description, name: description, widget: text }
+        #           - { label: Price, name: price, widget: string }
+        #           - { label: Photo, name: photo, widget: image, required: false }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"

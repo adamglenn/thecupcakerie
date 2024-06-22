@@ -30,7 +30,6 @@ $i: 1;
 @while $i < 17 {
   .highlighter-#{$i} {
     &:before {
-      color: red;
       mask-image: url('/img/highlighter-#{$i}.png');
       -webkit-mask-image: url('/img/highlighter-#{$i}.png');
     }
@@ -40,13 +39,7 @@ $i: 1;
 
 .highlighter-pink {
   &:before {
-    background-color: #fe8fd6;
-  }
-}
-
-.highlighter-hot-pink {
-  &:before {
-    background-color: #fb00a1;
+    background-color: $cc-accent--pink;
   }
 }
 
