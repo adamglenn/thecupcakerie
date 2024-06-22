@@ -57,11 +57,11 @@
                           <div class="col-4 text-end">
                             <ul class="list-unstyled monograph-text-bold">
                               {{ range .options }}
-                                <li>                        
-                                  {{ if .size }}
-                                    {{ .size }} / 
-                                  {{ end }}
+                                <li>
                                   ${{ .price }}
+                                  {{ if .size }}
+                                    / {{ .size }}
+                                  {{ end }}
                                 </li>
                               {{ end }}
                             </ul>
