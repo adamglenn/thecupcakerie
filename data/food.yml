@@ -2,9 +2,9 @@ menus:
   - menu_name: Breakfast
     menu_sections:
       - title: Breakfast Sandwiches
-        description: "Served all day or until sold out - Bread choices
-          include: brioche roll, biscuit, sourdough, house-made focaccia,
-          croissant, or gluten-free bread."
+        description: "Served all day or until sold out - Bread choices include: brioche
+          roll, biscuit, sourdough, house-made focaccia, croissant, or
+          gluten-free bread."
         items:
           - title: Bacon, Egg & Cheddar Sandwich
             description: Crispy bacon, cheddar, and our egg soufflé on your choice of bread.
@@ -28,3 +28,22 @@ menus:
               - GF
             options:
               - price: "4.00"
+  - menu_name: Lunch
+    menu_sections:
+      - title: Sandwiches
+        description: "Served all day. Bread choices include: brioche roll, sourdough,
+          house-made focaccia, baguette, or gluten-free bread."
+        items:
+          - title: Rainbow Veggie Wrap
+            description: Black bean hummus, shredded carrots, sprouts, avocado mash,
+              cucumbers, greens, mango salsa, and vegan green goddess dressing
+              on a spinach wrap.
+            designation:
+              - VE
+            options:
+              - price: "14"
+          - title: Lean Green Turkey Wrap
+            description: Lemony chickpea salad, roasted turkey breast, cucumber, avocado
+              mash, arugula, and green goddess dressing on a spinach wrap.
+            options:
+              - price: "15"
