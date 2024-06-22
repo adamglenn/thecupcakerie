@@ -20,7 +20,7 @@ menus:
             description: Avocado, cheddar, and our egg soufflé on your choice of bread.
             options:
               - price: "11.00"
-      - menu_section: Pastries
+      - title: Pastries
         items:
           - title: Brown Butter Marshmallow Bar
             description: ""

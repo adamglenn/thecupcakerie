@@ -3,10 +3,10 @@
     <div class="container">
       <h1 class="text-center flapjack-regular display-1 mb-4 mt-5">Menu</h1>
       <ul id="food-tabs" role="tablist" class="nav nav-pills justify-content-center mb-5">
-        {{ range . }}
+        {{ range $index, $element := . }}
           <!-- need to add active class and aria role to first item -->
           <li class="nav-item">
-            <button id="{{ .menu_name }}-tab" data-bs-toggle="tab" data-bs-target="#{{ .menu_name }}" class="nav-link text-dark fs-3" type="button" role="tab" aria-controls="{{ .menu_name }}" aria-selected="false">{{ .menu_name }}</button>
+            <button id="{{ .menu_name }}-tab" data-bs-toggle="tab" data-bs-target="#{{ .menu_name }}" class="nav-link text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ .menu_name }}" aria-selected="false">{{ .menu_name }}</button>
           </li>
         {{ end }}
       </ul>
