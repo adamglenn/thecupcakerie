@@ -33,7 +33,9 @@
                       <div>
                         <div class="bg-cc-accent--momosa text-dark p-4 me-5 mt-5">
                           <h3 class="flapjack-regular d-inline-block">{{ .title }}</h3>
-                          <p class="mb-0">{{ .description }}</p>
+                          {{ if .description }}
+                            <p class="mb-0">{{ .description }}</p>
+                          {{ end }}
                         </div>
                       </div>
                     </div>
