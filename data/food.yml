@@ -30,6 +30,7 @@ menus:
             options:
               - price: "4.00"
             photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+            feature: true
   - menu_name: Lunch
     menu_sections:
       - title: Sandwiches
