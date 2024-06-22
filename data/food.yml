@@ -1,8 +1,8 @@
 menus:
   - menu_name: Breakfast
-    menu:
-      - menu_section: Breakfast Sandwiches
-        menu_section_description: "Served all day or until sold out - Bread choices
+    menu_sections:
+      - title: Breakfast Sandwiches
+        description: "Served all day or until sold out - Bread choices
           include: brioche roll, biscuit, sourdough, house-made focaccia,
           croissant, or gluten-free bread."
         items:

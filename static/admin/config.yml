@@ -203,14 +203,14 @@ collections:
             widget: "list"
             fields:
               - label: "Menu Name"
-                name: "menu_name"
+                name: "title"
                 widget: "string"
               - label: "Menu Description"
-                name: "menu_description"
+                name: "description"
                 widget: "text"
                 required: false
               - label: "Menu Sections"
-                name: "menu"
+                name: "menu_sections"
                 widget: "list"
                 fields:
                   - label: "Section Title"
