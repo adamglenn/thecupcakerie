@@ -23,7 +23,7 @@ menus:
       - menu_section: Pastries
         items:
           - title: Brown Butter Marshmallow Bar
-            description: Test.
+            description: ""
             designation:
               - GF
             options:
