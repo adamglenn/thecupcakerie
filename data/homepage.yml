@@ -16,6 +16,11 @@ brunch:
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
+specials:
+  heading: Slightly Sweet Wednesdays
+  details:
+    - line: Frosé Flight (3) for $10
+    - line: Add (3) mini cupcakes for $5
 products:
   title: Stocked and Loaded.
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
