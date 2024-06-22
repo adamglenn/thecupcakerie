@@ -19,9 +19,9 @@
       </div>
       <div class="tab-content" id="food-content">
         {{ range . }}
-          {{ range .menu_sections }}
-            <div class="tab-pane fade show active" id="{{ .menu_name }}" role="tabpanel" aria-labelledby="{{ .menu_name }}-tab">
-              <div class="row gx-xl-5">
+          <div class="tab-pane fade show active" id="{{ .menu_name }}" role="tabpanel" aria-labelledby="{{ .menu_name }}-tab">
+            <div class="row gx-xl-5" data-masonry='{"percentPosition": true }'>
+              {{ range .menu_sections }}
                 <div class="col-xl-6">
                   <h2 class="monograph-text-bold">{{ .title }}</h2>
                   {{ if .description }}
@@ -70,10 +70,10 @@
                       </li>
                     {{ end }}
                   </ul>
-                </div>
-              </div>
+                </div>              
+              {{ end }}
             </div>
-          {{ end }}
+          </div>
         {{ end }}
       </div>
     </div>
