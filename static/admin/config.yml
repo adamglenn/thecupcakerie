@@ -76,6 +76,9 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Line", name: "line", widget: "string" }
+              - label: "Photo"
+                name: "photo"
+                widget: image
           - label: "Products"
             name: "products"
             widget: object
