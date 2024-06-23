@@ -9,6 +9,17 @@ hero:
   cta:
     - button_text: View Menu
       url: /menu
+hours:
+  title: Come Visit Us
+  address:
+    - address_line: 3200 Collins Ferry Road
+    - address_line: Morgantown, WV 26505
+  hours:
+    - hours_line: Sun. - Mon. 10AM - 2PM
+    - hours_line: Tues. - Sat. 10AM - 7PM
+  special_hours:
+    messaeg: We will be closed on Thursday, July 4th.
+    show: true
 happyHour:
   heading: Join Us for Happy Hour
   hours:
