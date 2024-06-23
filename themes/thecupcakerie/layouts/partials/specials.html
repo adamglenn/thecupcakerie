@@ -1,26 +1,24 @@
 {{ with site.Data.homepage.specials }}
   {{ $image := resources.Get .photo }}
   <section class="py-5">
-    <div class="container">
-      <div class="mt-n5 pb-5">
-        <div class="bg-cc-neutral--mocha">
-          <div class="m-4 border border-2 border-dark">
-            <div class="row mx-0 h-100">
-              <div class="col-xl-4 bg-cc-accent--pink position-relative">
-                <div class="p-4 mt-5 me-xl-n5 bg-cc-accent--pink">
-                  <h2 class="display-2 monograph-text-bold lh-1">{{ .heading }}</h2>
-                </div>
-                <div class="p-4 d-flex justify-content-end">
-                  <ul class="d-inline-block fs-3 list-unstyled me-n5 mb-5">
-                    {{ range .details }}
-                      <li class="mb-2"><span class="p-2 bg-cc-accent--mojito">{{ .line }}</span></li>
-                    {{ end }}
-                  </ul>
-                </div>
+    <div class="container mb-5">
+      <div class="bg-cc-neutral--mocha py-4 ps-4 pe-4 ms-n5">
+        <div class="bg-cc-accent--pink mt-n5 me-n5 border border-2 border-dark">
+          <div class="row mx-0 h-100">
+            <div class="col-xl-4 position-relative">
+              <div class="p-4 mt-5 me-xl-n5 bg-cc-accent--pink">
+                <h2 class="display-2 monograph-text-bold lh-1">{{ .heading }}</h2>
               </div>
-              <div class="col-xl-8" style="background-image: url('{{ ( $image.Fill "1200x800 Center" ).RelPermalink }}'); background-size: cover;">
+              <div class="p-4 d-flex justify-content-end">
+                <ul class="d-inline-block fs-3 list-unstyled me-n5 mb-5">
+                  {{ range .details }}
+                    <li class="mb-2"><span class="p-2 bg-cc-accent--mojito">{{ .line }}</span></li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-8" style="background-image: url('{{ ( $image.Fill "1200x800 Center" ).RelPermalink }}'); background-size: cover;">
 
-              </div>
             </div>
           </div>
         </div>

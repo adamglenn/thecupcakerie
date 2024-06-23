@@ -2,3 +2,10 @@
   writing-mode: vertical-lr !important;
   transform: rotate(180deg) !important;
 }
+
+@include media-breakpoint-up(md) {
+  .cc-text-vertica-md {
+    writing-mode: vertical-lr !important;
+    transform: rotate(180deg) !important;
+  }
+}

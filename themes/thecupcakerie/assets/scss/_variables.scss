@@ -41,6 +41,7 @@ $dark:          $gray-900;
 
 // Primary
 $cc-white-chocolate: #FDF7F0;
+$cc-white-chocolate-tint: #f6f1ea;
 
 $cc-accent--frose: #B71F3A;
 $cc-accent--pink: #E56E89; // #F05689 will be final
@@ -51,7 +52,7 @@ $cc-accent--momosa: #FFD13A;
 $cc-neutral--vino: #4D1021;
 $cc-neutral--dark-chocolate: #341716;
 $cc-neutral--cohiba: #723B28;
-$cc-neutral--mocha: #F0E6D5;
+$cc-neutral--mocha: #f5ebd9;
 
 $theme-colors: (
   "primary": $primary,
@@ -64,6 +65,7 @@ $theme-colors: (
   "dark": $dark,
   "white": $white,
   "cc-white-chocolate": $cc-white-chocolate,
+  "cc-white-chocolate-tint": $cc-white-chocolate-tint,
   "cc-accent--frose": $cc-accent--frose,
   "cc-accent--pink": $cc-accent--pink,
   "cc-accent--mojito": $cc-accent--mojito,

@@ -3,7 +3,7 @@
     <div class="container py-5">
       <div class="row mb-5 text-center">
         <div class="col-xl-8 mx-xl-auto">
-          <h2 class="flapjack-regular display-1 highlighter highlighter-3 highlighter-underline highlighter-pink">{{ .title }}</h2>
+          <h2 class="flapjack-regular display-1 highlighter highlighter-3 highlighter-underline highlighter-pink lh-1">{{ .title }}</h2>
           <p class="fs-5">{{ .description }}</p>
         </div>
       </div>
@@ -14,7 +14,7 @@
             <div class="border border-2 border-dark">
               <div class="row gx-0">
                 <div class="col-xl-6">
-                  <img class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' />
+                  <img load="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' />
                 </div>
                 <div class="col-xl-6 d-flex align-items-center p-4">
                   <div>
