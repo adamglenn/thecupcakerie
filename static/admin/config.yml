@@ -29,7 +29,7 @@ collections:
                 required: false
                 fields:
                   - { label: "Button Text", name: "button_text", widget: "string" }
-                  - { label: "Link", name: "link", widget: "relation", collection: "sitePages", search_fields: ["sitePages.name"], file: "data/homepage.yml", value_field: "name" }
+                  - { label: "URL", name: "url", widget: "string" }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object
