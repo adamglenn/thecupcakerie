@@ -22,7 +22,7 @@ collections:
             collapsed: true
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
-              - { label: "Lede", name: 'lede', widget: 'string' }
+              - { label: "Lede", name: 'lede', widget: 'text' }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object
