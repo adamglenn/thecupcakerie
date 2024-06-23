@@ -5,7 +5,11 @@
     <div class="p-5 border-bottom border-dark border-2">
       <h1 class="flapjack-regular display-1 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
       <p class="lead mb-4 fs-5">{{ .lede }}</p>
-      <a class="btn btn-outline-dark" href="#">Call to Action</a>
+      {{ if .cta }}
+        {{ range .cta }}
+          <a class="text-cc-accent--pink text-decoration-none" href="{{ .url }}">{{ .button_text }}</a>
+        {{ end }}
+      {{ end }}
     </div>
   </main>
   <main class="ratio ratio-21x9 bg-dark text-whit d-none d-lg-block" style="background-image: url('{{ ( $image.Fill "1800x771 Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
@@ -16,7 +20,11 @@
             <div class="p-5 border border-2 border-dark bg-cc-white-chocolate">
               <h1 class="flapjack-regular display-1 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
               <p class="lead mb-4 fs-5">{{ .lede }}</p>
-              <a class="btn btn-outline-dark" href="#">Call to Action</a>
+              {{ if .cta }}
+                {{ range .cta }}
+                  <a class="text-cc-accent--pink text-decoration-none fs-5" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+                {{ end }}
+              {{ end }}
             </div>
           </div>
         </div>

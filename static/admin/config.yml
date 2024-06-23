@@ -30,6 +30,29 @@ collections:
                 fields:
                   - { label: "Button Text", name: "button_text", widget: "string" }
                   - { label: "URL", name: "url", widget: "string" }
+          - label: "Address and Hours"
+            name: "hours"
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "title", name: "title", widget: "string" }
+              - label: "Address"
+                name: "address"
+                widget: list
+                fields:
+                  - { label: "Address Line", name: "address_line", widget: "string" }
+              - label: "Hours"
+                name: "hours"
+                widget: list
+                fields:
+                  - { label: "Hours Line", name: "hours_line", widget: "string" }
+              - label: "Special Hours"
+                name: "special_hours"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Show", name: "show", widget: "boolean" }
+                  - { label: "Message", name: "messaeg", widget: "text" }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object

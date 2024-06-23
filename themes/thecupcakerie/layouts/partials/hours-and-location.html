@@ -15,7 +15,9 @@
                 <span class="fas fa-clock"></span> Sun. - Mon. 10AM - 2PM
                 <br>Tues. - Sat. 10AM - 7PM
               </p>
-              <p>Special Hours Toggle</p>
+              {{ if eq .special_hours true }}
+                <p>* Special Hours Toggle</p>
+              {{ end }}
             </div>
           </div>
           <div class="col-xl-4 cc-stripes cc-stripes-neutral--vino">
