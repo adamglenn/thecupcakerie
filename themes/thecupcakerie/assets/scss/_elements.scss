@@ -58,9 +58,14 @@
       background-color: $cc-neutral--vino;
     }
   }
+  &.cc-stripes-accent--frose {
+    &:before {
+      background-color: $cc-accent--frose;
+    }
+  }
   &.cc-stripes-tint {
     &:before {
-      opacity: 50%;
+      opacity: 30%;
     }
   }
 }
