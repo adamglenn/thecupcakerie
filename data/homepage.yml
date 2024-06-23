@@ -6,6 +6,9 @@ hero:
     of both worlds: delightful brunch offerings and a curated selection of fine
     wines."
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
+  cta:
+    - button_text: View Menu
+      url: /menu
 happyHour:
   heading: Join Us for Happy Hour
   hours:
