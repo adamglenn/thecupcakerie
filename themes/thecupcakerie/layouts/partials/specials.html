@@ -5,20 +5,29 @@
       <div class="bg-cc-neutral--mocha py-4 ps-4 pe-4 ms-n5">
         <div class="bg-cc-accent--pink cc-stripes cc-stripes-accent--frose cc-stripes-tint mt-n5 me-n5 border border-2 border-dark">
           <div class="row mx-0 h-100">
-            <div class="col-xl-4 position-relative">
-              <div class="p-4 mt-5 me-xl-n5 bg-cc-accent--pink z-index-1">
-                <h2 class="display-2 monograph-text-bold lh-1">{{ .heading }}</h2>
-              </div>
-              <div class="p-4 d-flex justify-content-end">
-                <ul class="d-inline-block fs-3 list-unstyled me-n5 mb-5 z-index-1">
-                  {{ range .details }}
-                    <li class="mb-2"><span class="p-2 bg-cc-accent--mojito">{{ .line }}</span></li>
-                  {{ end }}
-                </ul>
+            <div class="col-xl-5 position-relative d-flex align-items-center">
+              <div>
+                <p class="ms-4 mt-5 text-white px-4 fs-4 monograph-text-bold">Don’t Miss Out</p>
+                <div class="p-4 ms-4 me-xl-n5 bg-cc-accent--pink z-index-1">
+                  <h2 class="display-2 monograph-text-bold lh-1">{{ .heading }}</h2>
+                </div>
+                <div class="p-4 d-flex justify-content-end">
+                  <ul class="d-inline-block fs-3 list-unstyled me-n5 z-index-1">
+                    {{ range .details }}
+                      <li class="mb-2"><span class="p-2 bg-cc-accent--mojito">{{ .line }}</span></li>
+                    {{ end }}
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-xl-8 position-relative" style="background-image: url('{{ ( $image.Fill "1200x800 Center" ).RelPermalink }}'); background-size: cover;">
-
+            <div class="col-xl-7 position-relative" style="background-image: url('{{ ( $image.Fill "1200x800 Center" ).RelPermalink }}'); background-size: cover;">
+              <div class="ratio ratio-4x3">
+                <div class="d-flex align-items-end justify-content-end">
+                  <div class="bg-dark text-white p-2 mb-5">
+                    Caption
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

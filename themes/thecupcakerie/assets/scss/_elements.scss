@@ -25,6 +25,11 @@
       background-color: $cc-accent--frose;
     }
   }
+  &.cc-pattern-neutral--vino {
+    &:before {
+      background-color: $cc-neutral--vino;
+    }
+  }
   &.cc-pattern-tint {
     &:before {
       opacity: 50%;

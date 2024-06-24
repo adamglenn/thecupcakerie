@@ -1,6 +1,6 @@
 <section aria-labelledby="hours-and-location-label" class="bg-cc-neutral--dark-chocolate text-cc-white-chocolate cc-stripes cc-stripes-neutral--vino">
   <div class="container position-relative">
-    <div class="row">
+    <div class="row py-4">
       <h2 class="visually-hidden">Hours of Operation and Location</h2>
       {{ with site.Data.homepage.hours }}
         <div class="col-xl-4">
@@ -22,7 +22,7 @@
               {{ end }}
             </p>
             {{ if eq .special_hours.show true }}
-              <p class="p-1 bg-cc-accent--momosa text-dark lh-1">* {{ .special_hours.message }}</p>
+              <p class="p-1 bg-cc-accent--momosa text-dark lh-1 mb-0">* {{ .special_hours.message }}</p>
             {{ end }}
           </div>
         </div>
@@ -39,7 +39,8 @@
       </div>
       <div class="col-xl-4">
         <div class="p-5 small bg-cc-neutral--dark-chocolate h-100">
-          <h3 class="h4 monograph-text-bold text-uppercase text-cc-neutral--mocha cc-text-letter-spacing-2 mb-3">Catch Us on the Road</h3>
+          <h3 class="h4 monograph-text-bold text-uppercase text-cc-neutral--mocha cc-text-letter-spacing-2 mb-1">Catch Us on the Road</h3>
+          <p class="mb-3 monograph-text text-uppercase cc-text-letter-spacing-2 text-cc-neutral--mocha">Food Truck</p>
           <p class="text-cc-accent--pink flapjack-regular lh-1 mb-2">Next Stop:</p>
           <p>
             <strong>Moonlight Market</strong>

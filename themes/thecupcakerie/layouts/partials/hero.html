@@ -1,26 +1,12 @@
 {{ with site.Data.homepage.hero }}
   {{ $image := resources.Get .photo }}
-  <main class="d-lg-none">
-    <div class="ratio ratio-21x9 bg-dark" style="background-image: url('{{ ( $image.Fill "1400x600 Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat;"></div>
-    <div class="p-5 border-bottom border-dark border-2">
-      <h1 class="flapjack-regular display-2 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
-      {{ if .subheading }}
-        <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
-      {{ end }}
-      <p class="lead mb-4 fs-5">{{ .lede }}</p>
-      {{ if .cta }}
-        {{ range .cta }}
-          <a class="text-cc-accent--pink text-decoration-none" href="{{ .url }}">{{ .button_text }}</a>
-        {{ end }}
-      {{ end }}
-    </div>
-  </main>
+  {{ $align := .align }}
   <main class="py-5 bg-dark text-whit d-none d-lg-block" style="background-image: url('{{ ( $image.Fill "1800x771 Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
     <div class="d-flex align-items-center">
       <div class="container py-5">
         <div class="row">
           <div class="col-xl-7">
-            <div class="p-5 border border-2 border-dark bg-cc-white-chocolate ms-xxl-n5 me-xxl-5">
+            <div class="p-5 border border-2 border-dark bg-cc-white-chocolate">
               <h1 class="flapjack-regular display-2 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
               {{ if .subheading }}
                 <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
