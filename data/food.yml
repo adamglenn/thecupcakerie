@@ -1,5 +1,5 @@
 menus:
-  - menu_name: Breakfast
+  - menu_name: Brunch
     menu_sections:
       - title: Breakfast Sandwiches
         description: "Served all day or until sold out - Bread choices include: brioche
@@ -31,7 +31,7 @@ menus:
               - price: "4.00"
             photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
             feature: true
-  - menu_name: Lunch
+  - menu_name: Dinner
     menu_sections:
       - title: Sandwiches
         description: "Served all day. Bread choices include: brioche roll, sourdough,
