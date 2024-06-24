@@ -41,6 +41,9 @@ collections:
                 widget: list
                 fields:
                   - { label: "Address Line", name: "address_line", widget: "string" }
+              - label: "Map Link"
+                name: "map_link"
+                widget: "string"
               - label: "Hours"
                 name: "hours"
                 widget: list
@@ -49,10 +52,11 @@ collections:
               - label: "Special Hours"
                 name: "special_hours"
                 widget: "object"
+                collapsed: true
                 required: false
                 fields:
                   - { label: "Show", name: "show", widget: "boolean" }
-                  - { label: "Message", name: "messaeg", widget: "text" }
+                  - { label: "Message", name: "message", widget: "text" }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object

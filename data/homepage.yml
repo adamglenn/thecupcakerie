@@ -1,24 +1,24 @@
 hero:
-  heading: Where Brunch Meets Irresistible Ambiance
-  lede: "Welcome to The Cupcakerie, where mornings are made for brunch and
-    evenings are meant for wine. Nestled in the heart of Morgantown, West
+  heading: Mornings are made for brunch and evenings are meant for wine.
+  lede: "Nestled in the heart of Morgantown, West
     Virginia, our charming cafe offers a unique experience that blends the best
     of both worlds: delightful brunch offerings and a curated selection of fine
     wines."
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
-    - button_text: View Menu
+    - button_text: Check Out Our Menu
       url: /menu
 hours:
   title: Come Visit Us
   address:
     - address_line: 3200 Collins Ferry Road
     - address_line: Morgantown, WV 26505
+  map_link: https://maps.app.goo.gl/fHBWJHnJsy88TUYS8
   hours:
     - hours_line: Sun. - Mon. 10AM - 2PM
     - hours_line: Tues. - Sat. 10AM - 7PM
   special_hours:
-    messaeg: We will be closed on Thursday, July 4th.
+    message: We will be closed on Thursday, July 4th.
     show: true
 happyHour:
   heading: Join Us for Happy Hour

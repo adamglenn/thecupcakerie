@@ -1,64 +1,52 @@
-<section aria-labelledby="hours-and-location-label" class="bg-cc-neutral--dark-chocolate text-cc-white-chocolate">
-  <div class="container-fluid">
+<section aria-labelledby="hours-and-location-label" class="bg-cc-neutral--dark-chocolate text-cc-white-chocolate cc-stripes cc-stripes-neutral--vino">
+  <div class="container position-relative">
     <div class="row">
       <h2 class="visually-hidden">Hours of Operation and Location</h2>
-      <div class="col-xl-4">
-        <div class="row h-100">
-          <div class="col-xl-8">
-            <div class="p-5">
-              <h3 class="flapjack-regular text-cc-neutral--mocha">Come Visit Us</h3>
-              <address>
-                3200 Collins Ferry Road<br>
-                Morgantown, WV 26505
-              </address>
-              <p>
-                <span class="fas fa-clock"></span> Sun. - Mon. 10AM - 2PM
-                <br>Tues. - Sat. 10AM - 7PM
-              </p>
-              {{ if eq .special_hours true }}
-                <p>* Special Hours Toggle</p>
+      {{ with site.Data.homepage.hours }}
+        <div class="col-xl-4">
+          <div class="p-5 small bg-cc-neutral--dark-chocolate h-100">
+            <h3 class="h4 monograph-text-bold text-uppercase text-cc-neutral--mocha cc-text-letter-spacing-2 mb-3">{{ .title }}</h3>
+            <address class="ms-4 position-relative">
+              <span class="fas fa-map-marker-alt text-cc-neutral--mocha position-absolute ms-n4"></span>
+              {{ range .address }}
+                <span class="d-block">{{ .address_line }}</span>
               {{ end }}
-            </div>
+            </address>
+            {{ if .map_link }}
+              <p class="ms-4 mt-n2"><a class="text-cc-accent--pink" href="{{ .map_link }}">View on Map</a></p>
+            {{ end }}
+            <p class="ms-4 position-relative">
+              <span class="fas fa-clock text-cc-neutral--mocha position-absolute ms-n4"></span>
+              {{ range .hours }}
+                <span class="d-block">{{ .hours_line }}</span>
+              {{ end }}
+            </p>
+            {{ if eq .special_hours.show true }}
+              <p class="p-1 bg-cc-accent--momosa text-dark lh-1">* {{ .special_hours.message }}</p>
+            {{ end }}
           </div>
-          <div class="col-xl-4 cc-stripes cc-stripes-neutral--vino">
-
-          </div>
+        </div>
+      {{ end }}
+      <div class="col-xl-4">
+        <div class="p-5 small bg-cc-neutral--dark-chocolate h-100">
+          <h3 class="h4 monograph-text-bold text-uppercase text-cc-neutral--mocha cc-text-letter-spacing-2 mb-3">Get Ahold of Us</h3>
+          <p>Need to make <strong>reservations</strong>? Host a <strong>special event</strong>? Inquire about a <strong>job opening</strong> or <strong>event sponsorship</strong>?</p>
+          <ul class="list-unstyled">
+            <li><span class="fas fa-phone text-cc-neutral--mocha"></span> <a class="text-cc-accent--pink" href="tel:3042125464">(304) 212-5464</a></li>
+            <li><span class="fas fa-envelope text-cc-neutral--mocha"></span> <a class="text-cc-accent--pink" href="mailto:orders@thecupcakerie.com">orders@thecupcakerie.com</a></li>
+          </p>
         </div>
       </div>
       <div class="col-xl-4">
-        <div class="row h-100">
-          <div class="col-xl-8">
-            <div class="p-5">
-              <h3 class="flapjack-regular text-cc-neutral--mocha">Get Ahold of Us</h3>
-              <p>Need to make <strong>reservations</strong>? Host a <strong>special event</strong>? Inquire about a <strong>job opening</strong> or <strong>event sponsorship</strong>?</p>
-              <ul class="list-unstyled">
-                <li><span class="fas fa-phone"></span> <a class="text-cc-accent--pink" href="tel:3042125464">(304) 212-5464</a></li>
-                <li><span class="fas fa-envelope"></span> <a class="text-cc-accent--pink" href="mailto:orders@thecupcakerie.com">orders@thecupcakerie.com</a></li>
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-4 cc-stripes cc-stripes-neutral--vino">
-
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4">
-        <div class="row h-100">
-          <div class="col-xl-8">
-            <div class="p-5">
-              <h3 class="flapjack-regular text-cc-neutral--mocha">Catch Us on the Road</h3>
-              <p class="text-cc-accent--pink flapjack-regular lh-1 mb-2">Next Stop:</p>
-              <p>
-                <strong>Moonlight Market</strong>
-                <br>May 18, 2024 | 4PM - 9PM
-                <br>Morgantown Marketplace Pavilion
-                <br>400 Spruce Street
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-4 cc-stripes cc-stripes-neutral--vino">
-
-          </div>
+        <div class="p-5 small bg-cc-neutral--dark-chocolate h-100">
+          <h3 class="h4 monograph-text-bold text-uppercase text-cc-neutral--mocha cc-text-letter-spacing-2 mb-3">Catch Us on the Road</h3>
+          <p class="text-cc-accent--pink flapjack-regular lh-1 mb-2">Next Stop:</p>
+          <p>
+            <strong>Moonlight Market</strong>
+            <br>May 18, 2024 | 4PM - 9PM
+            <br>Morgantown Marketplace Pavilion
+            <br>400 Spruce Street
+          </p>
         </div>
       </div>
     </div>
