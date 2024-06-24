@@ -24,11 +24,8 @@ collections:
               - label: "Align"
                 name: "align"
                 widget: "select"
-                options:
-                  - { label: "Left", value: "" }
-                  - { label: "Right", value: "mx-auto" }
-                default:
-                  - { label: "Right", value: "mx-auto" }
+                options: ["Left", "Right"]
+                default: ["Right"]
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'text' }
               - label: "Call to Action"
