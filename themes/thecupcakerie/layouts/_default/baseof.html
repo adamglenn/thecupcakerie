@@ -18,5 +18,24 @@
 
     <script type="application/javascript" src="{{ $bootstrap.Permalink }}"></script>
 
+    <script>
+      window.addEventListener('load', () => {
+        let url = window.location.href.split('?menu=').pop();
+        let matchingTab = document.querySelector('#' + url + '-tab');
+        let matchingPane = document.querySelector('#' + url);
+        let activeTab = document.querySelector('#food-tabs .active');
+        let activePane = document.querySelector('#food-content .active');
+        if (matchingTab.ariaSelected !== 'true') {
+          activeTab.ariaSelected = "false";
+          activeTab.classList.remove('active');
+          activePane.classList.remove('active');
+          activePane.classList.remove('show');
+          matchingTab.ariaSelected = "true";
+          matchingTab.classList.add('active');
+          matchingPane.classList.add('active');
+          matchingPane.classList.add('show');
+        };
+      });
+    </script>
   </body>
 </html>

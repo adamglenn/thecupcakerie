@@ -1,81 +1,8 @@
 {{ with site.Data.food.menus }}
   <main class="py-5">
-    <div class="container">
-      <h1 class="text-center flapjack-regular display-1 mb-4 mt-5">Menu</h1>
-      <ul id="food-tabs" role="tablist" class="nav nav-pills justify-content-center mb-5">
-        {{ range $index, $element := . }}
-          <!-- need to add active class and aria role to first item -->
-          <li class="nav-item">
-            <button id="{{ .menu_name }}-tab" data-bs-toggle="tab" data-bs-target="#{{ .menu_name }}" class="nav-link text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ .menu_name }}" aria-selected="false">{{ .menu_name }}</button>
-          </li>
-        {{ end }}
-      </ul>
-      <div class="d-flex justify-content-center">
-        <ul class="d-inline-block list-inline mx-auto mb-5">
-          <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
-          <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
-          <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
-        </ul>
-      </div>
-      <div class="tab-content" id="food-content">
-        {{ range . }}
-          <div class="tab-pane fade show active" id="{{ .menu_name }}" role="tabpanel" aria-labelledby="{{ .menu_name }}-tab">
-            <div class="row gx-xl-5" data-masonry='{"percentPosition": true }'>
-              {{ range .menu_sections }}
-                <div class="col-xl-6">
-                  <h2 class="monograph-text-bold">{{ .title }}</h2>
-                  {{ if .description }}
-                    <p>{{ .description }}</p>
-                  {{ end }}
-                  <ul class="list-unstyled">
-                    {{ range .items }}
-                      {{ $image := resources.Get .photo }}
-                      <li class="py-4 border-top border-2 border-dark">
-                        <div class="row gx-2">
-                          <div class="col-8">
-                            <div class="row">
-                              {{ if $image }}
-                                <div class="col-6">
-                                  <img class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
-                                </div>
-                              {{ end }}
-                              <div class="col">
-                                <h3 class="h4 flapjack-regular lh-1">{{ .title }}</h3>
-                                <p class="mb-0">
-                                  {{ if .description }}
-                                    {{ .description }}
-                                  {{ end }}
-                                  {{ if .designation }}
-                                    {{ range .designation }}
-                                      <strong>({{ . }})</strong>
-                                    {{ end }}
-                                  {{ end }}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-4 text-end">
-                            <ul class="list-unstyled monograph-text-bold">
-                              {{ range .options }}
-                                <li>
-                                  ${{ .price }}
-                                  {{ if .size }}
-                                    / {{ .size }}
-                                  {{ end }}
-                                </li>
-                              {{ end }}
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                    {{ end }}
-                  </ul>
-                </div>              
-              {{ end }}
-            </div>
-          </div>
-        {{ end }}
-      </div>
+    <div class="container my-5">
+      <h1 class="text-center flapjack-regular display-1 mb-4">Menu</h1>
+      {{ partial "food-and-drinks-inner.html" . }}
     </div>
   </main>
 {{ end }}

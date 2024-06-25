@@ -63,6 +63,11 @@
       background-color: $cc-neutral--vino;
     }
   }
+  &.cc-stripes-neutral--mocha {
+    &:before {
+      background-color: $cc-neutral--mocha;
+    }
+  }
   &.cc-stripes-accent--frose {
     &:before {
       background-color: $cc-accent--frose;
