@@ -6,7 +6,7 @@ public_folder: /img
 collections:
   - label: "Landing Pages"
     name: "sitePages"
-    create: true
+    create: false
     editor:
       preview: false
     files:
