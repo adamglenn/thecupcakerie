@@ -27,13 +27,33 @@ happyHour:
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  cta:
+    buttonText: View Drink Menu
+    link: /drinks
 brunch:
-  heading: Daily Brunch Headling
+  heading: Brunch Daily
   hours:
     - days: Tues. - Sat.
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
+  cta:
+    buttonText: View Brunch Menu
+    link: /menu?menu=Brunch
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+dinner:
+  heading: Dinner Seating
+  hours:
+    - days: Tues - Sat
+      hours: 4PM - 7PM
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  cta:
+    buttonText: View Dinner Menu
+    link: /menus?menu=Dinner
 specials:
   heading: Slightly Sweet Wednesdays
   details:
