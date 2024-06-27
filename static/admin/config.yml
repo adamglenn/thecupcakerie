@@ -75,6 +75,17 @@ collections:
                   - { label: "Days", name: "days", widget: "string" }
                   - { label: "Hours", name: "hours", widget: "string" }
                 required: false
+              - { label: "Description", name: "description", widget: "string", required: false }
+              - label: "Call to Action"
+                name: "cta"
+                widget: object
+                fields:
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+                    required: false
+                required: false
           - label: "Brunch Feature"
             name: "brunch"
             widget: object
@@ -96,10 +107,31 @@ collections:
                   - { label: "Button Text", name: "buttonText", widget: "string", required: false }
                   - label: "Link"
                     name: "link"
-                    widget: "relation"
-                    collection: "sitePages"
-                    value_field: "name"
-                    search_fields: ["label"]
+                    widget: "string"
+                    required: false
+                required: false
+          - label: "Dinner Feature"
+            name: "dinner"
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Heading", name: 'heading', widget: 'string' }
+              - label: "Hours"
+                name: "hours"
+                widget: list
+                fields:
+                  - { label: "Days", name: "days", widget: "string" }
+                  - { label: "Hours", name: "hours", widget: "string" }
+                required: false
+              - { label: "Description", name: "description", widget: "string", required: false }
+              - label: "Call to Action"
+                name: "cta"
+                widget: object
+                fields:
+                  - { label: "Button Text", name: "buttonText", widget: "string", required: false }
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
                     required: false
                 required: false
           - label: "Specials"
