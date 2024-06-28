@@ -50,3 +50,5 @@ menus:
               mash, arugula, and green goddess dressing on a spinach wrap.
             options:
               - price: "15"
+            feature: true
+            photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
