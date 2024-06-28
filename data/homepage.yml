@@ -86,3 +86,7 @@ products:
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore.
       photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Desserts
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      photo: /img/jonathan-carroll-_814rstroas-unsplash.jpg
