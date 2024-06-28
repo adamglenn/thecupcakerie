@@ -1,3 +1,4 @@
+{{ $hours := "" }}
 <section aria-labelledby="brunch-and-happy-hour-label" class="py-5">
   <div class="container-fluid px-5">
     <h2 class="visually-hidden">Brunch and Happy Hour</h2>
@@ -6,16 +7,16 @@
           {{ with site.Data.homepage.happyHour }}
             <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/cocktail.svg'); background-size: 250px; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
               <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-6 col-xl-12 col-xxl-8">
                   <h3 class="flapjack-regular display-3 lh-1 mb-4">{{ .heading }}</h3>
                   <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                     {{ range .hours }}
                       <li>{{ .days }} {{ .hours }}</li>
                     {{ end }}
                   </ul>
-                  <div class="me-5">
+                  <div class="me-xxl-5">
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#">Check Out Our Tappas Menu</a>              
+                    <a class="text-dark text-decoration-none" href="#">Check Out Our Tappas Menu <span class="fas fa-arrow-right"></span></a>              
                   </div>
                 </div>
               </div>
@@ -23,36 +24,39 @@
           {{ end }}
       </div>
       <div class="col-xl py-xl-5 mb-5 mb-xl-0">
-        <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/bacon-eggs.svg'); background-size: 250px; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
+        <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
           <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-md-6 col-xl-12 col-xxl-8">
               <h3 class="flapjack-regular display-3 lh-1 mb-4">Brunch Daily</h3>
               <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                 <li>Tues - Sat 10AM - 4PM</li>
                 <li>Sun - Mon 10AM - 2PM</li>
               </ul>
-              <div class="me-5">
+              <div class="me-xxl-5">
                 <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Check Out Our Brunch Menu</a>
+                <a class="text-dark text-decoration-none" href="#">Check Out Our Brunch Menu <span class="fas fa-arrow-right"></span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-xl py-xl-5">
-        <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/bacon-eggs.svg'); background-size: 250px; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
+        <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/dinner.svg'); background-size: 60%; background-repeat: no-repeat; background-position: top -.5rem right -7rem;">
           <div class="row">
-            <div class="col-8">
-              <h3 class="flapjack-regular display-3 lh-1">Bites & Slights</h3>
-              <p class="mb-4 flapjack-regular fs-4">Dinner Seating</p>
-              <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
-                <li>Tues - Sat 10AM - 4PM</li>
-                <li>Sun - Mon 10AM - 2PM</li>
-              </ul>
-              <div class="me-5">
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Check Out Our Brunch Menu</a>
-              </div>
+            <div class="col-12 col-md-6 col-xl-12 col-xxl-8">
+              {{ with site.Data.homepage.dinner }}
+                {{ $hours = .hours }}
+                <h3 class="flapjack-regular display-3 lh-1 mb-4">{{ .heading }}</h3>
+                <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
+                  {{ range $hours }}
+                    <li>{{ .days }} {{ .hours }}</li>
+                  {{ end }}
+                </ul>
+                <div class="me-xxl-5">
+                  <p class="mb-4">{{ .description }}</p>
+                  <a class="text-dark text-decoration-none" href="{{ .cta.link }}">{{ .cta.buttonText }} <span class="fas fa-arrow-right"></span></a>
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
