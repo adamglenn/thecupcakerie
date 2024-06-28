@@ -10,7 +10,9 @@
           {{ if eq $itemCount 1 }}
             {{ $labelCols = "col-xl-9" }}
           {{ else if eq $itemCount 2 }}
-            {{ $labelCols = "col-12 col-md-1 col-lg-4 col-xxl-6" }}
+            {{ $labelCols = "col-12 col-xl-1 col-xxl-6" }}
+          {{ else if eq $itemCount 3 }}
+            {{ $labelCols = "col-12 col-xl-3" }}
           {{ end }}
         {{ end }}
       {{ end }}
@@ -20,14 +22,14 @@
     <div class="container-fluid px-0 mx-0">
       <div class="row gx-0 px-0 mx-0">
         <div class="{{ $labelCols }} mx-0 px-0 position-relative" style="z-index: 1;">
-          <h2 class="cc-text-vertical py-4 px-2 text-end ms-xl-auto mt-5 me-xl-n4 bg-cc-white-chocolate-tint">Featured Dishes</h2>
+          <h2 class="cc-text-xl-vertical py-4 px-2 text-end ms-xl-auto mt-5 me-xl-n4 bg-cc-white-chocolate-tint">Featured Dishes</h2>
         </div>
         {{ range . }}
           {{ range .menu_sections }}
             {{ range .items }}
               {{ if eq .feature true }}
                 {{ $image := resources.Get .photo }}
-                <div class="col-12 col-md mx-0 px-0">
+                <div class="col-12 col-md-6 col-xl-3 mx-0 px-0">
                   <div class="ratio ratio-1x1" style="background-image: url('{{ ( $image.Fill "960x960 Center" ).RelPermalink }}'); background-size: cover;">
                     <div class="d-flex justify-content-end">
                       <div>

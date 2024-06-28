@@ -3,8 +3,8 @@
   transform: rotate(180deg) !important;
 }
 
-@include media-breakpoint-up(md) {
-  .cc-text-vertica-md {
+@include media-breakpoint-up(xl) {
+  .cc-text-xl-vertical {
     writing-mode: vertical-lr !important;
     transform: rotate(180deg) !important;
   }
