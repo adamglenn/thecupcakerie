@@ -41,7 +41,7 @@ brunch:
       hours: 10AM - 2PM
   cta:
     buttonText: View Brunch Menu
-    link: /menu?menu=Brunch
+    link: /menu/?menu=Brunch
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua.
 dinner:
@@ -53,7 +53,7 @@ dinner:
     eiusmod tempor incididunt ut labore et dolore magna aliqua.
   cta:
     buttonText: View Dinner Menu
-    link: /menus?menu=Dinner
+    link: /menus/?menu=Dinner
 specials:
   heading: Slightly Sweet Wednesdays
   details:
