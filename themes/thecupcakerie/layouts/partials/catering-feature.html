@@ -1,6 +1,7 @@
 {{ $align := "" }}
+{{ $image := "" }}
 {{ with site.Data.homepage.catering }}
-  {{ $image := resources.Get .photo }}
+  {{ $image = resources.Get .background_image }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}
