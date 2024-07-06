@@ -1,5 +1,5 @@
 {{ $align := "" }}
-{{ with site.Data.homepage.hero }}
+{{ with site.Data.homepage.catering }}
   {{ $image := resources.Get .photo }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
@@ -14,12 +14,16 @@
               {{ if .subheading }}
                 <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
               {{ end }}
-              <p class="lead mb-4 fs-5 ms-xl-5">{{ .lede }}</p>
-              {{ if .cta }}
-                {{ range .cta }}
-                  <a class="text-dark text-decoration-none fs-5 ms-xl-5" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+            </div>
+            <div class="bg-cc-neutral--vino cc-stripes cc-stripes-tint cc-stripes-accent--frose p-5 text-white ms-xl-5 mt-xl-n5 me-xl-n5">
+              <div class="position-relative">
+                <p class="lead mb-4 fs-5 mt-5">{{ .lede }}</p>
+                {{ if .cta }}
+                  {{ range .cta }}
+                    <a class="text-white text-decoration-none fs-5" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+                  {{ end }}
                 {{ end }}
-              {{ end }}
+              </div>
             </div>
           </div>
         </div>

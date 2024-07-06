@@ -1,24 +1,28 @@
 {{ with site.Data.homepage.products }}
-  <section class="py-5">
-    <div class="container py-5">
-      <div class="row mb-5 text-center">
-        <div class="col-xl-8 mx-xl-auto">
-          <h2 class="flapjack-regular display-1 highlighter highlighter-3 highlighter-underline highlighter-pink lh-1">{{ .title }}</h2>
-          <p class="fs-5">{{ .description }}</p>
+  <section class="pb-5">
+    <div class="bg-cc-white-chocolate-tint cc-pattern cc-pattern-tint py-5">
+      <div class="container pt-5 pb-4 position-relative">
+        <div class="row mb-5 text-center">
+          <div class="col-xl-6 mx-xl-auto">
+            <h2 class="flapjack-regular display-1 lh-1 mb-4">{{ .title }}</h2>
+            <p class="fs-5"><span class="p-2 bg-dark text-white">{{ .description }}</span></p>
+          </div>
         </div>
       </div>
-      <div class="row gx-4">
+    </div>
+    <div class="container">
+      <div class="row gx-4 mt-n5 position-relative">
         {{ range .products }}
           {{ $image := resources.Get .photo }}
           <div class="col-xxl-6 mb-4">
-            <div class="border border-2 border-dark">
+            <div class="border border-2 border-dark bg-cc-white-chocolate">
               <div class="row gx-0">
                 <div class="col-lg-6">
                   <img load="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' />
                 </div>
                 <div class="col-lg-6 d-flex align-items-center p-4">
                   <div>
-                    <h3 class="flapjack-regular">{{ .title }}</h3>
+                    <h3 class="flapjack-regular mb-3">{{ .title }}</h3>
                     <p>{{ .description }}</p>
                   </div>
                 </div>

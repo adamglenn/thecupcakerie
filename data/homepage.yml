@@ -60,6 +60,16 @@ specials:
     - line: Frosé Flight (3) for $10
     - line: Add (3) mini cupcakes for $5
   photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+catering:
+  align: Left
+  heading: Mornings are made for brunch and evenings are meant for wine.
+  lede: "Nestled in the heart of Morgantown, West Virginia, our charming cafe
+    offers a unique experience that blends the best of both worlds: delightful
+    brunch offerings and a curated selection of fine wines."
+  photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
+  cta:
+    - button_text: Check Out Our Catering Menu
+      url: /menu/?menu=Catering
 products:
   title: Stocked and Loaded.
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
