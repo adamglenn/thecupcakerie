@@ -1,63 +1,23 @@
-{{- /*
-Renders a menu for the given menu ID.
-
-@context {page} page The current page.
-@context {string} menuID The menu ID.
-
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-*/}}
-
-{{- $page := .page }}
-{{- $menuID := .menuID }}
-
-{{- with index site.Menus $menuID }}
-  <nav class="navbar navbar-expand-lg navbar-light bg-cc-white-chocolate sticky-top border-bottom border-2 border-dark">
-    <div class="container">
-      <button class="navbar-toggler w-100 flapjack-regular py-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span> Menu
-      </button>
-      <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 flapjack-regular fs-5 me-4">
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-facebook"></span><span class="visually-hidden"> The Cupcakerie on Facebook</span></a></li>
-          <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-instagram"></span><span class="visually-hidden"> The Cupcakerie on Instagram</span></a></li>
-          <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-tiktok"></span><span class="visually-hidden"> The Cupcakerie on Tiktok</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-{{- end }}
-
-{{- define "partials/inline/menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    <li class="nav-item">
-      <a class="nav-link text-dark"
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+<nav class="navbar navbar-expand-lg navbar-light bg-cc-white-chocolate sticky-top border-bottom border-2 border-dark">
+  <div class="container">
+    <button class="navbar-toggler w-100 flapjack-regular py-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 flapjack-regular fs-5 me-4">
+        {{- with site.Data.settings.site_menu }}
+          {{- range . }}
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="{{ .url }}">{{ .menu_item }}</a>
+            </li>
           {{- end }}
-        {{- end -}}
-      >{{ $name }}</a>
-      {{- with .Children }}
-        <ul>
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{- end }}
-    </li>
-  {{- end }}
-{{- end }}
+        {{ end }}
+      </ul>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-facebook"></span><span class="visually-hidden"> The Cupcakerie on Facebook</span></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-instagram"></span><span class="visually-hidden"> The Cupcakerie on Instagram</span></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark"><span class="fab fa-tiktok"></span><span class="visually-hidden"> The Cupcakerie on Tiktok</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
