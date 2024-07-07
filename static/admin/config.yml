@@ -150,6 +150,32 @@ collections:
               - label: "Photo"
                 name: "photo"
                 widget: image
+          - label: "Special Event"
+            name: "special_event"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                required: false
+              - label: "Logo Alt Text"
+                name: "logo_alt_text"
+                widget: "text"
+                required: false
+              - label: "Details"
+                name: "details"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string", required: false }
+                  - { label: "Detail", name: "detail", widget: "string" }
+                  - { label: "URL", name: "url", widget: "string", required: false }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                fields:
+                  - { label: "Photo", name: "photo", widget: "image" }
+                  - { label: "Photo Alt Text", name: "photo_alt_text", widget: "string" }
           - label: "Catering"
             name: "catering"
             widget: object
