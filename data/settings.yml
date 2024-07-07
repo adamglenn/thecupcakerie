@@ -1,4 +1,20 @@
 description: Here is my cool site description.
+site_menu:
+  - menu_item: Menu
+    url: /menu
+  - menu_item: Drinks
+    url: /drinks
+  - menu_item: Catering
+    url: /catering
+  - menu_item: Parties
+    url: /parties
+  - menu_item: Order
+    url: /order
+  - menu_item: About
+    url: /about
+  - menu_item: Blog
+    url: /posts
 social_media_accounts:
   - platform: Facebook
     url: https://www.facebook.com/thecupcakeriewv/
+    icon_code: facebook
