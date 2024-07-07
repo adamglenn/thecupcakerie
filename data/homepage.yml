@@ -59,11 +59,15 @@ specials:
   details:
     - line: Frosé Flight (3) for $10
     - line: Add (3) mini cupcakes for $5
-  photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+  photo: /img/jodie-walton-vvx4kbkubti-unsplash.jpg
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
-  lede: "Indulge in the exceptional culinary experience with The Cupcakerie! We pride ourselves on delivering exquisite, tailor-made menus that delight your taste buds and impress your guests. From elegant weddings to corporate events, our dedicated team ensures every detail is perfect, combining fresh, locally-sourced ingredients with impeccable service."
+  lede: Indulge in the exceptional culinary experience with The Cupcakerie! We
+    pride ourselves on delivering exquisite, tailor-made menus that delight your
+    taste buds and impress your guests. From elegant weddings to corporate
+    events, our dedicated team ensures every detail is perfect, combining fresh,
+    locally-sourced ingredients with impeccable service.
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
     - button_text: Check Out Our Catering Menu
@@ -71,7 +75,8 @@ catering:
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
 products:
   title: Stocked and Loaded.
-  description: Our diverse selection of artisanal coffees, teas, and freshly baked treats means there's something for everyone.
+  description: Our diverse selection of artisanal coffees, teas, and freshly baked
+    treats means there's something for everyone.
   products:
     - title: Beer
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
