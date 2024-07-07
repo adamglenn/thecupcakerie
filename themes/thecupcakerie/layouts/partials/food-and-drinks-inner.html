@@ -1,4 +1,7 @@
 {{ $menuName := "" }}
+{{ $imageHeight := "" }}
+{{ $imageWidth := "" }}
+{{ $imageRatio := "" }}
 <ul id="food-tabs" role="tablist" class="py-4 cc-stripes cc-stripes-neutral--mocha nav nav-pills justify-content-center mb-5">
   {{ range $index, $element := . }}
     {{ $menuName = .menu_name | urlize }}
@@ -29,13 +32,21 @@
             <ul class="list-unstyled">
               {{ range .items }}
                 {{ $image := resources.Get .photo }}
+                {{ with resources.Get $image }}
+                  {{ $imageHeight = float .Height }}
+                  {{ $imageWidth = float .Width }}
+                  {{ $imageRatio = div $imageHeight $imageWidth }}
+                  {{ $imageRatio = mul $imageRatio 100 }}
+                {{ end }}
                 <li class="py-4 border-top border-2 border-dark">
                   <div class="row gx-2">
                     <div class="col-8">
                       <div class="row">
                         {{ if $image }}
                           <div class="col-6">
-                            <img class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                            <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
+                              <img load="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                            </div>
                           </div>
                         {{ end }}
                         <div class="col">
