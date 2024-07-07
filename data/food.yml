@@ -33,6 +33,14 @@ menus:
               - price: "11.00"
             photo: ""
             feature: true
+          - title: Harvest Cobb
+            description: Chicken, bacon, bleu cheese, walnuts, apples, dried cranberries,
+              romaine arugula mix, maple balsamic vinaigrette.
+            designation:
+              - GF
+              - V
+            options:
+              - price: "13.00"
         description: ""
       - title: Handhelds
         description: Served with chips or seasonal fruit.
