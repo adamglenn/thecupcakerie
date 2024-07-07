@@ -16,9 +16,9 @@
   </ul>
 </div>
 <div class="tab-content" id="food-content">
-  {{ range . }}
-    {{ $menuName = .menu_name | urlize }}
-    <div class="tab-pane fade show active" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
+  {{ range $i, $e := . }}
+    {{ $menuName = $e.menu_name | urlize }}
+    <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
       <div class="row gx-xl-5" data-masonry='{"percentPosition": true }'>
         {{ range .menu_sections }}
           <div class="col-xl-6">
