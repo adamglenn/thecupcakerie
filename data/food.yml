@@ -25,14 +25,15 @@ menus:
               - price: "7.00"
       - title: Soups & Salads
         items:
-          - title: Brown Butter Marshmallow Bar
-            description: ""
-            designation:
-              - GF
+          - title: Caesar Salad
+            description: Shaved Parmesan, croutons, pickled red onions, creamy Caesar,
+              romaine, blistered tomatoes.
+            designation: null
             options:
-              - price: "4.00"
-            photo: /img/toa-heftiba-wpruxylny68-unsplash.jpg
+              - price: "11.00"
+            photo: ""
             feature: true
+        description: ""
       - title: Handhelds
         description: Served with chips or seasonal fruit.
         items:
