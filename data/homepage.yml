@@ -60,6 +60,22 @@ specials:
     - line: Frosé Flight (3) for $10
     - line: Add (3) mini cupcakes for $5
   photo: /img/jodie-walton-vvx4kbkubti-unsplash.jpg
+special_event:
+  logo: /img/festival-logo.svg
+  logo_alt_text: Beer Fest logo
+  details:
+    - icon: ""
+      detail: Saturday, April 27, 2024
+    - detail: 12PM - 6PM
+    - icon: ""
+      detail: Downtown Morgantown, Courthouse Square
+    - detail: Details
+    - detail: cupcakecraftbeer.com
+      url: https://cupcakecraftbeer.com
+    - detail: Sponsorship Opportunities
+  photos:
+    - photo: /img/giovanna-gomes-_8kv86shhpo-unsplash-1-.jpg
+      photo_alt_text: People "cheers"-ing beers
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
