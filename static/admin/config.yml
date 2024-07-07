@@ -28,6 +28,7 @@ collections:
                 default: ["Right"]
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'text' }
+              - { label: "Background Image", name: "featured_image", widget: "image" }
               - label: "Call to Action"
                 name: "cta"
                 widget: list
