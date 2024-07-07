@@ -49,6 +49,9 @@
                                 <strong>({{ . }})</strong>
                               {{ end }}
                             {{ end }}
+                            {{ if .note }}
+                              <p class="text-cc-accent--pink">{{ .note }}</p>
+                            {{ end }}
                           </p>
                         </div>
                       </div>
