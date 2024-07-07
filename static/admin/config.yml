@@ -176,6 +176,8 @@ collections:
                 fields:
                   - { label: "Photo", name: "photo", widget: "image" }
                   - { label: "Photo Alt Text", name: "photo_alt_text", widget: "string" }
+                max: 3
+                required: false
           - label: "Catering"
             name: "catering"
             widget: object
