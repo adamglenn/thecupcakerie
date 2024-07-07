@@ -1,7 +1,7 @@
 menus:
-  - menu_name: Brunch
+  - menu_name: Brunch & Lunch
     menu_sections:
-      - title: Breakfast Sandwiches
+      - title: Brunch Plates
         description: "Served all day or until sold out - Bread choices include: brioche
           roll, biscuit, sourdough, house-made focaccia, croissant, or
           gluten-free bread."
@@ -21,7 +21,7 @@ menus:
             description: Avocado, cheddar, and our egg soufflé on your choice of bread.
             options:
               - price: "11.00"
-      - title: Pastries
+      - title: Soups & Salads
         items:
           - title: Brown Butter Marshmallow Bar
             description: ""
@@ -31,6 +31,14 @@ menus:
               - price: "4.00"
             photo: /img/toa-heftiba-wpruxylny68-unsplash.jpg
             feature: true
+      - title: Handhelds
+        description: Served with chips or seasonal fruit.
+        items:
+          - title: BELT
+            description: Applewood smoked bacon, over-medium egg, lettuce, tomato, roasted
+              pepper aoli, wheat.
+            options:
+              - price: "13"
   - menu_name: Dinner
     menu_sections:
       - title: Sandwiches
