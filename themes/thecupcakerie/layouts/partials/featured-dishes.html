@@ -31,7 +31,6 @@
                 {{ range .items }}
                   {{ if and (eq .feature true) (.photo) }}
                     {{ $image := resources.Get .photo }}
-                    {{ $image = $image.Process "webp" }}
                     <div class="{{ $labelCols }} mx-0 px-0">
                       <div class="ratio ratio-1x1" style="background-image: url('{{ ( $image.Fill "960x960 Center" ).RelPermalink }}'); background-size: cover;">
                         <div class="d-flex justify-content-end">

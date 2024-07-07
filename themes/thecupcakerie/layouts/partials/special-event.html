@@ -28,7 +28,6 @@
             {{ $shift := slice "x" "ms-auto" "ms-5" }}
             {{ range $i, $e := .photos }}
               {{ $photo := resources.Get $e.photo }}
-              {{ $photo = $photo.Process "webp" }}
               <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
                 <div class="col-xl-7 {{ index $shift $i }}">
                   <div class="ratio ratio-1x1 border border-5 border-cc-accent--{{ index $colors $i }}">
