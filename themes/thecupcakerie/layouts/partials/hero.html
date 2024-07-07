@@ -1,11 +1,10 @@
 {{ $align := "" }}
 {{ with site.Data.homepage.hero }}
   {{ $image := resources.Get .featured_image }}
-  {{ $image = $image.Process "webp" }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}
-  <main class="py-5 bg-dark text-white" style="background-image: url('{{ ( $image.Fill "1800x771 Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat; xbackground-attachment: fixed;">
+  <main class="py-5 bg-dark text-white" style="background-image: url('{{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat; xbackground-attachment: fixed;">
     <div class="d-flex align-items-center">
       <div class="container py-5">
         <div class="row py-5">
