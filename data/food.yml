@@ -71,3 +71,8 @@ menus:
               - price: "15"
             feature: true
             photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
+      - title: Test Section
+        items:
+          - title: Test Item
+            options:
+              - price: "11.00"
