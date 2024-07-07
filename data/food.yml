@@ -2,25 +2,27 @@ menus:
   - menu_name: Brunch & Lunch
     menu_sections:
       - title: Brunch Plates
-        description: "Served all day or until sold out - Bread choices include: brioche
-          roll, biscuit, sourdough, house-made focaccia, croissant, or
-          gluten-free bread."
+        description: ""
         items:
-          - title: Bacon, Egg & Cheddar Sandwich
-            description: Crispy bacon, cheddar, and our egg soufflé on your choice of bread.
+          - title: Classic Eggs Benedict
+            description: English Muffin, smoked ham, Hollandaise
             options:
               - price: "11.00"
-            photo: /img/nahima-aparicio-zykkqngwffg-unsplash.jpg
+            photo: /img/john-baker-wu4zbeitiym-unsplash.jpg
             feature: true
-          - title: Sausage, Egg & Cheddar Sandwich
-            description: Pork sausage patty, cheddar, and our egg soufflé on your choice of
-              bread.
+          - title: The Mountaineer
+            description: Two eggs your way, sausage or bacon, choice of toast.
             options:
               - price: "11.00"
-          - title: Egg, Cheddar & Avocado Sandwich
-            description: Avocado, cheddar, and our egg soufflé on your choice of bread.
+          - title: Apple Stack Cakes
+            description: Sausage or bacon, buckwheat cakes, roasted apples, cinnamon,
+              bourbon maple, smoked butter.
             options:
-              - price: "11.00"
+              - price: "12.00"
+          - title: Parfait
+            description: Yogurt, honey walnut granola, fresh berries & cream.
+            options:
+              - price: "7"
       - title: Soups & Salads
         items:
           - title: Brown Butter Marshmallow Bar
