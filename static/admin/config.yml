@@ -432,6 +432,27 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: "Settings"
+    name: "settings"
+    create: false
+    editor:
+      preview: false
+    files:
+      - label: "Config"
+        name: "config"
+        file: "data/settings.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Site Description", name: "description", widget: "text" }
+          - label: "Social Media Accounts"
+            name: "social_media_accounts"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "Username", name: "username", widget: "string", required: false }
+              - { label: "URL", name: "url", widget: "string" }
   # - label: "Components"
   #   name: "components"
   #   fields:
