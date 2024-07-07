@@ -1,6 +1,7 @@
 {{ $align := "" }}
 {{ with site.Data.homepage.hero }}
   {{ $image := resources.Get .featured_image }}
+  {{ $image = $image.Process "webp" }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}

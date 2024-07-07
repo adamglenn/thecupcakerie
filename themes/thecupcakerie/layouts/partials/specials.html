@@ -1,5 +1,6 @@
 {{ with site.Data.homepage.specials }}
   {{ $image := resources.Get .photo }}
+  {{ $image = $image.Process "webp" }}
   <section class="py-4">
     <div class="container mb-5">
       <div class="bg-cc-neutral--mocha py-4 ps-4 pe-4 ms-n5">

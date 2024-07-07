@@ -2,6 +2,7 @@
 {{ $image := "" }}
 {{ with site.Data.homepage.catering }}
   {{ $image = resources.Get .background_image }}
+  {{ $image = $image.Process "webp" }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}

@@ -14,6 +14,7 @@
       <div class="row gx-4 mt-n5 position-relative">
         {{ range .products }}
           {{ $image := resources.Get .photo }}
+          {{ $image = $image.Process "webp" }}
           <div class="col-xxl-6 mb-4">
             <div class="border border-2 border-dark bg-cc-white-chocolate">
               <div class="row gx-0">
