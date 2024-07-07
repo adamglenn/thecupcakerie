@@ -6,7 +6,7 @@
           <div class="row gx-5">
             <div class="col-4">
               <div class="ratio ratio-1x1 text-dark">
-                <img src="/img/festival-logo.svg" alt="Festival logo" />
+                <img loading="lazy" src="/img/festival-logo.svg" alt="Festival logo" />
               </div>
             </div>
             <div class="col-8 fs-4">
@@ -31,7 +31,7 @@
               <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
                 <div class="col-xl-7 {{ index $shift $i }}">
                   <div class="ratio ratio-1x1 border border-5 border-cc-accent--{{ index $colors $i }}">
-                    <img src="{{ ( $photo.Fill "900x900 Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
+                    <img loading="lazy" src="{{ ( $photo.Fill "900x900 Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
                   </div>
                 </div>
               </div>

@@ -45,7 +45,7 @@
                         {{ if $image }}
                           <div class="col-6">
                             <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
-                              <img load="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                              <img loading="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
                             </div>
                           </div>
                         {{ end }}
