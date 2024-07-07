@@ -1,6 +1,6 @@
 {{ $align := "" }}
 {{ with site.Data.homepage.hero }}
-  {{ $image := resources.Get .photo }}
+  {{ $image := resources.Get .featured_image }}
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}
