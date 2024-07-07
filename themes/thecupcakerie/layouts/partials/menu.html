@@ -46,7 +46,7 @@ Renders a menu for the given menu ID.
       {{- end }}
     {{- end }}
     <li class="nav-item">
-      <a class="nav-link"
+      <a class="nav-link text-dark"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}

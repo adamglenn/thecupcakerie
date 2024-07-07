@@ -1,6 +1,6 @@
 {{ with site.Data.homepage.specials }}
   {{ $image := resources.Get .photo }}
-  <section class="py-4">
+  <section class="py-4" aria-labelledby="specials-label">
     <div class="container mb-5">
       <div class="bg-cc-neutral--mocha py-4 ps-4 pe-4 ms-n5">
         <div class="bg-cc-accent--pink cc-stripes cc-stripes-accent--frose cc-stripes-tint mt-n5 me-n5 border border-2 border-dark">
@@ -9,7 +9,7 @@
               <div>
                 <p class="ms-4 mt-5 text-white px-4 fs-4 monograph-text-bold cc-text-letter-spacing-2 text-uppercase">Don’t Miss Out</p>
                 <div class="p-4 ms-4 me-xl-n5 bg-cc-accent--pink z-index-1">
-                  <h2 class="display-2 monograph-text-bold lh-1">{{ .heading }}</h2>
+                  <h2 class="display-2 monograph-text-bold lh-1" id="specials-label">{{ .heading }}</h2>
                 </div>
                 <div class="p-4 d-flex justify-content-end">
                   <ul class="d-inline-block fs-3 list-unstyled me-n5 z-index-1">
