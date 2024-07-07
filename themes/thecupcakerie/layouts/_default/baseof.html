@@ -38,6 +38,11 @@
             matchingPane.classList.add('show');
           };
         }
+        var elem = document.querySelector('.tab-pane.active');
+        var msnry = new Masonry( elem, {
+          // options
+          itemSelector: '.menu-section'
+        });
       });
 
       const menuButtons = document.querySelectorAll('#food-tabs .nav-link');
@@ -53,6 +58,13 @@
           // Replace current querystring with the new one.
           history.pushState(null, null, "?"+queryParams.toString());
         });
+        el.addEventListener('shown.bs.tab', e => {
+          var elem = document.querySelector('.tab-pane.active');
+          var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.menu-section'
+          });
+        })
       });
 
     </script>
