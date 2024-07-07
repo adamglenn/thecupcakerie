@@ -32,7 +32,7 @@
                   {{ if and (eq .feature true) (.photo) }}
                     {{ $image := resources.Get .photo }}
                     <div class="{{ $labelCols }} mx-0 px-0">
-                      <div class="ratio ratio-1x1" style="background-image: url('{{ ( $image.Fill "960x960 Center" ).RelPermalink }}'); background-size: cover;">
+                      <div class="ratio ratio-1x1" style="background-image: url('{{ ( $image.Fill "960x960 webp Center" ).RelPermalink }}'); background-size: cover;">
                         <div class="d-flex justify-content-end">
                           <div>
                             <div class="bg-cc-accent--momosa text-dark p-3 ms-5 mt-4">
