@@ -24,35 +24,18 @@
         </div>
         <div class="col-xl-4">
           <div>
-            {{ range .photos }}
-              {{ $photo := resources.Get .photo }}
-              <div class="row">
-                <div class="col-xl-7">
-                  <div class="ratio ratio-1x1 border border-5 border-cc-accent--momosa">
+            {{ $colors := slice "momosa" "pink" "mojito" }}
+            {{ $shift := slice "x" "ms-auto" "ms-5" }}
+            {{ range $i, $e := .photos }}
+              {{ $photo := resources.Get $e.photo }}
+              <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
+                <div class="col-xl-7 {{ index $shift $i }}">
+                  <div class="ratio ratio-1x1 border border-5 border-cc-accent--{{ index $colors $i }}">
                     <img src="{{ ( $photo.Fill "900x900 Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
                   </div>
                 </div>
               </div>
             {{ end }}
-            <div class="row">
-              <div class="col-xl-7">
-                <div class="ratio ratio-1x1 border border-5 border-cc-accent--momosa">
-                </div>
-              </div>
-            </div>
-            <div class="row mt-n5">
-              <div class="col-xl-7 ms-auto">
-                <div class="ratio ratio-1x1 border border-5 border-cc-accent--pink">
-                  
-                </div>
-              </div>
-            </div>
-            <div class="row mt-n5">
-              <div class="col-xl-7 ms-5">
-                <div class="ratio ratio-1x1 border border-5 border-cc-accent--mojito">
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
