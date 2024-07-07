@@ -445,6 +445,12 @@ collections:
           preview: false
         fields:
           - { label: "Site Description", name: "description", widget: "text" }
+          - label: "Site Menu"
+            name: "site_menu"
+            widget: "list"
+            fields:
+              - { label: "Menu Item", name: "menu_item", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
           - label: "Social Media Accounts"
             name: "social_media_accounts"
             widget: "list"
