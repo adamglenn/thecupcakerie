@@ -10,10 +10,12 @@ menus:
               - price: "11.00"
             photo: /img/john-baker-wu4zbeitiym-unsplash.jpg
             feature: true
+            note: Served with Breakfast Potatoes or Fresh Fruit.
           - title: The Mountaineer
             description: Two eggs your way, sausage or bacon, choice of toast.
             options:
               - price: "11.00"
+            note: Served with Breakfast Potatoes or Fresh Fruit.
           - title: Apple Stack Cakes
             description: Sausage or bacon, buckwheat cakes, roasted apples, cinnamon,
               bourbon maple, smoked butter.
