@@ -7,7 +7,7 @@
           {{ with site.Data.homepage.happyHour }}
             <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/cocktail.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
               <div class="row">
-                <div class="col-9 col-lg-6 col-xl-12">
+                <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
                   <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
                   <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                     {{ range .hours }}
@@ -26,7 +26,7 @@
       <div class="col-xl py-xl-5 mb-5 mb-xl-0">
         <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
           <div class="row">
-            <div class="col-9 col-lg-6 col-xl-12">
+            <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
               <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">Brunch Daily</h3>
               <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                 <li><span class="px-2 pt-1 mb-1 bg-cc-accent--momosa mx-n2 d-block">Tues - Sat 10AM - 4PM</span></li>
@@ -42,7 +42,7 @@
       <div class="col-xl py-xl-5">
         <div class="p-5 border border-2 border-dark h-100" style="background-image: url('/img/dinner.svg'); background-size: 60%; background-repeat: no-repeat; background-position: top -.5rem right -7rem;">
           <div class="row">
-            <div class="col-9 col-lg-6 col-xl-12">
+            <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
               {{ with site.Data.homepage.dinner }}
                 {{ $hours = .hours }}
                 <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>

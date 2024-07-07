@@ -62,10 +62,8 @@ specials:
   photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
 catering:
   align: Left
-  heading: Mornings are made for brunch and evenings are meant for wine.
-  lede: "Nestled in the heart of Morgantown, West Virginia, our charming cafe
-    offers a unique experience that blends the best of both worlds: delightful
-    brunch offerings and a curated selection of fine wines."
+  heading: Culinary Delights for Unforgettable Celebrations.
+  lede: "Indulge in the exceptional culinary experience with The Cupcakerie! We pride ourselves on delivering exquisite, tailor-made menus that delight your taste buds and impress your guests. From elegant weddings to corporate events, our dedicated team ensures every detail is perfect, combining fresh, locally-sourced ingredients with impeccable service."
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
     - button_text: Check Out Our Catering Menu
@@ -73,8 +71,7 @@ catering:
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
 products:
   title: Stocked and Loaded.
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore.
+  description: Our diverse selection of artisanal coffees, teas, and freshly baked treats means there's something for everyone.
   products:
     - title: Beer
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
