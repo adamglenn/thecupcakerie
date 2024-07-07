@@ -22,7 +22,7 @@ menus:
           - title: Parfait
             description: Yogurt, honey walnut granola, fresh berries & cream.
             options:
-              - price: "7"
+              - price: "7.00"
       - title: Soups & Salads
         items:
           - title: Brown Butter Marshmallow Bar
