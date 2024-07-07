@@ -8,6 +8,7 @@ hero:
   cta:
     - button_text: Check Out Our Menu
       url: /menu
+  featured_image: /img/micheile-henderson-szaprvh5kua-unsplash-copy.jpg
 hours:
   title: Come Visit Us
   address:
