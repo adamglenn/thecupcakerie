@@ -1,8 +1,10 @@
+{{ $menuName := "" }}
 <ul id="food-tabs" role="tablist" class="py-4 cc-stripes cc-stripes-neutral--mocha nav nav-pills justify-content-center mb-5">
   {{ range $index, $element := . }}
+    {{ $menuName = .menu_name | urlize }}
     <!-- need to add active class and aria role to first item -->
     <li class="nav-item">
-      <button id="{{ .menu_name }}-tab" data-bs-toggle="tab" data-bs-target="#{{ .menu_name }}" class="position-relative rounded-0 nav-link bg-cc-neutral--mocha text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ .menu_name }}" aria-selected="{{ if (eq $index 0) }}true{{ else }}false{{ end }}">{{ .menu_name }}</button>
+      <button id="{{ $menuName }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $menuName }}" class="position-relative rounded-0 nav-link bg-cc-neutral--mocha text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ $menuName }}" aria-selected="{{ if (eq $index 0) }}true{{ else }}false{{ end }}">{{ .menu_name }}</button>
     </li>
   {{ end }}
 </ul>
@@ -15,7 +17,8 @@
 </div>
 <div class="tab-content" id="food-content">
   {{ range . }}
-    <div class="tab-pane fade show active" id="{{ .menu_name }}" role="tabpanel" aria-labelledby="{{ .menu_name }}-tab">
+    {{ $menuName = .menu_name | urlize }}
+    <div class="tab-pane fade show active" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
       <div class="row gx-xl-5" data-masonry='{"percentPosition": true }'>
         {{ range .menu_sections }}
           <div class="col-xl-6">
