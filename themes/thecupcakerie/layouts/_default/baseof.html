@@ -38,11 +38,6 @@
             matchingPane.classList.add('show');
           };
         }
-        var elem = document.querySelector('.tab-pane.active');
-        var msnry = new Masonry( elem, {
-          // options
-          itemSelector: '.menu-section'
-        });
       });
 
       const menuButtons = document.querySelectorAll('#food-tabs .nav-link');
@@ -61,13 +56,19 @@
       });
 
       {{ if eq .Page.Title "Menu" }}
-          el.addEventListener('shown.bs.tab', e => {
-            var elem = document.querySelector('.tab-pane.active');
-            var msnry = new Masonry( elem, {
-              // options
-              itemSelector: '.menu-section'
-            });
-          })
+        window.addEventListener('load', () => {
+          var elem = document.querySelector('.tab-pane.active');
+          var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.menu-section'
+          });
+        });
+        el.addEventListener('shown.bs.tab', e => {
+          var elem = document.querySelector('.tab-pane.active');
+          var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.menu-section'
+          });
         });
       {{ end }}
 
