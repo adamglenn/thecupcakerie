@@ -58,14 +58,18 @@
           // Replace current querystring with the new one.
           history.pushState(null, null, "?"+queryParams.toString());
         });
-        el.addEventListener('shown.bs.tab', e => {
-          var elem = document.querySelector('.tab-pane.active');
-          var msnry = new Masonry( elem, {
-            // options
-            itemSelector: '.menu-section'
-          });
-        })
       });
+
+      {{ if eq .Page.Title "Menu" }}
+          el.addEventListener('shown.bs.tab', e => {
+            var elem = document.querySelector('.tab-pane.active');
+            var msnry = new Masonry( elem, {
+              // options
+              itemSelector: '.menu-section'
+            });
+          })
+        });
+      {{ end }}
 
     </script>
   </body>
