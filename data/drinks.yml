@@ -44,6 +44,7 @@ menus:
             options:
               - price: "13.00"
         description: ""
+    show_legend: false
   - menu_name: Wines by the Glass
     menu_sections:
       - title: Sparkling
