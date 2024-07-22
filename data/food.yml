@@ -66,6 +66,7 @@ menus:
           - title: (2) Sausage Patties
             options:
               - price: "4.00"
+    show_legend: true
   - menu_name: Happy Hour
     menu_sections:
       - title: Sandwiches
@@ -92,6 +93,7 @@ menus:
           - title: Test Item
             options:
               - price: "11.00"
+    show_legend: true
   - menu_name: Desserts
     menu_sections:
       - title: Desserts
@@ -111,6 +113,7 @@ menus:
           - title: Pot De Creme
             options:
               - price: "10.00"
+    show_legend: true
   - menu_name: Kids Menu
     menu_sections:
       - items:
@@ -119,3 +122,4 @@ menus:
               - price: "7.00"
             description: White Cheddar, Mozarella, Sourdough
             note: Served with Chips or Seasonal Fruit
+    show_legend: true
