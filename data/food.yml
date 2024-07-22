@@ -66,7 +66,7 @@ menus:
           - title: (2) Sausage Patties
             options:
               - price: "4.00"
-  - menu_name: Dinner
+  - menu_name: Happy Hour
     menu_sections:
       - title: Sandwiches
         description: "Served all day. Bread choices include: brioche roll, sourdough,
@@ -92,3 +92,22 @@ menus:
           - title: Test Item
             options:
               - price: "11.00"
+  - menu_name: Desserts
+    menu_sections:
+      - title: Desserts
+        items:
+          - title: Romney Peach Stack Cake
+            options:
+              - price: "11.00"
+          - title: Quantum Affogato
+            options:
+              - price: "12.00"
+          - title: Sorbet
+            designation:
+              - GF
+              - V
+            options:
+              - price: "9.00"
+          - title: Pot De Creme
+            options:
+              - price: "10.00"
