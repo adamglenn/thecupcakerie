@@ -228,8 +228,8 @@ collections:
                     name: "photoAltText"
                     widget: "string"
                     required: false
-      - label: "Food"
-        name: "Food"
+      - label: "Menu"
+        name: "menu"
         file: "data/food.yml"
         editor:
           preview: false
@@ -252,6 +252,7 @@ collections:
                   - label: "Section Title"
                     name: "title"
                     widget: "string"
+                    required: false
                   - label: "Section Description"
                     name: "description"
                     widget: "text"
