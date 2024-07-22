@@ -9,7 +9,7 @@
       {{ partial "header.html" . }}
     </header>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    
+
     {{ block "main" . }}{{ end }}
 
     <footer>
@@ -55,22 +55,22 @@
         });
       });
 
-      {{ if eq .Page.Title "Menu" }}
-        window.addEventListener('load', () => {
-          var elem = document.querySelector('.tab-pane.active');
-          var msnry = new Masonry( elem, {
-            // options
-            itemSelector: '.menu-section'
-          });
+      window.addEventListener('load', () => {
+        var elem = document.querySelector('.tab-pane.active');
+        var msnry = new Masonry( elem, {
+          // options
+          itemSelector: '.menu-section'
         });
-        el.addEventListener('shown.bs.tab', e => {
-          var elem = document.querySelector('.tab-pane.active');
-          var msnry = new Masonry( elem, {
-            // options
-            itemSelector: '.menu-section'
-          });
+        console.log('Shown Active');
+      });
+      el.addEventListener('shown.bs.tab', e => {
+        var elem = document.querySelector('.tab-pane.active');
+        var msnry = new Masonry( elem, {
+          // options
+          itemSelector: '.menu-section'
         });
-      {{ end }}
+        console.log('Shown Active');
+      });
 
     </script>
   </body>

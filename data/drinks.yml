@@ -1,0 +1,82 @@
+menus:
+  - menu_name: Drinks
+    menu_sections:
+      - title: Hot Drinks
+        description: ""
+        items:
+          - title: Classic Eggs Benedict
+            description: English Muffin, smoked ham, Hollandaise
+            options:
+              - price: "11.00"
+            photo: /img/john-baker-wu4zbeitiym-unsplash.jpg
+            feature: true
+            note: Served with Breakfast Potatoes or Fresh Fruit.
+          - title: The Mountaineer
+            description: Two eggs your way, sausage or bacon, choice of toast.
+            options:
+              - price: "11.00"
+            note: Served with Breakfast Potatoes or Fresh Fruit.
+          - title: Apple Stack Cakes
+            description: Sausage or bacon, buckwheat cakes, roasted apples, cinnamon,
+              bourbon maple, smoked butter.
+            options:
+              - price: "12.00"
+          - title: Parfait
+            description: Yogurt, honey walnut granola, fresh berries & cream.
+            options:
+              - price: "7.00"
+      - title: Cold Drinks
+        items:
+          - title: Caesar Salad
+            description: Shaved Parmesan, croutons, pickled red onions, creamy Caesar,
+              romaine, blistered tomatoes.
+            designation: null
+            options:
+              - price: "11.00"
+            photo: ""
+            feature: true
+          - title: Harvest Cobb
+            description: Chicken, bacon, bleu cheese, walnuts, apples, dried cranberries,
+              romaine arugula mix, maple balsamic vinaigrette.
+            designation:
+              - GF
+              - V
+            options:
+              - price: "13.00"
+        description: ""
+  - menu_name: Wines by the Glass
+    menu_sections:
+      - title: Sparkling
+        items:
+          - title: Prosecco, Coste Petrai, Italy
+            options:
+              - price: "12"
+          - title: Mimosa, Coste Petrai Prosecco & Natalie's Orange Juice
+            options:
+              - price: "12"
+            feature: true
+            photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
+      - title: Rosé
+        items:
+          - title: Rose, La Colombe, Provence, France
+            options:
+              - price: "12.00"
+      - title: White
+        items:
+          - title: Chardonnay, Domaine De Bernier, France
+            options:
+              - price: "14.00"
+          - title: Sauvignon Blanc, Le Coeur De La Reine, France
+            options:
+              - price: "14.00"
+          - title: Pinot Gris, King & Cannon, Oregon
+            options:
+              - price: "12.00"
+      - title: Red
+        items:
+          - title: Cabernet Sauvignon, Valravn, California
+            options:
+              - price: "16.00"
+          - title: Pinot Noir, Bourgogne, France
+            options:
+              - price: "16.00"

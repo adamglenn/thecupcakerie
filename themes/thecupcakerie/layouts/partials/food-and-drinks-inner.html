@@ -2,12 +2,13 @@
 {{ $imageHeight := "" }}
 {{ $imageWidth := "" }}
 {{ $imageRatio := "" }}
-<ul id="food-tabs" role="tablist" class="py-4 cc-stripes cc-stripes-neutral--mocha nav nav-pills justify-content-center mb-5">
+
+<ul id="food-tabs" role="tablist" class="py-4 cc-stripes cc-stripes-accent--gold cc-stripes-tint nav nav-pills justify-content-center mb-5">
   {{ range $index, $element := . }}
     {{ $menuName = .menu_name | urlize }}
     <!-- need to add active class and aria role to first item -->
     <li class="nav-item">
-      <button id="{{ $menuName }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $menuName }}" class="position-relative rounded-0 nav-link bg-cc-neutral--mocha text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ $menuName }}" aria-selected="{{ if (eq $index 0) }}true{{ else }}false{{ end }}">{{ .menu_name }}</button>
+      <button id="{{ $menuName }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $menuName }}" class="position-relative rounded-0 nav-link bg-cc-strawberry text-dark fs-3 {{ if (eq $index 0) }}active{{ end }}" type="button" role="tab" aria-controls="{{ $menuName }}" aria-selected="{{ if (eq $index 0) }}true{{ else }}false{{ end }}">{{ .menu_name }}</button>
     </li>
   {{ end }}
 </ul>
@@ -22,70 +23,77 @@
   {{ range $i, $e := . }}
     {{ $menuName = $e.menu_name | urlize }}
     <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
-      <div class="row gx-xl-5" >
+      <div class="row gx-xl-4" >
         {{ range .menu_sections }}
-          <div class="col-xl-6 menu-section">
-            {{ if .title }}
-              <h2 class="monograph-text-bold">{{ .title }}</h2>
-            {{ end }}
-            {{ if .description }}
-              <p>{{ .description }}</p>
-            {{ end }}
-            <ul class="list-unstyled">
-              {{ range .items }}
-                {{ $image := resources.Get .photo }}
-                {{ with resources.Get $image }}
-                  {{ $imageHeight = float .Height }}
-                  {{ $imageWidth = float .Width }}
-                  {{ $imageRatio = div $imageHeight $imageWidth }}
-                  {{ $imageRatio = mul $imageRatio 100 }}
+          <div class="col-xl-6 menu-section mb-4">
+            <div class="triple-deco-container">
+              <div class="triple-deco-content p-5">
+                {{ if .title }}
+                  <h2 class="monograph-text-bold">{{ .title }}</h2>
                 {{ end }}
-                <li class="py-4 border-top border-2 border-dark">
-                  <div class="row gx-2">
-                    <div class="col-8">
-                      <div class="row">
-                        {{ if $image }}
-                          <div class="col-6">
-                            <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
-                              <img loading="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                {{ if .description }}
+                  <p>{{ .description }}</p>
+                {{ end }}
+                <ul class="list-unstyled">
+                  {{ range .items }}
+                    {{ $image := resources.Get .photo }}
+                    {{ with resources.Get $image }}
+                      {{ $imageHeight = float .Height }}
+                      {{ $imageWidth = float .Width }}
+                      {{ $imageRatio = div $imageHeight $imageWidth }}
+                      {{ $imageRatio = mul $imageRatio 100 }}
+                    {{ end }}
+                    <li class="py-4 border-top border-1 border-cc-accent--gold">
+                      <div class="row gx-2">
+                        <div class="col-8">
+                          <div class="row">
+                            {{ if $image }}
+                              <div class="col-6">
+                                <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
+                                  <img loading="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                                </div>
+                              </div>
+                            {{ end }}
+                            <div class="col">
+                              <h3 class="h4 flapjack-regular lh-1 mb-0">{{ .title }}</h3>
+                              <p class="mb-0">
+                                {{ if .description }}
+                                  {{ .description }}
+                                {{ end }}
+                                {{ if .designation }}
+                                  {{ range .designation }}
+                                    <strong>({{ . }})</strong>
+                                  {{ end }}
+                                {{ end }}
+                                {{ if .note }}
+                                  <p class="text-cc-accent--pink monograph-text-bold mt-2 small">{{ .note }}</p>
+                                {{ end }}
+                              </p>
                             </div>
                           </div>
-                        {{ end }}
-                        <div class="col">
-                          <h3 class="h4 flapjack-regular lh-1">{{ .title }}</h3>
-                          <p class="mb-0">
-                            {{ if .description }}
-                              {{ .description }}
+                        </div>
+                        <div class="col-4 text-end">
+                          <ul class="list-unstyled monograph-text-bold">
+                            {{ range .options }}
+                              <li>
+                                ${{ .price }}
+                                {{ if .size }}
+                                  / {{ .size }}
+                                {{ end }}
+                              </li>
                             {{ end }}
-                            {{ if .designation }}
-                              {{ range .designation }}
-                                <strong>({{ . }})</strong>
-                              {{ end }}
-                            {{ end }}
-                            {{ if .note }}
-                              <p class="text-cc-accent--pink monograph-text-bold mt-2 small">{{ .note }}</p>
-                            {{ end }}
-                          </p>
+                          </ul>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <ul class="list-unstyled monograph-text-bold">
-                        {{ range .options }}
-                          <li>
-                            ${{ .price }}
-                            {{ if .size }}
-                              / {{ .size }}
-                            {{ end }}
-                          </li>
-                        {{ end }}
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              {{ end }}
-            </ul>
-          </div>              
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+              <div class="triple-deco-tall"></div>
+              <div class="triple-deco-mid"></div>
+              <div class="triple-deco-wide"></div>
+            </div>
+          </div>       
         {{ end }}
       </div>
     </div>
