@@ -19,13 +19,13 @@
     {{ end }}
   {{ end }}
   <section aria-labelledby="featured-dishes-label">
-    <div class="container-fluid mx-0">
+    <div class="container-fluid mx-0 px-0">
       <div class="row gx-0 px-0 mx-0">
-        <div class="col-xl-1 mx-0 px-0 position-relative" style="z-index: 1;">
-          <h2 id="featured-dishes-label" class="cc-text-xl-vertical py-4 px-2 text-end ms-xl-auto mt-4 bg-cc-white-chocolate">Featured Dishes</h2>
+        <div class="col-xl-1 mx-0 px-0 position-relative bg-cc-accent--mojito" style="z-index: 1;">
+          <h2 id="featured-dishes-label" class="cc-text-xl-vertical py-4 px-2 text-end ms-xl-auto mt-4">Featured Dishes</h2>
         </div>
         <div class="col-xl-11">
-          <div class="row">
+          <div class="row mx-0 px-0">
             {{ range . }}
               {{ range .menu_sections }}
                 {{ range .items }}

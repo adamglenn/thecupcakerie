@@ -1,6 +1,6 @@
 {{ with site.Data.homepage.products }}
   <section class="pb-5" aria-labelledby="products-label">
-    <div class="bg-cc-white-chocolate-tint cc-pattern cc-pattern-tint py-5">
+    <div class="bg-cc-strawberry-tint cc-pattern cc-pattern-tint py-5">
       <div class="container pt-5 pb-4 position-relative">
         <div class="row mb-5 text-center">
           <div class="col-xl-6 mx-xl-auto">
@@ -15,7 +15,7 @@
         {{ range .products }}
           {{ $image := resources.Get .photo }}
           <div class="col-xxl-6 mb-4">
-            <div class="border border-2 border-dark bg-cc-white-chocolate">
+            <div class="border border-2 border-dark bg-cc-strawberry">
               <div class="row gx-0">
                 <div class="col-lg-6">
                   <img loading="lazy" class="img-fluid" src='{{ ( $image.Fill "960x640 webp Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />

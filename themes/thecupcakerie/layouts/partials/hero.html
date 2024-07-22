@@ -9,15 +9,15 @@
       <div class="container py-5">
         <div class="row py-5">
           <div class="col-xl-7 {{ $align }}">
-            <div class="p-5 border border-2 border-dark bg-cc-white-chocolate text-dark">
-              <h1 class="flapjack-regular display-3 lh-1 mb-3 d-inline-block">{{ .heading }}</h1>
+            <div class="p-5 border border-2 border-dark bg-cc-strawberry text-dark">
+              <h1 class="flapjack-regular display-3 lh-1 mb-3 d-inline-block text-cc-accent--gold">{{ .heading }}</h1>
               {{ if .subheading }}
                 <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
               {{ end }}
               <p class="lead mb-4 fs-5 ms-xl-5">{{ .lede }}</p>
               {{ if .cta }}
                 {{ range .cta }}
-                  <a class="text-dark text-decoration-none fs-5 ms-xl-5" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+                  <a class="btn btn-cc-accent--mojito ms-5" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
                 {{ end }}
               {{ end }}
             </div>

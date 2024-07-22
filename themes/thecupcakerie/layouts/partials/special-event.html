@@ -1,41 +1,47 @@
 {{ with site.Data.homepage.special_event }}
-  <section class="py-5 bg-dark bg-cc-neutral--dark-chocolate text-cc-neutral--mocha fs-3" aria-labelledby="special-event-label">
-    <div class="container py-5 position-relative">
+  <section class="bg-dark bg-cc-neutral--cohiba text-cc-neutral--mocha" aria-labelledby="special-event-label">
+    <div class="container position-relative">
       <div class="row">
         <div class="col-xl-8 d-flex align-items-center">
           <div class="row gx-5">
             <div class="col-4">
               <div class="ratio ratio-1x1 text-dark">
-                <img loading="lazy" src="/img/festival-logo.svg" alt="Festival logo" />
+                <img class="img-fluid mt-5" loading="lazy" src="/img/festival-logo.svg" alt="Festival logo" />
               </div>
             </div>
-            <div class="col-8 fs-4">
-              <h2 class="flapjack-regular mb-5 display-1 lh-1" id="special-event-label">WV Cupcake & Craft Beer Fest</h2>
-              <div class="p-5 bg-cc-neutral--cohiba ms-n5">
-                <p class="position-relative mb-2 ms-5"><span class="fa-solid fa-calendar position-absolute ms-n5"></span>Satuday, April 27, 2024</p>
-                <p class="position-relative mb-2 ms-5"><span class="fa-solid fa-clock position-absolute ms-n5"></span>12PM - 6PM</p>
-                <p class="position-relative mb-2 ms-5"><span class="fa-solid fa-location-dot position-absolute ms-n5"></span>Downtown Morgantown, Courthouse Square</p>
-                <p class="position-relative mb-2 ms-5"><span class="fa-solid fa-circle-info position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">Details</a></p>
-                <p class="position-relative mb-2 ms-5"><span class="fa-solid fa-link position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">cupcakecraftbeer.com</a></p>
-                <p class="position-relative mb-2 ms-5 mb-0"><span class="fa-solid fa-dollar-sign position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">Sponsorship Opportunities</a></p>
+            <div class="col-8 fs-5">
+              <div class="py-5 h-100 ps-5">
+                <div class="ms-n5">
+                  <h2 class="flapjack-regular display-1 lh-1 ms-n5 mt-5 bg-cc-neutral--cohiba position-relative" id="special-event-label">WV Cupcake & Craft Beer Fest</h2>
+                </div>
+                <div class="px-5 mt-4 ms-n5 mb-5">
+                  <p class="position-relative mb-1 ms-5"><span class="fa-solid fa-calendar position-absolute ms-n5"></span>Satuday, April 27, 2024</p>
+                  <p class="position-relative mb-1 ms-5"><span class="fa-solid fa-clock position-absolute ms-n5"></span>12PM - 6PM</p>
+                  <p class="position-relative mb-1 ms-5"><span class="fa-solid fa-location-dot position-absolute ms-n5"></span>Downtown Morgantown, Courthouse Square</p>
+                  <p class="position-relative mb-1 ms-5"><span class="fa-solid fa-circle-info position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">Details</a></p>
+                  <p class="position-relative mb-1 ms-5"><span class="fa-solid fa-link position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">cupcakecraftbeer.com</a></p>
+                  <p class="position-relative mb-1 ms-5 mb-0"><span class="fa-solid fa-dollar-sign position-absolute ms-n5"></span><a class="text-cc-neutral--mocha" href="https://cupcakecraftbeer.com">Sponsorship Opportunities</a></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-xl-4">
-          <div>
-            {{ $colors := slice "momosa" "pink" "mojito" }}
-            {{ $shift := slice "x" "ms-auto" "ms-5" }}
-            {{ range $i, $e := .photos }}
-              {{ $photo := resources.Get $e.photo }}
-              <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
-                <div class="col-xl-7 {{ index $shift $i }}">
-                  <div class="ratio ratio-1x1 border border-5 border-cc-accent--{{ index $colors $i }}">
-                    <img loading="lazy" src="{{ ( $photo.Fill "900x900 webp Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
+          <div class="py-5 w-100 h-100 d-flex align-items-center">
+            <div class="w-100 pt-5">
+              {{ $colors := slice "momosa" "pink" "mojito" }}
+              {{ $shift := slice "x" "ms-auto" "ms-5" }}
+              {{ range $i, $e := .photos }}
+                {{ $photo := resources.Get $e.photo }}
+                <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
+                  <div class="col-xl-7 {{ index $shift $i }}">
+                    <div class="ratio ratio-1x1 mt-n5 border border-5 border-cc-accent--{{ index $colors $i }}">
+                      <img class="img-fluid" loading="lazy" src="{{ ( $photo.Fill "900x900 webp Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            {{ end }}
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>

@@ -9,10 +9,10 @@
     bottom: 0;
     right: 0;
     mask-size: 700px;
-    mask-position: left -175px top 30px;
+    mask-position: center top 30px;
     mask-image: url('/img/food-pattern.svg');
     -webkit-mask-size: 700px;
-    -webkit-mask-position: left -175px top 30px;
+    -webkit-mask-position: center top 30px;
     -webkit-mask-image: url('/img/food-pattern.svg');
   }
   &.cc-pattern-accent--manhattan {
@@ -58,6 +58,11 @@
       background-color: $cc-accent--pink;
     }
   }
+  &.cc-stripes-accent--gold {
+    &:before {
+      background-color: $cc-accent--gold;
+    }
+  }
   &.cc-stripes-neutral--vino {
     &:before {
       background-color: $cc-neutral--vino;
@@ -75,7 +80,7 @@
   }
   &.cc-stripes-tint {
     &:before {
-      opacity: 30%;
+      opacity: 10%;
     }
   }
 }
