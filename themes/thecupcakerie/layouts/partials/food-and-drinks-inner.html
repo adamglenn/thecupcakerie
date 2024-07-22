@@ -25,7 +25,9 @@
       <div class="row gx-xl-5" >
         {{ range .menu_sections }}
           <div class="col-xl-6 menu-section">
-            <h2 class="monograph-text-bold">{{ .title }}</h2>
+            {{ if .title }}
+              <h2 class="monograph-text-bold">{{ .title }}</h2>
+            {{ end }}
             {{ if .description }}
               <p>{{ .description }}</p>
             {{ end }}
