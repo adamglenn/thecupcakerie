@@ -1,5 +1,5 @@
 menus:
-  - menu_name: Brunch & Lunch
+  - menu_name: Brunch
     menu_sections:
       - title: Brunch Plates
         description: ""
@@ -52,6 +52,20 @@ menus:
               pepper aoli, wheat.
             options:
               - price: "13"
+      - title: A La Carte
+        items:
+          - title: (2) Eggs Your Way
+            options:
+              - price: "4.00"
+          - title: Honey Walnut Granola
+            options:
+              - price: "4.00"
+          - title: (3) Slices of Bacon
+            options:
+              - price: "4.00"
+          - title: (2) Sausage Patties
+            options:
+              - price: "4.00"
   - menu_name: Dinner
     menu_sections:
       - title: Sandwiches
