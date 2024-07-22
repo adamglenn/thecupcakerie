@@ -15,6 +15,11 @@
     -webkit-mask-position: center top 30px;
     -webkit-mask-image: url('/img/food-pattern.svg');
   }
+  &.cc-pattern-accent--gold {
+    &:before {
+      background-color: $cc-accent--gold;
+    }
+  }
   &.cc-pattern-accent--manhattan {
     &:before {
       background-color: $cc-accent--manhattan;
