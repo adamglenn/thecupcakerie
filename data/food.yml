@@ -111,3 +111,11 @@ menus:
           - title: Pot De Creme
             options:
               - price: "10.00"
+  - menu_name: Kids Menu
+    menu_sections:
+      - items:
+          - title: Grilled Cheese
+            options:
+              - price: "7.00"
+            description: White Cheddar, Mozarella, Sourdough
+            note: Served with Chips or Seasonal Fruit
