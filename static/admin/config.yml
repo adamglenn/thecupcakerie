@@ -317,6 +317,10 @@ collections:
                 name: "description"
                 widget: "text"
                 required: false
+              - label: "Show Legend"
+                name: "show_legend"
+                widget: "boolean"
+                required: false
               - label: "Menu Sections"
                 name: "menu_sections"
                 widget: "list"
