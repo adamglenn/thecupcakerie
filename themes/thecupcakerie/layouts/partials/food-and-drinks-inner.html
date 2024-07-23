@@ -13,92 +13,94 @@
   {{ end }}
 </ul>
 
-<div class="tab-content" id="food-content">
-  {{ range $i, $e := . }}
-    {{ $menuName = $e.menu_name | urlize }}
-    <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
-      {{ if eq .show_legend true }}
-        <div class="d-flex justify-content-center">
-          <ul class="d-inline-block list-inline mx-auto mb-5">
-            <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
-            <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
-            <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
-          </ul>
-        </div>
-      {{ end }}
-      <div class="row gx-xl-4" >
-        {{ range .menu_sections }}
-          <div class="col-xl-6 menu-section mb-4">
-            <div class="triple-deco-container">
-              <div class="triple-deco-content p-5">
-                {{ if .title }}
-                  <h2 class="monograph-text-bold">{{ .title }}</h2>
-                {{ end }}
-                {{ if .description }}
-                  <p>{{ .description }}</p>
-                {{ end }}
-                <ul class="list-unstyled">
-                  {{ range .items }}
-                    {{ $image := resources.Get .photo }}
-                    {{ with resources.Get $image }}
-                      {{ $imageHeight = float .Height }}
-                      {{ $imageWidth = float .Width }}
-                      {{ $imageRatio = div $imageHeight $imageWidth }}
-                      {{ $imageRatio = mul $imageRatio 100 }}
-                    {{ end }}
-                    <li class="py-4 border-top border-1 border-cc-accent--gold">
-                      <div class="row gx-2">
-                        <div class="col-8">
-                          <div class="row">
-                            {{ if $image }}
-                              <div class="col-6">
-                                <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
-                                  <img loading="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+<div class="pb-5">
+  <div class="tab-content">
+    {{ range $i, $e := . }}
+      {{ $menuName = $e.menu_name | urlize }}
+      <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
+        {{ if eq .show_legend true }}
+          <div class="d-flex w-100 justify-content-center">
+            <ul class="d-inline-block list-inline mx-auto mb-5">
+              <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
+              <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
+              <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
+            </ul>
+          </div>
+        {{ end }}
+        <div class="row gx-xl-4 food-content position-relative w-100">
+          {{ range .menu_sections }}      
+            <div class="col-xl-6 menu-section mb-4">
+              <div class="triple-deco-container">
+                <div class="triple-deco-content p-5">
+                  {{ if .title }}
+                    <h2 class="monograph-text-bold">{{ .title }}</h2>
+                  {{ end }}
+                  {{ if .description }}
+                    <p>{{ .description }}</p>
+                  {{ end }}
+                  <ul class="list-unstyled">
+                    {{ range .items }}
+                      {{ $image := resources.Get .photo }}
+                      {{ with resources.Get $image }}
+                        {{ $imageHeight = float .Height }}
+                        {{ $imageWidth = float .Width }}
+                        {{ $imageRatio = div $imageHeight $imageWidth }}
+                        {{ $imageRatio = mul $imageRatio 100 }}
+                      {{ end }}
+                      <li class="py-4 border-top border-1 border-cc-accent--gold">
+                        <div class="row gx-2">
+                          <div class="col-8">
+                            <div class="row">
+                              {{ if $image }}
+                                <div class="col-6">
+                                  <div class="position-relative mb-2 ratio" style="--bs-aspect-ratio: {{ $imageRatio }}%">
+                                    <img loading="lazy" class="w-100" src='{{ ( $image.Fill "960x640 Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
+                                  </div>
                                 </div>
-                              </div>
-                            {{ end }}
-                            <div class="col">
-                              <h3 class="h4 flapjack-regular lh-1 mb-0">{{ .title }}</h3>
-                              <p class="mb-0">
-                                {{ if .description }}
-                                  {{ .description }}
-                                {{ end }}
-                                {{ if .designation }}
-                                  {{ range .designation }}
-                                    <strong>({{ . }})</strong>
+                              {{ end }}
+                              <div class="col">
+                                <h3 class="h4 flapjack-regular lh-1 mb-0">{{ .title }}</h3>
+                                <p class="mb-0 mt-2">
+                                  {{ if .description }}
+                                    {{ .description }}
                                   {{ end }}
-                                {{ end }}
-                                {{ if .note }}
-                                  <p class="text-cc-accent--pink monograph-text-bold mt-2 small">{{ .note }}</p>
-                                {{ end }}
-                              </p>
+                                  {{ if .designation }}
+                                    {{ range .designation }}
+                                      <strong>({{ . }})</strong>
+                                    {{ end }}
+                                  {{ end }}
+                                  {{ if .note }}
+                                    <p class="text-cc-accent--pink monograph-text-bold mt-2 small">{{ .note }}</p>
+                                  {{ end }}
+                                </p>
+                              </div>
                             </div>
                           </div>
+                          <div class="col-4 text-end">
+                            <ul class="list-unstyled monograph-text-bold mb-0">
+                              {{ range .options }}
+                                <li>
+                                  ${{ .price }}
+                                  {{ if .size }}
+                                    / {{ .size }}
+                                  {{ end }}
+                                </li>
+                              {{ end }}
+                            </ul>
+                          </div>
                         </div>
-                        <div class="col-4 text-end">
-                          <ul class="list-unstyled monograph-text-bold mb-0">
-                            {{ range .options }}
-                              <li>
-                                ${{ .price }}
-                                {{ if .size }}
-                                  / {{ .size }}
-                                {{ end }}
-                              </li>
-                            {{ end }}
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  {{ end }}
-                </ul>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </div>
+                <div class="triple-deco-tall"></div>
+                <div class="triple-deco-mid"></div>
+                <div class="triple-deco-wide"></div>
               </div>
-              <div class="triple-deco-tall"></div>
-              <div class="triple-deco-mid"></div>
-              <div class="triple-deco-wide"></div>
             </div>
-          </div>       
-        {{ end }}
+          {{ end }}
+        </div>
       </div>
-    </div>
-  {{ end }}
+    {{ end }}
+  </div>
 </div>

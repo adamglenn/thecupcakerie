@@ -16,60 +16,62 @@
 
     <script type="application/javascript" src="{{ $bootstrap.Permalink }}"></script>
 
-    <script>
-      window.addEventListener('load', () => {
-        let url = window.location.href;
-        if (url.includes('?menu=')) {
-          let myUrl = window.location.href.split('?menu=').pop();
-          let matchingTab = document.querySelector('#' + myUrl + '-tab');
-          let matchingPane = document.querySelector('#' + myUrl);
-          let activeTab = document.querySelector('#food-tabs .active');
-          let activePane = document.querySelector('#food-content .active');
-          if (matchingTab.ariaSelected !== 'true') {
-            activeTab.ariaSelected = "false";
-            activeTab.classList.remove('active');
-            activePane.classList.remove('active');
-            activePane.classList.remove('show');
-            matchingTab.ariaSelected = "true";
-            matchingTab.classList.add('active');
-            matchingPane.classList.add('active');
-            matchingPane.classList.add('show');
-          };
-        }
-      });
-
-      const menuButtons = document.querySelectorAll('#food-tabs .nav-link');
-
-      menuButtons.forEach((el) => {
-        el.addEventListener('click', e => {
-          // Construct URLSearchParams object instance from current URL querystring.
-          var queryParams = new URLSearchParams(window.location.search);
-          let myValue = el.id
-          let newValue = myValue.replace('-tab','');
-          // Set new or modify existing parameter value. 
-          queryParams.set("menu", newValue);
-          // Replace current querystring with the new one.
-          history.pushState(null, null, "?"+queryParams.toString());
+    {{ if or (eq .Page.Title "Menu") (eq .Page.Title "Drinks") }}
+      <script>
+        window.addEventListener('load', () => {
+          let url = window.location.href;
+          if (url.includes('?menu=')) {
+            let myUrl = window.location.href.split('?menu=').pop();
+            let matchingTab = document.querySelector('#' + myUrl + '-tab');
+            let matchingPane = document.querySelector('#' + myUrl);
+            let activeTab = document.querySelector('#food-tabs .active');
+            let activePane = document.querySelector('#food-content .active');
+            if (matchingTab.ariaSelected !== 'true') {
+              activeTab.ariaSelected = "false";
+              activeTab.classList.remove('active');
+              activePane.classList.remove('active');
+              activePane.classList.remove('show');
+              matchingTab.ariaSelected = "true";
+              matchingTab.classList.add('active');
+              matchingPane.classList.add('active');
+              matchingPane.classList.add('show');
+            };
+          }
         });
-      });
 
-      window.addEventListener('load', () => {
-        var elem = document.querySelector('.tab-pane.active');
-        var msnry = new Masonry( elem, {
-          // options
-          itemSelector: '.menu-section'
-        });
-        console.log('Shown Active');
-      });
-      el.addEventListener('shown.bs.tab', e => {
-        var elem = document.querySelector('.tab-pane.active');
-        var msnry = new Masonry( elem, {
-          // options
-          itemSelector: '.menu-section'
-        });
-        console.log('Shown Active');
-      });
+        const menuButtons = document.querySelectorAll('#food-tabs .nav-link');
 
-    </script>
+        menuButtons.forEach((el) => {
+          el.addEventListener('click', e => {
+            // Construct URLSearchParams object instance from current URL querystring.
+            var queryParams = new URLSearchParams(window.location.search);
+            let myValue = el.id
+            let newValue = myValue.replace('-tab','');
+            // Set new or modify existing parameter value. 
+            queryParams.set("menu", newValue);
+            // Replace current querystring with the new one.
+            history.pushState(null, null, "?"+queryParams.toString());
+          });
+          el.addEventListener('shown.bs.tab', e => {
+            var elem = document.querySelector('.tab-pane.active');
+            var msnry = new Masonry( elem, {
+              // options
+              itemSelector: '.menu-section'
+            });
+            console.log('Shown Active');
+          });
+        });
+
+        window.addEventListener('load', () => {
+          var elem = document.querySelector('.tab-pane.active');
+          var msnry = new Masonry( elem, {
+            // options
+            itemSelector: '.menu-section'
+          });
+          console.log('Shown Active');
+        });
+
+      </script>
+    {{ end }}
   </body>
 </html>
