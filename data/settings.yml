@@ -14,7 +14,20 @@ site_menu:
     url: /about
   - menu_item: Blog
     url: /posts
+address:
+  - line: 3200 Collins Ferry Road
+  - line: Morgantown, WV 26505
+phone: (304) 212-5464
+email: orders@thecupcakerie.com
 social_media_accounts:
   - platform: Facebook
     url: https://www.facebook.com/thecupcakeriewv/
     icon_code: facebook
+  - platform: Instagram
+    username: thecupcakeriecafefrose
+    url: https://www.instagram.com/stories/thecupcakeriecafefrose/
+    icon_code: instagram
+  - platform: TikTok
+    username: thecupcakeriewv
+    url: https://www.tiktok.com/@thecupcakeriewv
+    icon_code: tiktok
