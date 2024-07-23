@@ -1,7 +1,7 @@
 menus:
-  - menu_name: Catering
+  - menu_name: Breakfast Catering
     menu_sections:
-      - title: Breakfast Catering
+      - title: Party Tray
         description: ""
         items:
           - title: Classic Eggs Benedict
@@ -25,7 +25,7 @@ menus:
             description: Yogurt, honey walnut granola, fresh berries & cream.
             options:
               - price: "7.00"
-      - title: Lunch and Dinner Catering
+      - title: Fruit Tray
         items:
           - title: Caesar Salad
             description: Shaved Parmesan, croutons, pickled red onions, creamy Caesar,
@@ -44,7 +44,7 @@ menus:
             options:
               - price: "13.00"
         description: ""
-      - title: Handhelds
+      - title: Greek Yogurt Parfaits with Gluten-Free Granola
         description: Served with chips or seasonal fruit.
         items:
           - title: BELT
@@ -52,7 +52,7 @@ menus:
               pepper aoli, wheat.
             options:
               - price: "13"
-      - title: A La Carte
+      - title: Breakfast Slider Tray
         items:
           - title: (2) Eggs Your Way
             options:
@@ -66,6 +66,47 @@ menus:
           - title: (2) Sausage Patties
             options:
               - price: "4.00"
+      - title: Quiche & Frittata
+        items:
+          - title: (2) Eggs Your Way
+            options:
+              - price: "4.00"
+          - title: Honey Walnut Granola
+            options:
+              - price: "4.00"
+          - title: (3) Slices of Bacon
+            options:
+              - price: "4.00"
+          - title: (2) Sausage Patties
+            options:
+              - price: "4.00"
+    show_legend: true
+  - menu_name: Lunch & Dinner Catering
+    menu_sections:
+      - title: Sandwiches
+        description: "Served all day. Bread choices include: brioche roll, sourdough,
+          house-made focaccia, baguette, or gluten-free bread."
+        items:
+          - title: Rainbow Veggie Wrap
+            description: Black bean hummus, shredded carrots, sprouts, avocado mash,
+              cucumbers, greens, mango salsa, and vegan green goddess dressing
+              on a spinach wrap.
+            designation:
+              - VE
+            options:
+              - price: "14"
+          - title: Lean Green Turkey Wrap
+            description: Lemony chickpea salad, roasted turkey breast, cucumber, avocado
+              mash, arugula, and green goddess dressing on a spinach wrap.
+            options:
+              - price: "15"
+            feature: true
+            photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
+      - title: Test Section
+        items:
+          - title: Test Item
+            options:
+              - price: "11.00"
     show_legend: true
   - menu_name: Take Home Meals
     menu_sections:
