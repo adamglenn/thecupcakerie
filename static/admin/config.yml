@@ -485,7 +485,6 @@ collections:
               - { label: "Username", name: "username", widget: "string", required: false }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Icon Code", name: "icon_code", widget: "string", required: false }
-            required: false
   # - label: "Components"
   #   name: "components"
   #   fields:
