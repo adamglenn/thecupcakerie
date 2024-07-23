@@ -12,17 +12,20 @@
     </li>
   {{ end }}
 </ul>
-<div class="d-flex justify-content-center">
-  <ul class="d-inline-block list-inline mx-auto mb-5">
-    <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
-    <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
-    <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
-  </ul>
-</div>
+
 <div class="tab-content" id="food-content">
   {{ range $i, $e := . }}
     {{ $menuName = $e.menu_name | urlize }}
     <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
+      {{ if eq .show_legend true }}
+        <div class="d-flex justify-content-center">
+          <ul class="d-inline-block list-inline mx-auto mb-5">
+            <li class="list-inline-item"><strong>(GF)</strong> Gluten Free</li>
+            <li class="list-inline-item"><strong>(V)</strong> Vegetarian</li>
+            <li class="list-inline-item"><strong>(VE)</strong> Vegan</li>
+          </ul>
+        </div>
+      {{ end }}
       <div class="row gx-xl-4" >
         {{ range .menu_sections }}
           <div class="col-xl-6 menu-section mb-4">
@@ -73,7 +76,7 @@
                           </div>
                         </div>
                         <div class="col-4 text-end">
-                          <ul class="list-unstyled monograph-text-bold">
+                          <ul class="list-unstyled monograph-text-bold mb-0">
                             {{ range .options }}
                               <li>
                                 ${{ .price }}
