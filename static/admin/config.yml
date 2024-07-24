@@ -464,7 +464,7 @@ collections:
           preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Meta Description", name: "meta_description", widget: "string", hint: "Used by search engines.", required: false }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
           - { label: "Content", name: "content", widget: "markdown" }
   - name: 'blog'
