@@ -31,8 +31,8 @@ happyHour:
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua.
   cta:
-    buttonText: View Drink Menu
-    link: /drinks
+    buttonText: View Happy Hour Menu
+    link: /menu/?menu=happy-hour
 brunch:
   heading: Brunch Daily
   hours:
@@ -42,7 +42,7 @@ brunch:
       hours: 10AM - 2PM
   cta:
     buttonText: View Brunch Menu
-    link: /menu/?menu=Brunch
+    link: /menu/?menu=brunch
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua.
 dinner:
@@ -54,7 +54,7 @@ dinner:
     eiusmod tempor incididunt ut labore et dolore magna aliqua.
   cta:
     buttonText: View Dinner Menu
-    link: /menu/?menu=Dinner
+    link: /menu/?menu=happy-hour
 specials:
   heading: Slightly Sweet Wednesdays
   details:
