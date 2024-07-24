@@ -3,7 +3,7 @@
     <div class="cc-pattern cc-pattern-tint cc-pattern-accent--gold py-5">
       <div class="py-5"></div>
     </div>
-    <div class="container position-relative py-5">
+    <div class="container position-relative py-5 small">
       <div class="row">
         <div class="col-xl-3 mb-5 mb-xl-0">
           <a href="/"><img loading="lazy" src="/cupcakerie-placeholder.svg" class="mb-4" alt="The Cupcakerie Logo (light color version)" /></a>
@@ -14,14 +14,14 @@
             <div class="col-xl mb-5 mb-xl-0">
               <h3 class="flapjack-regular text-cc-strawberry">Contact</h3>
               <address class="ms-4 position-relative mb-2">
-                <span class="fas fa-map-marker-alt text-cc-strawberry position-absolute ms-n4"></span>
+                <span class="fas fa-map-marker-alt text-cc-accent--gold position-absolute ms-n4"></span>
                 {{ range .address }}
                   <span class="d-block">{{ .line }}</span>
                 {{ end }}                
               </address>
               <ul class="list-unstyled">
-                <li class="ms-4 mb-2"><span class="fas fa-phone text-cc-strawberry position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ .phone }}">{{ .phone }}</a></li>
-                <li class="ms-4"><span class="fas fa-envelope text-cc-strawberry position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ .email }}">{{ .email }}</a></li>
+                <li class="ms-4 mb-2"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ .phone }}">{{ .phone }}</a></li>
+                <li class="ms-4"><span class="fas fa-envelope text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ .email }}">{{ .email }}</a></li>
               </ul>
             </div>
             <div class="col-xl mb-5 mb-xl-0">
@@ -39,7 +39,7 @@
               <h3 class="flapjack-regular text-cc-strawberry">Follow Us</h3>
               <ul class="list-unstyled">
                 {{ range .social_media_accounts }}
-                  <li><a class="text-white text-decoration-none" href="{{ .url }}"><span class="fab fa-{{ .icon_code }} text-cc-strawberry"></span> {{ .platform }}</a></li>
+                  <li><a class="text-white text-decoration-none" href="{{ .url }}"><span class="fab fa-{{ .icon_code }} text-cc-accent--gold me-1"></span> {{ .platform }}</a></li>
                 {{ end }}
               </ul>
             </div>

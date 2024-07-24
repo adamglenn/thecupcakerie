@@ -43,27 +43,32 @@ collections:
             collapsed: true
             fields:
               - { label: "title", name: "title", widget: "string" }
-              - label: "Address"
-                name: "address"
-                widget: list
-                fields:
-                  - { label: "Address Line", name: "address_line", widget: "string" }
-              - label: "Map Link"
-                name: "map_link"
-                widget: "string"
-              - label: "Hours"
-                name: "hours"
-                widget: list
-                fields:
-                  - { label: "Hours Line", name: "hours_line", widget: "string" }
-              - label: "Special Hours"
-                name: "special_hours"
+              - label: "Visit Us"
+                name: "visit_us"
                 widget: "object"
-                collapsed: true
-                required: false
                 fields:
-                  - { label: "Show", name: "show", widget: "boolean" }
-                  - { label: "Message", name: "message", widget: "text" }
+                  - { label: "Heading", name: "heading", widget: "string", hint: "Address and hours of operation can be edited in Settings > Config." }
+              - label: "Get Ahold of Us"
+                name: "get_ahold_of_us"
+                widget: "object"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string", hint: "Phone and email address can be edited in Settings > Config." }
+                  - { label: "Copy", name: "copy", widget: "markdown", required: false }
+              - label: "Catch Us on the Road"
+                name: "catch_us_on_the_road"
+                widget: "object"
+                fields:
+                  - { label: "Heading", name: "heading", widget: "string", hint: "Phone and email address can be edited in Settings > Config." }
+                  - { label: "Subheading", name: "subheading", widget: "string", required: false }
+                  - { label: "Subheading Icon", name: "subheading_icon", widget: "string", required: false }
+                  - { label: "Next Stop Title", name: "next_stop_title", widget: "string", required: false }
+                  - label: "Next Stop Address"
+                    name: "next_stop_address"
+                    widget: "list"
+                    collapsed: true
+                    required: false
+                    fields:
+                      - { label: "Line", name: "line", widget: "string" }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object
@@ -452,6 +457,16 @@ collections:
                         name: photo
                         widget: image
                         required: false
+      - label: "About"
+        name: "about"
+        file: "data/about.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "string", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Content", name: "content", widget: "markdown" }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
@@ -490,6 +505,9 @@ collections:
             fields: 
               - { label: "Line", name: "line", widget: "string" }
             required: false
+          - label: "Map Link"
+            name: "map_link"
+            widget: "string"
           - label: "Phone"
             name: "phone"
             widget: "string"
@@ -507,6 +525,19 @@ collections:
               - { label: "Username", name: "username", widget: "string", required: false }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Icon Code", name: "icon_code", widget: "string", required: false }
+          - label: "Hours"
+            name: "hours"
+            widget: list
+            fields:
+              - { label: "Hours Line", name: "hours_line", widget: "string" }
+          - label: "Special Hours"
+            name: "special_hours"
+            widget: "object"
+            collapsed: true
+            required: false
+            fields:
+              - { label: "Show", name: "show", widget: "boolean", required: false }
+              - { label: "Message", name: "message", widget: "text" }
   # - label: "Components"
   #   name: "components"
   #   fields:

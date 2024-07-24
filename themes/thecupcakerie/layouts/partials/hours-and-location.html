@@ -1,7 +1,7 @@
 <section aria-labelledby="hours-and-location-label" class="bg-dark text-white py-5">
   <div class="container position-relative">
     <h2 class="visually-hidden" id="hours-and-location-label">Hours of Operation, Contact Info and Food Truck Info</h2>
-    <div class="row position-relative py-3 gx-xl-5">      
+    <div class="row position-relative py-3 gx-xl-5 justify-content-center">      
       {{ with site.Data.homepage.hours }}
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="small h-100">
@@ -32,8 +32,12 @@
           <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">Get Ahold of Us</h3>
           <p>Need to make <strong>reservations</strong>? Host a <strong>special event</strong>? Inquire about a <strong>job opening</strong> or <strong>event sponsorship</strong>?</p>
           <ul class="list-unstyled">
-            <li class="ms-4"><span class="fas fa-phone text-cc-strawberry position-absolute ms-n4"></span> <a class="text-white" href="tel:3042125464">(304) 212-5464</a></li>
-            <li class="ms-4"><span class="fas fa-envelope text-cc-strawberry position-absolute ms-n4"></span> <a class="text-white" href="mailto:orders@thecupcakerie.com">orders@thecupcakerie.com</a></li>
+            {{ with site.Data.settings.phone }}
+              <li class="ms-4"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ . }}">{{ . }}</a></li>
+            {{ end }}
+            {{ with site.Data.settings.email }}
+              <li class="ms-4"><span class="fas fa-envelope text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ . }}">{{ . }}</a></li>
+            {{ end }}
           </ul>
         </div>
       </div>
