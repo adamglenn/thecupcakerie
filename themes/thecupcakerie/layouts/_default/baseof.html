@@ -25,7 +25,7 @@
             let matchingTab = document.querySelector('#' + myUrl + '-tab');
             let matchingPane = document.querySelector('#' + myUrl);
             let activeTab = document.querySelector('#food-tabs .active');
-            let activePane = document.querySelector('#food-content .active');
+            let activePane = document.querySelector('.tab-content .active');
             if (matchingTab.ariaSelected !== 'true') {
               activeTab.ariaSelected = "false";
               activeTab.classList.remove('active');
