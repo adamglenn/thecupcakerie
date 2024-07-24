@@ -4,45 +4,64 @@ menus:
       - title: Hot Drinks
         description: ""
         items:
-          - title: Classic Eggs Benedict
-            description: English Muffin, smoked ham, Hollandaise
+          - title: Drip Coffee Regular or Decaf
+            description: ""
             options:
-              - price: "11.00"
-            photo: /img/john-baker-wu4zbeitiym-unsplash.jpg
-            feature: true
-            note: Served with Breakfast Potatoes or Fresh Fruit.
-          - title: The Mountaineer
-            description: Two eggs your way, sausage or bacon, choice of toast.
-            options:
-              - price: "11.00"
-            note: Served with Breakfast Potatoes or Fresh Fruit.
-          - title: Apple Stack Cakes
-            description: Sausage or bacon, buckwheat cakes, roasted apples, cinnamon,
-              bourbon maple, smoked butter.
-            options:
-              - price: "12.00"
-          - title: Parfait
-            description: Yogurt, honey walnut granola, fresh berries & cream.
-            options:
-              - price: "7.00"
-      - title: Cold Drinks
-        items:
-          - title: Caesar Salad
-            description: Shaved Parmesan, croutons, pickled red onions, creamy Caesar,
-              romaine, blistered tomatoes.
-            designation: null
-            options:
-              - price: "11.00"
+              - price: "2.50"
+                size: 8oz.
+              - size: 16oz.
+                price: "3.00"
+              - size: 20oz.
+                price: "3.50"
             photo: ""
             feature: true
-          - title: Harvest Cobb
-            description: Chicken, bacon, bleu cheese, walnuts, apples, dried cranberries,
-              romaine arugula mix, maple balsamic vinaigrette.
+            note: Served with Breakfast Potatoes or Fresh Fruit.
+          - title: Cafe Au Lait
+            description: ""
+            options:
+              - price: "4.00"
+                size: 8oz.
+              - size: 16oz.
+                price: "4.50"
+              - size: 20oz.
+                price: "5.00"
+            note: Served with Breakfast Potatoes or Fresh Fruit.
+          - title: Red Eye
+            description: ""
+            options:
+              - price: "4.00"
+                size: 8oz.
+              - size: 16oz.
+                price: "5.00"
+              - size: 20oz.
+                price: "6.00"
+          - title: Double Shot Espresso
+            description: ""
+            options:
+              - price: "3.00"
+                size: 8oz.
+      - title: Cold Drinks
+        items:
+          - title: Cold Brew
+            description: ""
+            designation: null
+            options:
+              - price: "5.00"
+                size: 16oz.
+              - size: 24oz.
+                price: "7.00"
+            photo: ""
+            feature: true
+          - title: Nitro Cold Brew
+            description: ""
             designation:
               - GF
               - V
             options:
-              - price: "13.00"
+              - price: "7.00"
+                size: 16oz.
+              - size: 24oz.
+                price: "9.00"
         description: ""
     show_legend: false
   - menu_name: Wines by the Glass
