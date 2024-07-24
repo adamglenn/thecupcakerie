@@ -3,11 +3,11 @@
   <main class="py-5">
     <div class="container my-5">
       <h1 class="text-center flapjack-regular display-1 mb-4">{{ .title }}</h1>
-      <div class="row align-items-center">        
+      <div class="row justify-content-center fs-5">        
         {{ if .featured_image }}
           <div class="col-xl-4">
-            {{ $image = .featured_image }}
-            <img src='{{ ( $image.Fit "960x640 webp Center" ).RelPermalink }}' alt="" />
+            {{ $image = resources.Get .featured_image }}
+            <img class="img-fluid" src='{{ ( $image.Fit "960x640 webp Center" ).RelPermalink }}' alt="" />
           </div>
         {{ end }}
         <div class="col-xl-8">
