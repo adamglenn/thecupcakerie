@@ -68,7 +68,6 @@ menus:
           - title: Mimosa, Coste Petrai Prosecco & Natalie's Orange Juice
             options:
               - price: "12"
-            photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
       - title: Rosé
         items:
           - title: Rose, La Colombe, Provence, France
@@ -78,18 +77,18 @@ menus:
         items:
           - title: Chardonnay, Domaine De Bernier, France
             options:
-              - price: "14.00"
+              - price: "14"
           - title: Sauvignon Blanc, Le Coeur De La Reine, France
             options:
-              - price: "14.00"
+              - price: "14"
           - title: Pinot Gris, King & Cannon, Oregon
             options:
-              - price: "12.00"
+              - price: "12"
       - title: Red
         items:
           - title: Cabernet Sauvignon, Valravn, California
             options:
-              - price: "16.00"
+              - price: "16"
           - title: Pinot Noir, Bourgogne, France
             options:
-              - price: "16.00"
+              - price: "16"
