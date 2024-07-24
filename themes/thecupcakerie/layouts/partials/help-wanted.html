@@ -1,18 +1,24 @@
-<section class="py-5 border-top border-2 border-cc-accent--gold mt-5" aria-labelledby="help-wanted-label">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-3 ms-auto">
-        <div class="mt-n5 mb-n4 ms-xxl-n5">
-          <img loading="lazy" class="mw-100 mt-n5" src="/img/we-re-hiring.webp" alt="We're Hiring sign"/>
+{{ with site.Data.homepage.help }}
+  {{ if eq .show true }}
+    <section class="py-5 border-top border-2 border-cc-accent--gold mt-5" aria-labelledby="help-wanted-label">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 ms-auto">
+            <div class="mt-n5 mb-n4 ms-xxl-n5">
+              <img loading="lazy" class="mw-100 mt-n5" src="/img/we-re-hiring.webp" alt="We're Hiring sign"/>
+            </div>
+          </div>
+          <div class="col-xl-6 me-auto d-flex align-items-center">
+            <div class="ms-xl-4 py-4 mt-xl-n5">
+              <h2 class="flapjack-regular display-3" id="help-wanted-label">{{ .heading }}</h2>
+              <p class="h3 monograph-text-bold text-uppercase mb-3">{{ .job }}</p>
+              <div class="fs-5">
+                {{ .description }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-xl-6 me-auto d-flex align-items-center">
-        <div class="ms-xl-4 py-4 mt-xl-n5">
-          <h2 class="flapjack-regular display-3" id="help-wanted-label">Join Our Team!</h2>
-          <p class="h3 monograph-text-bold text-uppercase mb-3">Line/Prep Cook</p>
-          <p class="fs-5">We’re looking for experienced food truck and restaurant staff to join our team. Contact <a class="text-dark" href="mailto:orders@thecupcakerie.com">orders@thecupcakerie.com</a> to apply.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  {{ end }}
+{{ end }}
