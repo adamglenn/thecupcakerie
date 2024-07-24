@@ -10,6 +10,10 @@
     </header>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 
+    {{ if ne .Page.Title "Home" }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+
     {{ block "main" . }}{{ end }}
 
     {{ partial "footer.html" }}
