@@ -81,6 +81,7 @@ special_event:
       photo_alt_text: Cupcakes
     - photo: /img/daniel-dvorsky-oqt3pafe9cg-unsplash.jpg
       photo_alt_text: Beer bottles
+  show: true
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
