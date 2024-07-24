@@ -72,7 +72,7 @@ menus:
         items:
           - title: Rose, La Colombe, Provence, France
             options:
-              - price: "12.00"
+              - price: "12"
       - title: White
         items:
           - title: Chardonnay, Domaine De Bernier, France
