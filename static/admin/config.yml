@@ -232,6 +232,24 @@ collections:
                     name: "photoAltText"
                     widget: "string"
                     required: false
+          - label: "Help Wanted"
+            name: "help"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Show"
+                name: "show"
+                widget: "boolean"
+                required: false
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "Job Title"
+                name: "job"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "markdown"
       - label: "Menu"
         name: "menu"
         file: "data/food.yml"
