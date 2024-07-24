@@ -4,41 +4,41 @@
     <h2 class="visually-hidden" id="brunch-and-happy-hour-label">Brunch and Happy Hour</h2>
     <div class="row gx-xl-5">
       <div class="col-xl py-xl-5 mb-5 mb-xl-0">
-          {{ with site.Data.homepage.happyHour }}
-            <div class="triple-deco-container h-100">
-              <div class="triple-deco-content h-100">
-                <div class="p-5 h-100" style="background-image: url('/img/cocktail.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
-                  <div class="row">
-                    <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
-                      <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
-                      <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
-                        {{ range .hours }}
-                          <li><span class="px-2 pt-1 mb-1 bg-cc-accent--momosa mx-n2 d-block">{{ .days }} {{ .hours }}</span></li>
-                        {{ end }}
-                      </ul>
-                      <div class="me-xxl-5">
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a class="text-dark text-decoration-none" href="#">Check Out Our Tappas Menu <span class="fas fa-arrow-right"></span></a>              
-                      </div>
+        {{ with site.Data.homepage.happyHour }}
+          <div class="triple-deco-container h-100">
+            <div class="triple-deco-content h-100">
+              <div class="p-5 h-100 position-relative" style="background-image: url('/img/cocktail.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
+                <div class="row">
+                  <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
+                    <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
+                    <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
+                      {{ range .hours }}
+                        <li><span class="px-2 pt-1 mb-1 bg-cc-accent--gold text-white mx-n2 d-block">{{ .days }} {{ .hours }}</span></li>
+                      {{ end }}
+                    </ul>
+                    <div class="me-xxl-5">
+                      <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <a class="text-dark text-decoration-none" href="#">Check Out Our Tappas Menu <span class="fas fa-arrow-right"></span></a>              
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="triple-deco-tall"></div>
-              <div class="triple-deco-mid"></div>
-              <div class="triple-deco-wide"></div>
             </div>
-          {{ end }}
+            <div class="triple-deco-tall"></div>
+            <div class="triple-deco-mid"></div>
+            <div class="triple-deco-wide"></div>
+          </div>
+        {{ end }}
       </div>
       <div class="col-xl py-xl-5 mb-5 mb-xl-0">
         <div class="triple-deco-container h-100">
           <div class="triple-deco-content h-100">
-            <div class="p-5 border h-100" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
+            <div class="p-5 h-100 position-relative" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -2rem;">
               <div class="row">
                 <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
                   <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">Brunch Daily</h3>
                   <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
-                    <li><span class="px-2 pt-1 mb-1 bg-cc-accent--momosa mx-n2 d-block">Tues - Sat 10AM - 4PM</span></li>
+                    <li><span class="px-2 pt-1 mb-1 bg-cc-accent--gold text-white mx-n2 d-block">Tues - Sat 10AM - 4PM</span></li>
                   </ul>
                   <div class="me-xxl-5">
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -56,7 +56,7 @@
       <div class="col-xl py-xl-5">
         <div class="triple-deco-container h-100">
           <div class="triple-deco-content h-100">
-            <div class="p-5 h-100" style="background-image: url('/img/dinner.svg'); background-size: 60%; background-repeat: no-repeat; background-position: top -.5rem right -7rem;">
+            <div class="p-5 h-100 position-relative" style="background-image: url('/img/dinner.svg'); background-size: 60%; background-repeat: no-repeat; background-position: top -.5rem right -7rem;">
               <div class="row">
                 <div class="col-9 col-lg-6 col-xl-12 col-xxl-10">
                   {{ with site.Data.homepage.dinner }}
@@ -64,7 +64,7 @@
                     <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
                     <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                       {{ range $hours }}
-                        <li><span class="px-2 pt-1 mb-1 bg-cc-accent--momosa mx-n2 d-block">{{ .days }} {{ .hours }}</span></li>
+                        <li><span class="px-2 pt-1 mb-1 bg-cc-accent--gold text-white mx-n2 d-block">{{ .days }} {{ .hours }}</span></li>
                       {{ end }}
                     </ul>
                     <div class="me-xxl-5">

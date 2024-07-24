@@ -157,6 +157,10 @@ collections:
             widget: "object"
             collapsed: true
             fields:
+              - label: "Show"
+                name: "show"
+                widget: "boolean"
+                required: false
               - label: "Logo"
                 name: "logo"
                 widget: "image"

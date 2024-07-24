@@ -16,7 +16,7 @@
 
     <script type="application/javascript" src="{{ $bootstrap.Permalink }}"></script>
 
-    {{ if or (eq .Page.Title "Menu") (eq .Page.Title "Drinks") }}
+    {{ if or (eq .Page.Title "Menu") (eq .Page.Title "Drinks") (eq .Page.Title "Catering") }}
       <script>
         window.addEventListener('load', () => {
           let url = window.location.href;

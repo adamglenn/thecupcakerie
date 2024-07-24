@@ -40,6 +40,11 @@
       opacity: 50%;
     }
   }
+  &.cc-pattern-faint {
+    &:before {
+      opacity: 25%;
+    }
+  }
 }
 
 .cc-stripes {
@@ -88,8 +93,15 @@
       opacity: 10%;
     }
   }
+  &.cc-stripes-faint {
+    &:before {
+      opacity: 7%;
+    }
+  }
 }
 
 .nav-pills button.nav-link.active {
-  background-color: $cc-accent--gold;
+  background: $cc-accent--gold;
+  background-color: $cc-accent--gold !important;
+  color: white !important;
 }

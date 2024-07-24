@@ -1,10 +1,20 @@
 {{ define "main" }}
-  <h1 class="flapjack-regular">{{ .Title }}</h1>
+  <main class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-xl-6 mx-xl-auto">
+          <h1 class="display-4 flapjack-regular">{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format ":date_long" }}
+          <div class="mb-4 text-uppercase">
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </div>
 
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+          {{ .Content }}
+          {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
+      </div>
+    </div>
+  </main>
 {{ end }}
