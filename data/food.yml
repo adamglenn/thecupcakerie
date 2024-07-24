@@ -122,4 +122,18 @@ menus:
               - price: "7.00"
             description: White Cheddar, Mozarella, Sourdough
             note: Served with Chips or Seasonal Fruit
+          - title: Pepperoni Panini
+            note: Served with Chips or Seasonal Fruit
+            description: Pepperoni, Provolone, Baguette
+            options:
+              - price: "8.00"
+          - title: Grilled PB & J
+            note: Served with Chips or Seasonal Fruit
+            description: Peanut Butter, Strawberry Jelly, Grilled Sourdough
+            options:
+              - price: "8.00"
+          - title: Slight Cupcakes
+            description: (3) Mini Cupcakes of Your Choice
+            options:
+              - price: "6.00"
     show_legend: true
