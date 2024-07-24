@@ -15,7 +15,6 @@ menus:
                 price: "3.50"
             photo: ""
             feature: true
-            note: Served with Breakfast Potatoes or Fresh Fruit.
           - title: Cafe Au Lait
             description: ""
             options:
@@ -25,7 +24,6 @@ menus:
                 price: "4.50"
               - size: 20oz.
                 price: "5.00"
-            note: Served with Breakfast Potatoes or Fresh Fruit.
           - title: Red Eye
             description: ""
             options:
@@ -51,12 +49,8 @@ menus:
               - size: 24oz.
                 price: "7.00"
             photo: ""
-            feature: true
           - title: Nitro Cold Brew
             description: ""
-            designation:
-              - GF
-              - V
             options:
               - price: "7.00"
                 size: 16oz.
@@ -74,7 +68,6 @@ menus:
           - title: Mimosa, Coste Petrai Prosecco & Natalie's Orange Juice
             options:
               - price: "12"
-            feature: true
             photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
       - title: Rosé
         items:

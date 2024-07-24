@@ -367,10 +367,6 @@ collections:
                       - label: "Title"
                         name: "title"
                         widget: "string"
-                      - label: "Feature on Home Page"
-                        name: "feature"
-                        widget: "boolean"
-                        required: false
                       - label: "Description"
                         name: "description"
                         widget: "text"
