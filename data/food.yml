@@ -96,23 +96,27 @@ menus:
     show_legend: true
   - menu_name: Desserts
     menu_sections:
-      - title: Desserts
+      - title: ""
         items:
           - title: Romney Peach Stack Cake
             options:
               - price: "11.00"
+            description: Buckwheat Shortbread, Bourbon Peach Butter, Maple Candy
           - title: Quantum Affogato
             options:
               - price: "12.00"
+            description: Almond Ice Cream, Espresso, Cookie
           - title: Sorbet
             designation:
               - GF
               - V
             options:
               - price: "9.00"
+            description: Seasonal Fruit Sorbet
           - title: Pot De Creme
             options:
               - price: "10.00"
+            description: Vanilla Cream, Strawberry, Buckwheat Shortbread Crumble
     show_legend: true
   - menu_name: Kids Menu
     menu_sections:
