@@ -276,6 +276,12 @@ collections:
                 name: "show_legend"
                 widget: "boolean"
                 required: false
+              - label: "Postscript"
+                name: "postscript"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Line", name: "line", widget: "string", required: false }
               - label: "Menu Sections"
                 name: "menu_sections"
                 widget: "list"

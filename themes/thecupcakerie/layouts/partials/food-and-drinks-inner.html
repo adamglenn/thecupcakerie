@@ -94,6 +94,11 @@
                       </li>
                     {{ end }}
                   </ul>
+                  {{ if .postscript }}
+                    {{ range .postscript }}
+                      {{ .line }}<br>
+                    {{ end }}
+                  {{ end }}
                 </div>
                 <div class="triple-deco-tall"></div>
                 <div class="triple-deco-mid"></div>
