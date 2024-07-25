@@ -27,12 +27,13 @@ menus:
               - price: "13.00"
             note: Served with Hash Browns or Fresh Fruit
           - title: Romney Peach Stack Cakes
-            description: Buckwheat cakes, choice of bacon or sausage, roasted peaches, cinnamon,
-              bourbon maple, smoked butter
+            description: Buckwheat cakes, choice of bacon or sausage, roasted peaches,
+              cinnamon, bourbon maple, smoked butter
             options:
               - price: "14.00"
           - title: Pepperoni Hash
-            description: Hash Browns, Fried Pepperoni, Banana Peppers, Pickled Onion, Parmesan, 2 Fried Eggs, Hollandaise
+            description: Hash Browns, Fried Pepperoni, Banana Peppers, Pickled Onion,
+              Parmesan, 2 Fried Eggs, Hollandaise
             options:
               - price: "13.00"
           - title: Parfait
@@ -83,7 +84,7 @@ menus:
           - title: Soup and Half Sandwich
             description: Soup of the Day, Chef’s Choice Half Sandwich
             options:
-              - price: "MP"
+              - price: MP
           - title: Peach Caprese
             description: Fresh Peaches, Burrata Cheese, JQ Dickinson Salt
             designation:
@@ -92,7 +93,8 @@ menus:
             options:
               - price: "16.00"
           - title: Grilled Caesar
-            description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes, Shaved Parmesan, Croutons, Creamy Caesar
+            description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
+              Shaved Parmesan, Croutons, Creamy Caesar
             options:
               - price: "7.00"
                 option: Half
@@ -101,7 +103,8 @@ menus:
             photo: ""
             feature: true
           - title: Harvest Cobb
-            description: Romaine and Arugula Mix, Chicken, Bacon, Bleu Cheese, Gala Apples, Craisins, Walnuts, Maple Basalmic Vinaigrette
+            description: Romaine and Arugula Mix, Chicken, Bacon, Bleu Cheese, Gala Apples,
+              Craisins, Walnuts, Maple Basalmic Vinaigrette
             designation:
               - GF
             options:
@@ -110,10 +113,15 @@ menus:
               - price: "16.00"
                 option: Full
           - title: The Greek (One Size)
-            description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red Onions & Cucumbers, Oregano, Feta, Kalamata Olives
+            description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red
+              Onions & Cucumbers, Oregano, Feta, Kalamata Olives
             designation:
               - GF
               - V
+        postscript:
+          - line: Add Chicken 6 | Add Steak 8 | Add Salmon 9
+          - line: "Dressings: Maple Basalmic Vinaigrette, Sundried Tomato Italian, Creamy
+              Caesar, Buttermilk Ranch, Oil & Vinegar"
       - title: Handhelds
         description: Served with chips or seasonal fruit.
         items:
