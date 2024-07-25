@@ -93,6 +93,7 @@ menus:
             options:
               - price: "16.00"
             photo: /img/peach-caprese.webp
+            feature: true
           - title: Grilled Caesar
             description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
               Shaved Parmesan, Croutons, Creamy Caesar
