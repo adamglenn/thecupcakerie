@@ -214,6 +214,7 @@ menus:
               - GF
             options:
               - price: "16.00"
+            photo: /img/peach-caprese.webp
           - title: Grilled Caesar
             description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
               Shaved Parmesan, Croutons, Creamy Caesar
@@ -236,6 +237,7 @@ menus:
                 option: Half
               - price: "16.00"
                 option: Full
+            photo: /img/harvest-cobb.webp
           - title: The Greek (One Size)
             description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red
               Onions & Cucumbers, Oregano, Feta, Kalamata Olives
