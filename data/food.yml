@@ -335,6 +335,8 @@ menus:
             options:
               - price: "9.00"
             description: Seasonal Fruit Sorbet
+            feature: true
+            photo: /img/sandie-clarke-fdbbeotvrko-unsplash.jpg
           - title: Pot De Creme
             options:
               - price: "10.00"
