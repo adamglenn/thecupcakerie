@@ -1,3 +1,6 @@
+title: Home
+meta_description: The Cupcakerie
+featured_image: /img/olivia-oliver-design-ju7d6nx1z9i-unsplash.jpg
 hero:
   align: Left
   heading: Mornings are made for brunch and evenings are meant for wine.
@@ -21,6 +24,12 @@ hours:
   special_hours:
     message: We will be closed on Thursday, July 4th.
     show: true
+  visit_us:
+    heading: Come Visit Us
+  get_ahold_of_us:
+    heading: Get Ahold of Us
+  catch_us_on_the_road:
+    heading: Catch Us on the Road
 happyHour:
   heading: Join Us for Happy Hour
   hours:
