@@ -1,14 +1,14 @@
-@font-face {
-	font-family: 'Bosten-Regular';
-	src: url('/fonts/bosten/bosten-regular.eot');
-	src: url('/fonts/bosten/bosten-regular.eot?#iefix') format('embedded-opentype'),
-             url('/fonts/bosten/bosten-regular.woff2') format('woff2'),
-	     url('/fonts/bosten/bosten-regular.woff') format('woff'),
-	     url('/fonts/bosten/bosten-regular.ttf') format('truetype'),
-	     url('/fonts/bosten/bosten-regular.svg#youworkforthem') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: 'Bosten-Regular';
+// 	src: url('/fonts/bosten/bosten-regular.eot');
+// 	src: url('/fonts/bosten/bosten-regular.eot?#iefix') format('embedded-opentype'),
+//              url('/fonts/bosten/bosten-regular.woff2') format('woff2'),
+// 	     url('/fonts/bosten/bosten-regular.woff') format('woff'),
+// 	     url('/fonts/bosten/bosten-regular.ttf') format('truetype'),
+// 	     url('/fonts/bosten/bosten-regular.svg#youworkforthem') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
 
 @font-face {
 	font-family: 'Monograf-Text-Bold';
@@ -46,9 +46,9 @@
 	font-style: normal;
 }
 
-.bosten-regular {
-  font-family: $bosten-regular !important;
-}
+// .bosten-regular {
+//   font-family: $bosten-regular !important;
+// }
 
 .flapjack-regular {
   font-family: $flapjack-regular !important;
