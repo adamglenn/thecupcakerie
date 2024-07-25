@@ -133,12 +133,13 @@ menus:
             options:
               - price: "14.00"
           - title: B.L.T.
-            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted
-              Pepper Aoli, Wheatberry Bread
+            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted Pepper Aoli,
+              Wheatberry Bread
             options:
               - price: "13.00"
           - title: The Hot Italian
-            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
+            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana
+              Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
             options:
               - price: "16.00"
           - title: The Chef’s Cubano
@@ -146,11 +147,13 @@ menus:
             options:
               - price: "16.00"
           - title: The Dagwood Club
-            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce, Tomato, Red Onion, Garlic Aoli, Sourdough
+            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce,
+              Tomato, Red Onion, Garlic Aoli, Sourdough
             options:
               - price: "15.00"
           - title: The Mon Mushroom Melt
-            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew Peppers, Sourdough
+            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew
+              Peppers, Sourdough
             designation:
               - V
             options:
@@ -178,7 +181,7 @@ menus:
           - title: Friday
             description: Burger Night
             options:
-              - price: "MP"
+              - price: MP
       - title: Charcuterie Boards
         description: Mixed Nuts, House Pickles, Dates, Toasted Sourdough
         items:
@@ -252,13 +255,15 @@ menus:
             options:
               - price: "14.00"
           - title: Spinach and Artichoke Dip
-            description: Sauteed Spinach, Artichoke Hearts, White Cheddar, Ranch, Dill, Toasted Flatbread
+            description: Sauteed Spinach, Artichoke Hearts, White Cheddar, Ranch, Dill,
+              Toasted Flatbread
             options:
               - price: "15.00"
       - title: Flatbreads
         items:
           - title: The Mane
-            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew Peppers
+            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew
+              Peppers
             designation:
               - V
             options:
@@ -280,12 +285,15 @@ menus:
             options:
               - price: "14.00"
           - title: B.L.T.
-            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted
-              Pepper Aoli, Wheatberry Bread
+            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted Pepper Aoli,
+              Wheatberry Bread
             options:
               - price: "13.00"
+            photo: /img/hybrid-storytellers-2q_kfiduigc-unsplash.jpg
+            feature: true
           - title: The Hot Italian
-            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
+            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana
+              Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
             options:
               - price: "16.00"
           - title: The Chef’s Cubano
@@ -293,11 +301,13 @@ menus:
             options:
               - price: "16.00"
           - title: The Dagwood Club
-            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce, Tomato, Red Onion, Garlic Aoli, Sourdough
+            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce,
+              Tomato, Red Onion, Garlic Aoli, Sourdough
             options:
               - price: "15.00"
           - title: The Mon Mushroom Melt
-            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew Peppers, Sourdough
+            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew
+              Peppers, Sourdough
             designation:
               - V
             options:
