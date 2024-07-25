@@ -17,6 +17,9 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Hero"
             name: "hero"
             widget: object
@@ -261,6 +264,9 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"
@@ -345,6 +351,9 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"
@@ -408,6 +417,9 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"
@@ -474,6 +486,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown" }
   - name: 'blog'
     label: 'Blog'
@@ -485,7 +498,9 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Featured Image', name: 'featured_image', widget: 'image', required: false }
+      - { label: 'Featured Image Alt', name: 'featured_image_alt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: "Settings"
     name: "settings"
