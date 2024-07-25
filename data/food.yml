@@ -303,6 +303,9 @@ menus:
             options:
               - price: "14.00"
     show_legend: true
+    postscript:
+      - line: "Farms: Hawthorne Valley Farms, Mon Valley Mushrooms, JQ Dickinson Salt
+          Works, Mal’s Fresh Produce, Quantum Bean, Dawson Orchards Inc."
   - menu_name: Desserts
     menu_sections:
       - title: ""
