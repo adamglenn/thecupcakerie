@@ -1,0 +1,50 @@
+.cc-logo-switch {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: 55px;
+  width: 200px;
+}
+
+.home .navbar:before {
+  background-color: $cc-strawberry;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: all .3s;
+  z-index: -1;
+}
+
+.home .navbar:not(.navbar-dark):before {
+  transform: translateY(0);
+  border-bottom: 2px solid $cc-accent--gold;
+  .navbar-collapse .nav-link {
+    color: $dark !important;
+  }
+}
+
+.home .navbar-dark a {
+  color: white !important;
+}
+
+.home .navbar:not(.navbar-dark) {
+  .navbar-collapse a {
+    color: $dark !important;
+  }
+}
+
+.home .navbar .navbar-nav .nav-link {
+  transition: color .1s;
+}
+
+.navbar.navbar-dark .cc-logo-switch {
+  background-image: url(/cupcakerie-logo-placeholder-white.svg)
+}
+
+.navbar:not(.navbar-dark) .cc-logo-switch {
+  background-image: url(/cupcakerie-placeholder.svg)
+}

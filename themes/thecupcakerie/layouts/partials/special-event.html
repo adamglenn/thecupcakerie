@@ -27,15 +27,15 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
-            <div class="py-5 w-100 h-100 d-flex align-items-center">
+          <div class="col-xl-4 pb-5 pb-xl-0">
+            <div class="py-5 w-100 h-100 d-flex align-items-center mt-n5 mt-xl-0">
               <div class="w-100 pt-5">
                 {{ $colors := slice "momosa" "pink" "mojito" }}
                 {{ $shift := slice "x" "ms-auto" "ms-5" }}
                 {{ range $i, $e := .photos }}
                   {{ $photo := resources.Get $e.photo }}
                   <div class="row {{ if ne $i 0 }}mt-n5{{ end }}">
-                    <div class="col-xl-7 {{ index $shift $i }}">
+                    <div class="col-7 {{ index $shift $i }}">
                       <div class="ratio ratio-1x1 mt-n5 border border-5 border-cc-accent--{{ index $colors $i }}">
                         <img class="img-fluid" loading="lazy" src="{{ ( $photo.Fill "900x900 webp Center" ).RelPermalink }}" alt="{{ .photo_alt_text }}" />
                       </div>
