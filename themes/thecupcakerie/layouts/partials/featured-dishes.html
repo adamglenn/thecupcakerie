@@ -27,13 +27,17 @@
         <div class="col-xl-11">
           <div class="row mx-0 px-0">
             {{ $itemCount = 0 }}
+            {{ $filters := slice
+              (images.Contrast 20)
+              (images.Saturation 50)
+            }}
             {{ range . }}
               {{ range .menu_sections }}
                 {{ range .items }}
                   {{ if and (eq .feature true) (.photo) }}
                     {{ $itemCount = add $itemCount 1 }}
                     {{ if lt $itemCount 4 }}
-                    {{ $image := resources.Get .photo }}
+                      {{ $image := resources.Get .photo }}
                       <div class="{{ $labelCols }} mx-0 px-0">
                         <div class="ratio ratio-1x1" style="background-image: url('{{ ( $image.Fill "960x960 webp Center" ).RelPermalink }}'); background-size: cover;">
                           <div class="d-flex justify-content-end">
