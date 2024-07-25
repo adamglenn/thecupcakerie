@@ -17,6 +17,10 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Hero"
             name: "hero"
             widget: object
@@ -261,6 +265,7 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
@@ -348,6 +353,10 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"
@@ -386,15 +395,6 @@ collections:
                         name: "description"
                         widget: "text"
                         required: false
-                      # - label: "Designation"
-                      #   name: "designation"
-                      #   widget: "select"
-                      #   multiple: true
-                      #   required: false
-                      #   options:
-                      #     - { label: "Gluten Free", value: "GF" }
-                      #     - { label: "Vegetarian", value: "V" }
-                      #     - { label: "Vegan", value: "VE" }
                       - label: "Options"
                         name: "options"
                         widget: "list"
@@ -411,6 +411,10 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"
@@ -550,17 +554,3 @@ collections:
             fields:
               - { label: "Show", name: "show", widget: "boolean", required: false }
               - { label: "Message", name: "message", widget: "text" }
-  # - label: "Components"
-  #   name: "components"
-  #   fields:
-  #     - label: "Featured Products"
-  #       name: "featured_products"
-  #       fields:
-  #         - label: "Heading"
-  #           name: "heading"
-  #           widget: "string"
-  #         - label: "Body"
-  #           name: "body"
-  #           widget: "markdown"
-  #     - label: "Featured Dishes"
-  #       name: "featured_dishes"
