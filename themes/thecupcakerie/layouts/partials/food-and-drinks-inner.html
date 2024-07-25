@@ -83,6 +83,8 @@
                                   ${{ .price }}
                                   {{ if .size }}
                                     / {{ .size }}
+                                  {{ else if .option }}
+                                    / {{ .option }}
                                   {{ end }}
                                 </li>
                               {{ end }}
