@@ -118,6 +118,8 @@ menus:
             designation:
               - GF
               - V
+            options:
+              - price: "15.00"
         postscript:
           - line: Add Chicken 6 | Add Steak 8 | Add Salmon 9
           - line: "Dressings: Maple Basalmic Vinaigrette, Sundried Tomato Italian, Creamy
@@ -159,30 +161,147 @@ menus:
           Works, Mal’s Fresh Produce, Quantum Bean, Dawson Orchards Inc."
   - menu_name: Happy Hour
     menu_sections:
-      - title: Sandwiches
-        description: "Served all day. Bread choices include: brioche roll, sourdough,
-          house-made focaccia, baguette, or gluten-free bread."
+      - title: Weekly Slights
         items:
-          - title: Rainbow Veggie Wrap
-            description: Black bean hummus, shredded carrots, sprouts, avocado mash,
-              cucumbers, greens, mango salsa, and vegan green goddess dressing
-              on a spinach wrap.
+          - title: Tuesday
+            description: 2 Chef’s Tacos
+            options:
+              - price: "12.00"
+          - title: Wednesday
+            description: 3 Frose Flight, 3 Mini Cupcake Flight
+            options:
+              - price: "25.00"
+          - title: Thursday
+            description: 3 Wine Flight, Chef’s Choice Charcuterie
+            options:
+              - price: "38.00"
+          - title: Friday
+            description: Burger Night
+            options:
+              - price: "MP"
+      - title: Charcuterie Boards
+        description: Mixed Nuts, House Pickles, Dates, Toasted Sourdough
+        items:
+          - title: 2 Meats, 2 Cheeses
+            options:
+              - price: "18.00"
+          - title: 3 Meats, 3 Cheeses
+            options:
+              - price: "24.00"
+          - title: Add Extra Bread
+            options:
+              - price: "6.00"
+      - title: Soups & Salads
+        items:
+          - title: Weekly Feature Soup
+            options:
+              - price: "4.00"
+                option: Cup
+              - price: "6.00"
+                option: Bowl
+          - title: Soup and Half Sandwich
+            description: Soup of the Day, Chef’s Choice Half Sandwich
+            options:
+              - price: MP
+          - title: Peach Caprese
+            description: Fresh Peaches, Burrata Cheese, JQ Dickinson Salt
             designation:
-              - VE
+              - GF
             options:
-              - price: "14"
-          - title: Lean Green Turkey Wrap
-            description: Lemony chickpea salad, roasted turkey breast, cucumber, avocado
-              mash, arugula, and green goddess dressing on a spinach wrap.
+              - price: "16.00"
+          - title: Grilled Caesar
+            description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
+              Shaved Parmesan, Croutons, Creamy Caesar
+            designation:
+              - V
             options:
-              - price: "15"
+              - price: "7.00"
+                option: Half
+              - price: "14.00"
+                option: Full
+            photo: ""
             feature: true
-            photo: /img/eaters-collective-gg5-k-mjwuq-unsplash.jpg
-      - title: Test Section
-        items:
-          - title: Test Item
+          - title: Harvest Cobb
+            description: Romaine and Arugula Mix, Chicken, Bacon, Bleu Cheese, Gala Apples,
+              Craisins, Walnuts, Maple Basalmic Vinaigrette
+            designation:
+              - GF
             options:
-              - price: "11.00"
+              - price: "8.00"
+                option: Half
+              - price: "16.00"
+                option: Full
+          - title: The Greek (One Size)
+            description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red
+              Onions & Cucumbers, Oregano, Feta, Kalamata Olives
+            designation:
+              - GF
+              - V
+            options:
+              - price: "15.00"
+      - title: Bites
+        items:
+          - title: Stuffed Peppadew Peppers
+            description: Goat Cheese, Applewood Smoked Bacon, Arugula, Peppadew Pepper Jam
+            designation:
+              - GF
+            options:
+              - price: "8.00"
+          - title: Pork Belly Steam Buns
+            description: Hoisin, Pickled Cucumbers, Scallions, Sesame Seeds, Siracha
+            options:
+              - price: "14.00"
+          - title: Spinach and Artichoke Dip
+            description: Sauteed Spinach, Artichoke Hearts, White Cheddar, Ranch, Dill, Toasted Flatbread
+            options:
+              - price: "15.00"
+      - title: Flatbreads
+        items:
+          - title: The Mane
+            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew Peppers
+            designation:
+              - V
+            options:
+              - price: "14.00"
+          - title: The Classic
+            description: Pepperoni, Mozzarella & White Cheddar, Marinara
+            options:
+              - price: "13.00"
+          - title: The Buffalo
+            description: Oven Roasted Chicken, Siracha Buffalo, Bleu Cheese, Red Onions
+            options:
+              - price: "14.00"
+      - title: Handhelds
+        description: Served with chips or seasonal fruit.
+        items:
+          - title: B.E.L.T.
+            description: Applewood Smoked Bacon, Over Medium Egg, Lettuce, Tomato, Roasted
+              Pepper Aoli, Wheatberry Bread
+            options:
+              - price: "14.00"
+          - title: B.L.T.
+            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted
+              Pepper Aoli, Wheatberry Bread
+            options:
+              - price: "13.00"
+          - title: The Hot Italian
+            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
+            options:
+              - price: "16.00"
+          - title: The Chef’s Cubano
+            description: Smoked Ham, Pork Belly, House Pickles, Honey Dijon, Swiss, Baguette
+            options:
+              - price: "16.00"
+          - title: The Dagwood Club
+            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce, Tomato, Red Onion, Garlic Aoli, Sourdough
+            options:
+              - price: "15.00"
+          - title: The Mon Mushroom Melt
+            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew Peppers, Sourdough
+            designation:
+              - V
+            options:
+              - price: "14.00"
     show_legend: true
   - menu_name: Desserts
     menu_sections:

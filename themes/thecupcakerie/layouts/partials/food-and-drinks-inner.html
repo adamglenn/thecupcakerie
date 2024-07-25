@@ -79,8 +79,9 @@
                           <div class="col-4 text-end">
                             <ul class="list-unstyled monograph-text-bold mb-0">
                               {{ range .options }}
+                                {{ $price := .price | urlize }}
                                 <li>
-                                  ${{ .price }}
+                                  {{ if ne $price "mp" }}${{ end }}{{ .price }}
                                   {{ if .size }}
                                     / {{ .size }}
                                   {{ else if .option }}
