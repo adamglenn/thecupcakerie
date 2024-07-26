@@ -2,7 +2,7 @@ title: Home
 meta_description: The Cupcakerie
 featured_image: /img/olivia-oliver-design-ju7d6nx1z9i-unsplash.jpg
 hero:
-  heading: Mornings are made for brunch and evenings are meant for wine.
+  heading: Mornings are made for brunch and evenings are meant for wine. Test.
   lede: "Nestled in the heart of Morgantown, West Virginia, our charming cafe
     offers a unique experience that blends the best of both worlds: delightful
     brunch offerings and a curated selection of fine wines."
@@ -86,11 +86,11 @@ special_event:
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
-  lede: An exceptional culinary experience. We
-    pride ourselves on delivering exquisite, tailor-made menus that delight your
-    taste buds and impress your guests. From elegant weddings to corporate
-    events, our dedicated team ensures every detail is perfect, combining fresh,
-    locally-sourced ingredients with impeccable service.
+  lede: An exceptional culinary experience. We pride ourselves on delivering
+    exquisite, tailor-made menus that delight your taste buds and impress your
+    guests. From elegant weddings to corporate events, our dedicated team
+    ensures every detail is perfect, combining fresh, locally-sourced
+    ingredients with impeccable service.
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
     - button_text: Check Out Our Catering Menu
