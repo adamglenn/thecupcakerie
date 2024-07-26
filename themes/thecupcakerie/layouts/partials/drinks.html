@@ -1,9 +1,8 @@
-{{ $pageTitle := .Page.Title }}
-{{ with site.Data.drinks.menus }}
+{{ with site.Data.drinks }}
   <main class="py-5">
     <div class="container mb-5">
-      <h1 class="text-center flapjack-regular display-1 mb-4">{{ $pageTitle }}</h1>
-      {{ partial "food-and-drinks-inner.html" . }}
+      <h1 class="text-center flapjack-regular display-1 mb-4">{{ .title }}</h1>
+      {{ partial "food-and-drinks-inner.html" .menus }}
     </div>
   </main>
 {{ end }}
