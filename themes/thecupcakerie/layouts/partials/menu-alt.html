@@ -1,5 +1,5 @@
 {{ $pageTitle := .Page.Title }}
-<nav class='navbar navbar-expand-lg navbar-dark {{ if eq .Page.Title "Home" }}fixed-top{{ else }}sticky-top bg-cc-strawberry border-bottom border-2 border-cc-accent--gold{{ end }}'>
+<nav class='navbar navbar-expand-lg {{ if eq .Page.Title "Home" }}navbar-dark fixed-top{{ else }}sticky-top bg-cc-strawberry border-bottom border-2 border-cc-accent--gold{{ end }}'>
   <div class="container d-flex justify-content-center">
     {{ if eq .Page.Title "Home" }}
       <a class="navbar-brand py-3 mt-n1" href="/"><div class="cc-logo-switch"></div><span class="visually-hidden">{{ site.Title }}</span></a>
@@ -7,7 +7,7 @@
       <a class="navbar-brand py-3 mt-n1" href="/"><img loading="lazy" src="/cupcakerie-placeholder.svg" width="200px" alt="The Cupcakerie Logo" /><span class="visually-hidden">{{ site.Title }}</span></a>
     {{ end }}
     <button class="navbar-toggler w-100 flapjack-regular py-2 mb-2 text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> Menu
+      <span class="fa-regular fa-bars"></span> Menu
     </button>
     <div class="w-100">
       <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarSupportedContent">

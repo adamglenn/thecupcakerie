@@ -37,15 +37,19 @@
   }
 }
 
-// .home .navbar:not(.collapsed) .navbar-collapse {
-//   background-color: $cc-strawberry !important;
-// }
+.home .navbar .navbar-collapse.collapsing, .home .navbar .navbar-collapse.show {
+  padding: 0.75rem !important;
+}
+
+.home .navbar.navbar-dark .navbar-collapse.collapsing, .home .navbar.navbar-dark .navbar-collapse.show {
+  background-color: $dark !important;
+}
 
 .home .navbar .navbar-nav .nav-link {
   transition: color .1s;
 }
 
-.home .navbar:not(.navbar-dark) .navbar-toggler {
+.navbar:not(.navbar-dark) .navbar-toggler, .home .navbar:not(.navbar-dark) .navbar-toggler {
   border-color: $dark !important;
   color: $dark !important;
 }
