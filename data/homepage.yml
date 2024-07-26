@@ -113,29 +113,29 @@ products:
     treats means there's something for everyone.
   products:
     - title: Beer
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Discover our diverse beer selection! Enjoy craft brews, local
+        favorites, and seasonal specials. Cheers to great taste!
       photoAltText: Pint of beer
       photo: /img/giovanna-gomes-_8kv86shhpo-unsplash.jpg
     - title: Wine
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Indulge in our exquisite wine selection, featuring fine reds,
+        whites, and sparkling options. Cheers to elegance!
       photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
     - title: Cigars
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Savor the finest cigars, where quality and luxury meet. Enjoy a
+        premium selection for true connoisseurs.
       photo: /img/rich-smith-ze3k2vwynrk-unsplash-1-.jpg
     - title: Gift Baskets
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Delight with our curated gift baskets, featuring premium wines,
+        gourmet treats, and elegant packaging. Perfect gifts!
       photo: /img/nurlan-isazade-b5i23qpt1sa-unsplash-1-.jpg
     - title: Coffee
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Experience the best brews with our diverse coffee selection, from
+        rich espressos to smooth lattes. Sip joyfully!
       photo: /img/brooke-cagle-x4rjg4ani8o-unsplash.jpg
     - title: Desserts
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
+      description: Indulge in sweet delights, where every dessert is a masterpiece.
+        From cakes to pastries, treat yourself!
       photo: /img/jonathan-carroll-_814rstroas-unsplash.jpg
 help:
   heading: Join Our Team!
