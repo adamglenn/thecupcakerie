@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ $altText := "" }}
+  <main class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-xl-6 mx-xl-auto">
+          <h1 class="display-4 flapjack-regular">{{ .Title }}</h1>
+
+          {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := .Date | time.Format ":date_long" }}
+          <div class="mb-4 text-uppercase">
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          </div>
+          {{ if .Params.featured_image_alt }}
+            {{ $altText = .Params.featured_image_alt }}
+          {{ end }}
+          {{ with .Params.featured_image }}
+            {{ $image := resources.Get . }}
+            <div class="mx-xl-n5 my-5">
+              <img class="img-fluid" src='{{ ( $image.Fit "960x640 webp Center" ).RelPermalink }}' alt="{{ with $altText }}{{ . }}{{ end }}" />
+            </div>
+          {{ end }}
+          {{ .Content }}
+          {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
+      </div>
+    </div>
+  </main>
+{{ end }}
