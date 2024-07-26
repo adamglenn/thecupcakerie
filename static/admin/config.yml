@@ -478,6 +478,17 @@ collections:
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown" }
+      - label: "Blog"
+        name: "blog"
+        file: "data/blog.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
+          - { label: "Intro", name: "intro", widget: "markdown", hint: "Create blog articles from the Collections panel under Blog. This is just for the intro copy of the Blog landing page.", required: false }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
