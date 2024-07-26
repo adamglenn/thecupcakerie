@@ -3,6 +3,8 @@ title: Welcome to the Cupcakerie’s New Digital Home!
 date: 2024-07-26T00:20:00.000Z
 description: We are thrilled to announce the launch of our brand-new website,
   designed to bring the heart and soul of The Cupcakerie to the digital world.
+featured_image: /img/surfing.jpg
+featured_image_alt: Person visiting The Cupcakerie website
 ---
 We are thrilled to announce the launch of our brand-new website, designed to bring the heart and soul of The Cupcakerie to the digital world. Our goal is to create an online space that reflects our commitment to quality, community, and, of course, delicious food and drinks.
 
