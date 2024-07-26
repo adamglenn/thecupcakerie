@@ -17,6 +17,7 @@ site_menu:
 address:
   - line: 3200 Collins Ferry Road
   - line: Morgantown, WV 26505
+map_link: https://www.google.com/maps/place/The+Cupcakerie+Caf%C3%A9+%26+Fros%C3%A9/@39.6579247,-79.9716824,16z/data=!4m15!1m8!3m7!1s0x88357ba5b1d090e7:0x20b419add81e3125!2s3200+Collins+Ferry+Rd,+Morgantown,+WV+26505!3b1!8m2!3d39.6579247!4d-79.9716824!16s%2Fg%2F11bw3x_vj9!3m5!1s0x88357b7cbcc555a9:0x47ebfa1b6fa68bf4!8m2!3d39.6579322!4d-79.9716965!16s%2Fg%2F1v_s6js6?entry=ttu
 phone: (304) 212-5464
 email: orders@thecupcakerie.com
 social_media_accounts:
@@ -31,3 +32,9 @@ social_media_accounts:
     username: thecupcakeriewv
     url: https://www.tiktok.com/@thecupcakeriewv
     icon_code: tiktok
+hours:
+  - hours_line: Sun. - Mon. 10AM - 2PM
+  - hours_line: Tues. - Sat. 10AM - 7PM
+special_hours:
+  show: true
+  message: We will be closed on Thursday, July 4th.
