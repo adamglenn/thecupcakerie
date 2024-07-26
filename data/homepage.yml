@@ -37,8 +37,9 @@ happyHour:
       hours: 10AM - 4PM
     - days: Sun. - Mon.
       hours: 10AM - 2PM
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: "Looking for the perfect spot to unwind after a long day? Look no
+    further. Our Happy Hour promises to make your evenings brighter and your
+    taste buds happier! "
   cta:
     buttonText: View Happy Hour Menu
     link: /menu/?menu=happy-hour
@@ -52,15 +53,17 @@ brunch:
   cta:
     buttonText: View Brunch Menu
     link: /menu/?menu=brunch
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Indulge in the ultimate brunch experience! Join us for delightful
+    dishes, refreshing mimosas, and a cozy atmosphere. Our menu has something
+    for everyone.
 dinner:
   heading: Dinner Seating
   hours:
     - days: Tues - Sat
       hours: 4PM - 7PM
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Join us for exquisite dishes crafted with fresh, local ingredients.
+    Enjoy our cozy ambiance, fine wines, and delectable desserts. Perfect for a
+    romantic date or a casual night out.
   cta:
     buttonText: View Dinner Menu
     link: /menu/?menu=happy-hour
