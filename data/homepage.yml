@@ -86,7 +86,7 @@ special_event:
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
-  lede: Indulge in the exceptional culinary experience with The Cupcakerie! We
+  lede: An exceptional culinary experience. We
     pride ourselves on delivering exquisite, tailor-made menus that delight your
     taste buds and impress your guests. From elegant weddings to corporate
     events, our dedicated team ensures every detail is perfect, combining fresh,
@@ -97,7 +97,7 @@ catering:
       url: /menu/?menu=Catering
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
 products:
-  title: Indulge in Our Delicious Selection.
+  title: Check Out Our Delicious Selection.
   description: Our diverse selection of artisanal coffees, teas, and freshly baked
     treats means there's something for everyone.
   products:
