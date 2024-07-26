@@ -37,8 +37,22 @@
   }
 }
 
+// .home .navbar:not(.collapsed) .navbar-collapse {
+//   background-color: $cc-strawberry !important;
+// }
+
 .home .navbar .navbar-nav .nav-link {
   transition: color .1s;
+}
+
+.home .navbar:not(.navbar-dark) .navbar-toggler {
+  border-color: $dark !important;
+  color: $dark !important;
+}
+
+.home .navbar .navbar-toggler {
+  border-color: white !important;
+  color: white !important;
 }
 
 .navbar.navbar-dark .cc-logo-switch {
