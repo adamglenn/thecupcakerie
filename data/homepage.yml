@@ -2,7 +2,6 @@ title: Home
 meta_description: The Cupcakerie
 featured_image: /img/olivia-oliver-design-ju7d6nx1z9i-unsplash.jpg
 hero:
-  align: Left
   heading: Mornings are made for brunch and evenings are meant for wine.
   lede: "Nestled in the heart of Morgantown, West Virginia, our charming cafe
     offers a unique experience that blends the best of both worlds: delightful
@@ -14,16 +13,6 @@ hero:
   featured_image: /img/micheile-henderson-whcnjfhgiok-unsplash.jpg
 hours:
   title: Come Visit Us
-  address:
-    - address_line: 3200 Collins Ferry Road
-    - address_line: Morgantown, WV 26505
-  map_link: https://maps.app.goo.gl/fHBWJHnJsy88TUYS8
-  hours:
-    - hours_line: Sun. - Mon. 10AM - 2PM
-    - hours_line: Tues. - Sat. 10AM - 7PM
-  special_hours:
-    message: We will be closed on Thursday, July 4th.
-    show: true
   visit_us:
     heading: Come Visit Us
   get_ahold_of_us:

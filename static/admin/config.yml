@@ -26,11 +26,6 @@ collections:
             widget: object
             collapsed: true
             fields:
-              - label: "Align"
-                name: "align"
-                widget: "select"
-                options: ["Left", "Right"]
-                default: ["Right"]
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'text' }
               - { label: "Background Image", name: "featured_image", widget: "image" }

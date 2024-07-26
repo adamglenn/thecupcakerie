@@ -5,13 +5,13 @@
     </div>
     <div class="container position-relative py-5 small">
       <div class="row">
-        <div class="col-xl-3 mb-5 mb-xl-0">
+        <div class="col-6 col-md-4 col-xl-3 mb-5 mb-xl-0">
           <a href="/"><img loading="lazy" src="/cupcakerie-logo-placeholder-white.svg" class="mb-4" alt="The Cupcakerie Logo (light color version)" /></a>
           <p>Copyright &copy; The Cupcakerie {{ now.Year }}. All rights reserved.</p>
         </div>
         <div class="col-xl-7 ms-auto">
           <div class="row">
-            <div class="col-xl mb-5 mb-xl-0">
+            <div class="col-md mb-5 mb-xl-0">
               <h3 class="flapjack-regular text-cc-strawberry">Contact</h3>
               <address class="ms-4 position-relative mb-2">
                 <span class="fas fa-map-marker-alt text-cc-accent--gold position-absolute ms-n4"></span>
@@ -19,12 +19,25 @@
                   <span class="d-block">{{ .line }}</span>
                 {{ end }}                
               </address>
+              {{ if .map_link }}
+                <p class="ms-4 mt-n2"><a class="text-white" href="{{ .map_link }}">View on Map</a></p>
+              {{ end }}
               <ul class="list-unstyled">
                 <li class="ms-4 mb-2"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ .phone }}">{{ .phone }}</a></li>
                 <li class="ms-4"><span class="fas fa-envelope text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ .email }}">{{ .email }}</a></li>
               </ul>
+              <h3 class="flapjack-regular text-cc-strawberry mt-5">Hours</h3>              
+              <p class="ms-4 position-relative">
+                <span class="fas fa-clock text-cc-accent--gold position-absolute ms-n4"></span>
+                {{ range .hours }}
+                  <span class="d-block">{{ .hours_line }}</span>
+                {{ end }}
+              </p>
+              {{ if eq .special_hours.show true }}
+                <p class="p-1 text-white lh-1 mb-0">* {{ .special_hours.message }}</p>
+              {{ end }}
             </div>
-            <div class="col-xl mb-5 mb-xl-0">
+            <div class="col-md mb-5 mb-xl-0">
               <div>
                 <h3 class="flapjack-regular text-cc-strawberry">Menu</h3>
                 <ul class="list-unstyled">
@@ -35,7 +48,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-xl mb-5 mb-xl-0">
+            <div class="col-md mb-5 mb-xl-0">
               <h3 class="flapjack-regular text-cc-strawberry">Follow Us</h3>
               <ul class="list-unstyled">
                 {{ range .social_media_accounts }}

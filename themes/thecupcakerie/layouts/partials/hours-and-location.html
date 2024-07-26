@@ -2,14 +2,16 @@
   <div class="container position-relative">
     <h2 class="visually-hidden" id="hours-and-location-label">Hours of Operation, Contact Info and Food Truck Info</h2>
     <div class="row position-relative py-3 gx-xl-5 justify-content-center">      
-      {{ with site.Data.homepage.hours }}
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="small h-100">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="small h-100">
+          {{ with site.Data.homepage.hours }}
             <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .title }}</h3>
+          {{ end }}
+          {{ with site.Data.settings }}
             <address class="ms-4 position-relative">
               <span class="fas fa-map-marker-alt text-cc-accent--gold position-absolute ms-n4"></span>
               {{ range .address }}
-                <span class="d-block">{{ .address_line }}</span>
+                <span class="d-block">{{ .line }}</span>
               {{ end }}
             </address>
             {{ if .map_link }}
@@ -24,13 +26,15 @@
             {{ if eq .special_hours.show true }}
               <p class="p-1 text-white lh-1 mb-0">* {{ .special_hours.message }}</p>
             {{ end }}
-          </div>
+          {{ end }}
         </div>
-      {{ end }}
+      </div>
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
-          <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">Get Ahold of Us</h3>
-          <p>Need to make <strong>reservations</strong>? Host a <strong>special event</strong>? Inquire about a <strong>job opening</strong> or <strong>event sponsorship</strong>?</p>
+          {{ with site.Data.homepage.hours.get_ahold_of_us }}
+            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>
+            <p>Need to make <strong>reservations</strong>? Host a <strong>special event</strong>? Inquire about a <strong>job opening</strong> or <strong>event sponsorship</strong>?</p>
+          {{ end }}
           <ul class="list-unstyled">
             {{ with site.Data.settings.phone }}
               <li class="ms-4"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ . }}">{{ . }}</a></li>
@@ -43,7 +47,9 @@
       </div>
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
-          <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-1">Catch Us on the Road</h3>
+          {{ with site.Data.homepage.hours.get_ahold_of_us }}
+            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-1">{{ .heading }}</h3>
+          {{ end }}
           <p class="mb-3 monograph-text text-uppercase cc-text-letter-spacing-2 text-cc-accent--mojito"><span class="fa-light fa-truck"></span> Food Truck</p>
           <p class="text-cc-accent--pink flapjack-regular lh-1 mb-2">Next Stop:</p>
           <p>
