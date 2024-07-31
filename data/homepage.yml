@@ -45,17 +45,6 @@ brunch:
   description: Indulge in the ultimate brunch experience! Join us for delightful
     dishes, refreshing mimosas, and a cozy atmosphere. Our menu has something
     for everyone.
-dinner:
-  heading: Dinner Seating
-  hours:
-    - days: Tues - Sat
-      hours: 4PM - 7PM
-  description: Join us for exquisite dishes crafted with fresh, local ingredients.
-    Enjoy our cozy ambiance, fine wines, and delectable desserts. Perfect for a
-    romantic date or a casual night out.
-  cta:
-    buttonText: View Dinner Menu
-    link: /menu/?menu=happy-hour
 specials:
   heading: Slightly Sweet Wednesdays
   details:

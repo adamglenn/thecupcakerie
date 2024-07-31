@@ -2,8 +2,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   content: '';
-  height: 55px;
-  width: 200px;
+  height: 75px;
+  width: 149px;
 }
 
 .home .navbar:before {
@@ -60,9 +60,9 @@
 }
 
 .navbar.navbar-dark .cc-logo-switch {
-  background-image: url(/cupcakerie-logo-placeholder-white.svg)
+  background-image: url(/cupcakerie-logo-white.svg)
 }
 
 .navbar:not(.navbar-dark) .cc-logo-switch {
-  background-image: url(/cupcakerie-placeholder.svg)
+  background-image: url(/cupcakerie-logo.svg)
 }

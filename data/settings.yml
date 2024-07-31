@@ -6,8 +6,8 @@ site_menu:
     url: /drinks
   - menu_item: Catering
     url: /catering
-  - menu_item: Parties
-    url: /parties
+  - menu_item: Private Events
+    url: /private-events
   - menu_item: Order
     url: /order
   - menu_item: About
