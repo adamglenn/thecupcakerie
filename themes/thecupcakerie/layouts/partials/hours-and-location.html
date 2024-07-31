@@ -33,7 +33,7 @@
         <div class="small h-100">
           {{ with site.Data.homepage.hours.get_ahold_of_us }}
             <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>
-            {{ .copy }}
+            {{ .copy | markdownify }}
           {{ end }}
           <ul class="list-unstyled">
             {{ with site.Data.settings.phone }}
