@@ -17,8 +17,9 @@ hours:
     heading: Come Visit Us
   get_ahold_of_us:
     heading: Get Ahold of Us
-    copy: Need to make **reservations**? Host a **special event**? Inquire about a
-      **job opening** or **event sponsorship**?
+    copy: >-
+      
+      Need to make **reservations**? Host a **special event**? Inquire about a **job opening** or **event sponsorship**?
   catch_us_on_the_road:
     heading: Catch Us on the Road
 happyHour:
