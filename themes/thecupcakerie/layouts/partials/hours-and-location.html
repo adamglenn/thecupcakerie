@@ -56,11 +56,11 @@
             <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>          
             {{ if .events }}
               <ul class="list-unstyled">
-                {{ range . }}
-                  <li>
-                    <span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong>{{ .title }}</strong>
+                {{ range .events }}
+                  <li class="ms-4 mb-3">
+                    <span class="d-block"><span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong class="monograph-text-bold">{{ .title }}</strong></span>
                     {{ range .details }}
-                      {{ . }}
+                      <span class="d-block">{{ .detail }}</span>
                     {{ end }}
                   </li>
                 {{ end }}
