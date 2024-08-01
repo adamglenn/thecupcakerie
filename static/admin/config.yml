@@ -58,16 +58,20 @@ collections:
                 widget: "object"
                 fields:
                   - { label: "Heading", name: "heading", widget: "string", hint: "Phone and email address can be edited in Settings > Config." }
-                  - { label: "Subheading", name: "subheading", widget: "string", required: false }
-                  - { label: "Subheading Icon", name: "subheading_icon", widget: "string", required: false }
-                  - { label: "Next Stop Title", name: "next_stop_title", widget: "string", required: false }
-                  - label: "Next Stop Address"
-                    name: "next_stop_address"
+                  - { label: "No Events Message", name: "no_events", widget: "string", required: false }
+                  - label: "Events"
+                    name: "events"
                     widget: "list"
                     collapsed: true
                     required: false
                     fields:
-                      - { label: "Line", name: "line", widget: "string" }
+                      - { label: "Title", name: "title", widget: "string" }
+                      - label: "Details"
+                        name: "details"
+                        widget: "list"
+                        required: false
+                        fields:
+                          - { label: "Detail", name: "detail", widget: "string" }
           - label: "Happy Hour Feature"
             name: "happyHour"
             widget: object

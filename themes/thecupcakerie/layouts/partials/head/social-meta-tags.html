@@ -1,0 +1,50 @@
+{{ $featuredImg := "" }}
+{{ $permalink := "" }}
+{{ $pageTitle := .Site.Title }}
+{{ $description := site.Data.settings.description }}
+
+{{ if .Permalink }}
+  {{ $permalink = .Permalink }}
+{{ else if .permalink }}
+  {{ $permalink = .permalink }}
+{{ end }}
+
+{{ if .Title }}
+  {{ $pageTitle = .Title }}
+{{ else if .title }}
+  {{ $pageTitle = .title }}
+{{ end }}
+
+{{ if .meta_description }}
+  {{ $description = .meta_description }}
+{{ end }}
+
+<meta name="twitter:card" content="{{ if .featured_image }}summary_large_image{{else}}summary{{end}}">
+<meta name="twitter:title" content="{{ if eq .Title "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $description }}">
+
+{{- with site.Data.settings.social_media_accounts -}}
+  {{- range . -}}
+    {{- if eq .platform "Twitter" -}}
+      <meta name="twitter:site" content="{{ .url }}">
+      <meta name="twitter:creator" content="{{ .username }}">
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with .featured_image -}}
+  {{ $featuredImg = resources.Get . }}
+  <meta name="twitter:image" content='{{ ( $featuredImg.Fill "1600x900 Center" ).RelPermalink }}'>
+{{ end }}
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if eq .title "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+
+{{ with .featured_image }}
+  {{ $featuredImg = resources.Get . }}
+  <meta property="og:image" content='{{ ( $featuredImg.Fill "1200x628 Center" ).RelPermalink }}'>
+  <meta property="og:image:secure_url" content='{{ ( $featuredImg.Fill "1200x628 Center" ).RelPermalink }}'>
+{{ end }}

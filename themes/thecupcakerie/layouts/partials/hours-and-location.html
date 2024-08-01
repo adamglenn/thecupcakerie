@@ -33,7 +33,12 @@
         <div class="small h-100">
           {{ with site.Data.homepage.hours.get_ahold_of_us }}
             <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>
-            {{ .copy | markdownify }}
+            {{ $markdown := .copy | markdownify }}
+            {{ if not ( strings.Contains $markdown "<p>" ) }}
+              <p>{{ $markdown }}</p>
+            {{ else }}
+              {{ $markdown }}
+            {{ end }}
           {{ end }}
           <ul class="list-unstyled">
             {{ with site.Data.settings.phone }}
@@ -50,14 +55,20 @@
           {{ with site.Data.homepage.hours.catch_us_on_the_road }}
             <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-1">{{ .heading }}</h3>
           {{ end }}
-          <p class="mb-3 monograph-text text-uppercase cc-text-letter-spacing-2 text-cc-accent--mojito"><span class="fa-light fa-truck"></span> Food Truck</p>
-          <p class="text-cc-accent--pink flapjack-regular lh-1 mb-2">Next Stop:</p>
-          <p>
-            <strong>Moonlight Market</strong>
-            <br>May 18, 2024 | 4PM - 9PM
-            <br>Morgantown Marketplace Pavilion
-            <br>400 Spruce Street
-          </p>
+          {{ if .events }}
+            <ul class="list-unstyled">
+              {{ range . }}
+                <li>
+                  <span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong>{{ .title }}</strong>
+                  {{ range .details }}
+                    {{ . }}
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ else }}
+            <p>{{ .no_events }}</p>
+          {{ end }}
         </div>
       </div>
     </div>

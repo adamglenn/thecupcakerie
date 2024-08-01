@@ -1,6 +1,5 @@
 ---
-title: My First Page
+title: Home
 date: 2024-06-13T13:40:00.000Z
 description: Description for my page
 ---
-Body of my page.
