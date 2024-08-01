@@ -31,9 +31,7 @@ happyHour:
   heading: Join Us for Happy Hour
   hours:
     - days: Tues. - Sat.
-      hours: 10AM - 4PM
-    - days: Sun. - Mon.
-      hours: 10AM - 2PM
+      hours: 4PM - 7PM
   description: "Looking for the perfect spot to unwind after a long day? Look no
     further. Our Happy Hour promises to make your evenings brighter and your
     taste buds happier! "
