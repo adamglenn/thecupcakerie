@@ -11,9 +11,70 @@
           </div>
         {{ end }}
         <div class="col-lg-8 col-xl-6">
-          {{ if .content }}
-            {{ .content | markdownify }}
-          {{ end }}
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Phone <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email Address <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Number of People <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Date <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Time <span class="text-danger"><sup>*</sup></span></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Start Time</option>
+                <option value="1130">11:30 AM</option>
+                <option value="1200">12:00 PM</option>
+                <option value="1230">12:30 PM</option>
+                <option value="1000">1:00 PM</option>
+                <option value="0130">1:30 PM</option>
+                <option value="0200">2:00 PM</option>
+                <option value="0239">2:30 PM</option>
+                <option value="0300">3:00 PM</option>
+                <option value="0330">3:30 PM</option>
+                <option value="0400">4:00 PM</option>
+                <option value="0430">4:30 PM</option>
+                <option value="0500">5:00 PM</option>
+                <option value="0530">5:30 PM</option>
+                <option value="0600">6:00 PM</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Occasion <span class="text-danger"><sup>*</sup></span></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Space Preference <span class="text-danger"><sup>*</sup></span></label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Space Preference</option>
+                <option value="Inside">Inside</option>
+                <option value="Outside">Outside</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Budget Per Person <span class="text-danger"></label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Description / Requests</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            <p class="mt-5"><span class="text-danger"><sup>*</sup></span> Required</p>
+          </form>
         </div>
       </div>
     </div>
