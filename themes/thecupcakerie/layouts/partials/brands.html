@@ -1,0 +1,23 @@
+{{ $image := "" }}
+<section class="py-5" aria-labelledby="brands-label">
+  <div class="container-fluid mb-5">
+    <h2 id="brands-label" class="text-center">{{ .title }}</h2>
+    <div class="triple-diamond-deco-container container mt-4 mb-5">
+      <div class="left-line"></div>
+      <div class="right-line"></div>
+      <div class="small-diamond-left"></div>
+      <div class="small-diamond-right"></div>
+      <div class="large-diamond"></div>
+    </div>
+    <div class="row justify-content-center">
+      {{ range .logos }}
+        {{ $image = resources.Get .logo }}
+        <div class="col-sm-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
+          <a title="{{ .title }} Logo" href="{{ .url }}" class="d-block">
+            <img class="img-fluid" src='{{ ( $image.Fit "200x200 webp Center" ).RelPermalink }}' alt="{{ .title }} logo" />
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

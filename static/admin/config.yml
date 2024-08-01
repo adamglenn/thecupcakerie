@@ -136,6 +136,20 @@ collections:
               - label: "Photo"
                 name: "photo"
                 widget: image
+          - label: "Brands"
+            name: "brands"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                collapse: true
+                fields:
+                  - { label: "brand", name: "brand", widget: "string" }
+                  - { label: "logo", name: "logo", widget: "image" }
+                  - { label: "url", name: "url", widget: "string", required: false }
           - label: "Special Event"
             name: "special_event"
             widget: "object"
