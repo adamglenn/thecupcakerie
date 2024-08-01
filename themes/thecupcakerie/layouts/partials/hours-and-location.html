@@ -53,21 +53,21 @@
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
           {{ with site.Data.homepage.hours.catch_us_on_the_road }}
-            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-1">{{ .heading }}</h3>
-          {{ end }}
-          {{ if .events }}
-            <ul class="list-unstyled">
-              {{ range . }}
-                <li>
-                  <span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong>{{ .title }}</strong>
-                  {{ range .details }}
-                    {{ . }}
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          {{ else }}
-            <p>{{ .no_events }}</p>
+            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>          
+            {{ if .events }}
+              <ul class="list-unstyled">
+                {{ range . }}
+                  <li>
+                    <span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong>{{ .title }}</strong>
+                    {{ range .details }}
+                      {{ . }}
+                    {{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ else }}
+              <p>{{ .no_events }}</p>
+            {{ end }}
           {{ end }}
         </div>
       </div>
