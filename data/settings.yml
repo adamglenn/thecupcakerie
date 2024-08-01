@@ -8,6 +8,8 @@ site_menu:
     url: /catering
   - menu_item: Private Events
     url: /private-events
+  - menu_item: Frosé Machine
+    url: /frose-machine
   - menu_item: Order
     url: /order
   - menu_item: About
