@@ -1,6 +1,5 @@
 title: Home
 meta_description: ""
-permalink: https://thecupcakerie.com/
 featured_image: /img/olivia-oliver-design-ju7d6nx1z9i-unsplash.jpg
 hero:
   heading: Mornings are made for brunch and evenings are meant for wine.
@@ -23,6 +22,7 @@ hours:
       Need to make **reservations**? Host a **special event**? Inquire about a **job opening** or **event sponsorship**?
   catch_us_on_the_road:
     heading: Catch Us on the Road
+    no_events: Check back later for upcoming events.
 happyHour:
   heading: Join Us for Happy Hour
   hours:
@@ -125,3 +125,4 @@ help:
   description: We’re looking for experienced food truck and restaurant staff to
     join our team. Contact orders@thecupcakerie.com to apply.
   show: true
+permalink: https://thecupcakerie.com/
