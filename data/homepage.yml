@@ -23,6 +23,10 @@ hours:
   catch_us_on_the_road:
     heading: Catch Us on the Road
     no_events: Check back later for upcoming events.
+    events:
+      - title: Test Event
+        details:
+          - detail: Test detail.
 happyHour:
   heading: Join Us for Happy Hour
   hours:
