@@ -449,7 +449,7 @@ collections:
                         required: false
       - label: "Private Events"
         name: "private-events"
-        file: "data/private-events.yml"
+        file: "data/private_events.yml"
         editor:
           preview: false
         fields:
