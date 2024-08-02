@@ -3,8 +3,31 @@
 {{ $imageWidth := "" }}
 {{ $imageRatio := "" }}
 
+{{ if eq .title "Menu" }}
+  {{ with .cupcake_message }}
+    <div class="row mb-5">
+      <div class="col-xl-8 mx-xl-auto">
+        <div class="stair-deco-container container text-center">
+          <div class="stair-deco-content">
+            
+            <p class="mb-0 p-3">{{ . }}</p>
+          </div>
+          <div class="stair-deco-outer-left"></div>
+          <div class="stair-deco-outer-right"></div>
+          <div class="stair-deco-mid-left"></div>
+          <div class="stair-deco-mid-right"></div>
+          <div class="stair-deco-mid-top"></div>
+          <div class="stair-deco-mid-bottom"></div>
+          <div class="stair-deco-inner-top"></div>
+          <div class="stair-deco-inner-bottom"></div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+{{ end }}
+
 <ul id="food-tabs" role="tablist" class="py-4 cc-stripes cc-stripes-accent--gold cc-stripes-tint nav nav-pills justify-content-center mb-5 d-block d-lg-flex">
-  {{ range $index, $element := . }}
+  {{ range $index, $element := .menus }}
     {{ $menuName = .menu_name | urlize }}
     <!-- need to add active class and aria role to first item -->
     <li class="nav-item">
@@ -15,7 +38,7 @@
 
 <div class="pb-5">
   <div class="tab-content">
-    {{ range $i, $e := . }}
+    {{ range $i, $e := .menus }}
       {{ $menuName = $e.menu_name | urlize }}
       <div class="tab-pane fade {{ if (eq $i 0) }}show active{{ end }}" id="{{ $menuName }}" role="tabpanel" aria-labelledby="{{ $menuName }}-tab">
         {{ if eq .show_legend true }}

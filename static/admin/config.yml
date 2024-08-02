@@ -259,6 +259,7 @@ collections:
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
+          - { label: "Cupcake Message", name: "cupcake_message", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
             widget: "list"

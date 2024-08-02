@@ -13,7 +13,7 @@
               <h2 class="flapjack-regular display-3" id="help-wanted-label">{{ .heading }}</h2>
               <p class="h3 monograph-text-bold text-uppercase mb-3">{{ .job }}</p>
               <div class="fs-5">
-                {{ .description }}
+                {{ .description | markdownify }}
               </div>
             </div>
           </div>
