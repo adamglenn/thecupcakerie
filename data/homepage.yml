@@ -59,9 +59,8 @@ specials:
   photo: /img/jodie-walton-vvx4kbkubti-unsplash.jpg
 brands:
   title: Brands
-  subhead: Experience the taste of freshness at our café! We proudly source
-    ingredients from local producers, ensuring every dish is vibrant and
-    delicious.
+  subhead: We proudly source ingredients from local producers, ensuring every dish
+    is vibrant and delicious.
   logos:
     - brand: Hawthorne Valley Farms
       logo: /img/mon-valley-mushrooms.webp
