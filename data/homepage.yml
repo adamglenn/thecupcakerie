@@ -57,6 +57,24 @@ specials:
     - line: Frosé Flight (3) for $10
     - line: Add (3) mini cupcakes for $5
   photo: /img/jodie-walton-vvx4kbkubti-unsplash.jpg
+brands:
+  title: Brands
+  subhead: Experience the taste of freshness at our café! We proudly source
+    ingredients from local producers, ensuring every dish is vibrant and
+    delicious.
+  logos:
+    - brand: Hawthorne Valley Farms
+      logo: /img/mon-valley-mushrooms.webp
+    - brand: Mon Valley Mushrooms
+      logo: /img/mon-valley-mushrooms.webp
+    - brand: JQ Dickinson Salt Works
+      logo: /img/mon-valley-mushrooms.webp
+    - brand: Mal’s Fresh Produce
+      logo: /img/mon-valley-mushrooms.webp
+    - brand: Quantum Bean
+      logo: /img/mon-valley-mushrooms.webp
+    - brand: Dawson Orchards Inc.
+      logo: /img/mon-valley-mushrooms.webp
 special_event:
   logo: /img/festival-logo.svg
   logo_alt_text: Beer Fest logo
