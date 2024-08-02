@@ -142,6 +142,7 @@ collections:
             collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "string", required: false }
               - label: "Logos"
                 name: "logos"
                 widget: "list"
