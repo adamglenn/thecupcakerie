@@ -155,6 +155,7 @@ help:
   heading: Join Our Team!
   job: Line/Prep Cook
   description: We’re looking for experienced food truck and restaurant staff to
-    join our team. Contact orders@thecupcakerie.com to apply.
+    join our team. Contact
+    [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com) to apply.
   show: true
 permalink: https://thecupcakerie.com/
