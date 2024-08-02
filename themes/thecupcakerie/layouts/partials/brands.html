@@ -1,7 +1,9 @@
 {{ $image := "" }}
+{{ with site.Data.homepage.brands }}
 <section class="py-5" aria-labelledby="brands-label">
   <div class="container-fluid mb-5">
     <h2 id="brands-label" class="text-center">{{ .title }}</h2>
+    <p>{{ .subhead }}</p>
     <div class="triple-diamond-deco-container container mt-4 mb-5">
       <div class="left-line"></div>
       <div class="right-line"></div>
@@ -21,3 +23,4 @@
     </div>
   </div>
 </section>
+{{ end }}
