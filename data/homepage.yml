@@ -121,6 +121,11 @@ products:
       description: Indulge in sweet delights, where every dessert is a masterpiece.
         From cakes to pastries, treat yourself!
       photo: /img/red-cupcakes.webp
+    - title: Market
+      description: Discover a diverse selection at our store! From essentials to
+        unique finds, we offer something for everyone.
+      photo: /img/market.webp
+      photoAltText: Goods from our market
 help:
   heading: Join Our Team!
   job: Line/Prep Cook
