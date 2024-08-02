@@ -113,6 +113,8 @@ catering:
   cta:
     - button_text: Check Out Our Catering Menu
       url: /menu/?menu=Catering
+    - button_text: Private Events
+      url: /private-events
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
 products:
   title: Check Out Our Delicious Selection.
