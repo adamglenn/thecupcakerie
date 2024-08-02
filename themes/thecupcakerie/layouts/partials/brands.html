@@ -20,7 +20,7 @@
       {{ range .logos }}
         {{ $image = resources.Get .logo }}
         <div class="col-sm-6 col-md-4 col-lg-2 d-flex align-items-center justify-content-center">
-          <a title="{{ .title }} Logo" href="{{ .url }}" class="d-block">
+          <a title="{{ .title }} Logo" href="{{ .url }}" class="d-block p-4">
             <img class="img-fluid" src='{{ ( $image.Fit "200x200 webp Center" ).RelPermalink }}' alt="{{ .title }} logo" />
           </a>
         </div>
