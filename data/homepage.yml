@@ -63,22 +63,22 @@ brands:
     is vibrant and delicious.
   logos:
     - brand: Hawthorne Valley Farms
-      logo: /img/mon-valley-mushrooms.webp
+      logo: /img/hawthorne-logo.webp
       url: https://farm.hawthornevalley.org/
     - brand: Mon Valley Mushrooms
       logo: /img/mon-valley-mushrooms.webp
       url: https://monvalleymushrooms.com/
     - brand: JQ Dickinson Salt Works
-      logo: /img/mon-valley-mushrooms.webp
+      logo: /img/jqd-logo.webp
       url: https://www.jqdsalt.com/
     - brand: Mal’s Fresh Produce
-      logo: /img/mon-valley-mushrooms.webp
+      logo: /img/mal-s-logo.webp
       url: https://www.malsfreshproduce.com/
     - brand: Quantum Bean
-      logo: /img/mon-valley-mushrooms.webp
+      logo: /img/quantum-logo.webp
       url: https://www.quantumbean.com/
     - brand: Dawson’s Orchards Inc.
-      logo: /img/mon-valley-mushrooms.webp
+      logo: /img/dawson-s-logo.webp
       url: https://www.dawsonsorchards.com/
 special_event:
   logo: /img/festival-logo.svg
