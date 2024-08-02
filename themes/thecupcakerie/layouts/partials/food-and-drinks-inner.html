@@ -4,12 +4,11 @@
 {{ $imageRatio := "" }}
 
 {{ if eq .title "Menu" }}
-  {{ with .cupcake_message }}
+  {{ with .message }}
     <div class="row mb-5">
       <div class="col-xl-8 mx-xl-auto">
         <div class="stair-deco-container container text-center">
           <div class="stair-deco-content">
-            
             <p class="mb-0 p-3">{{ . | markdownify }}</p>
           </div>
           <div class="stair-deco-outer-left"></div>
