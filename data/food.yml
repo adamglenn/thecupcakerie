@@ -303,7 +303,7 @@ menus:
               Wheatberry Bread
             options:
               - price: "13.00"
-            photo: /img/hybrid-storytellers-2q_kfiduigc-unsplash.jpg
+            photo: ""
             feature: false
           - title: The Hot Italian
             description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana
