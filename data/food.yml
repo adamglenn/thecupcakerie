@@ -302,7 +302,7 @@ menus:
             options:
               - price: "13.00"
             photo: /img/hybrid-storytellers-2q_kfiduigc-unsplash.jpg
-            feature: true
+            feature: false
           - title: The Hot Italian
             description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana
               Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
