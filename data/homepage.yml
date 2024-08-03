@@ -115,6 +115,8 @@ catering:
       url: /catering
     - button_text: Private Events
       url: /private-events
+    - button_text: Rent Our Frose Machine
+      url: /frose-machine
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
 products:
   title: Check Out Our Delicious Selection.
