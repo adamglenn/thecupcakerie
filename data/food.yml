@@ -14,8 +14,8 @@ menus:
             description: English Muffin, smoked ham, Hollandaise
             options:
               - price: "13.00"
-            photo: /img/john-baker-wu4zbeitiym-unsplash.jpg
-            feature: true
+            photo: ""
+            feature: false
             note: Served with Hash Browns or Fresh Fruit.
           - title: Avocado Benedict
             description: English Muffin, Avocado, Poached Eggs Hollandaise
@@ -166,6 +166,8 @@ menus:
               - V
             options:
               - price: "14.00"
+            photo: /img/mon-valley-mushroom-melt.webp
+            feature: true
     show_legend: true
     postscript:
       - line: "Farms: Hawthorne Valley Farms, Mon Valley Mushrooms, JQ Dickinson Salt
