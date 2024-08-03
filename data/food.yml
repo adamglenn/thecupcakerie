@@ -121,6 +121,7 @@ menus:
               - price: "16.00"
                 option: Full
             photo: /img/harvest-cobb.webp
+            feature: true
           - title: The Greek (One Size)
             description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red
               Onions & Cucumbers, Oregano, Feta, Kalamata Olives
