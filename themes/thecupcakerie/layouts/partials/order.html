@@ -5,7 +5,7 @@
       <h1 class="text-center flapjack-regular display-1 mb-4">{{ .title }}</h1>
       <div class="row justify-content-center fs-5 gx-5 mt-5">
         <div class="col-lg-8 col-xl-6 mx-auto">
-          <form name="Order" method="POST" data-netlify="true">
+          <form name="Order" action="/order-success" method="POST" data-netlify="true">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Name <span class="text-danger"><sup>*</sup></span></label>
               <input type="email" class="form-control" id="name">

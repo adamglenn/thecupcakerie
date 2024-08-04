@@ -1,0 +1,8 @@
+{{ with site.Data.event_success }}
+  <main class="py-5">
+    <div class="container py-5">
+      <h1>{{ .title }}</h1>
+      {{ .confirmation_message | markdownify }}
+    </div>
+  </main>
+{{ end }}

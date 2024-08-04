@@ -518,6 +518,22 @@ collections:
           - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Intro", name: "intro", widget: "markdown", hint: "Create blog articles from the Collections panel under Blog. This is just for the intro copy of the Blog landing page.", required: false }
+      - label: "Event Confirmation"
+        name: "event_confirmation"
+        file: "data/event_success.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Confirmation Message", name: "confirmation_message", widget: "markdown" }
+      - label: "Order Confirmation"
+        name: "order_confirmation"
+        file: "data/order_success.yml"
+        editor:
+          preview: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Confirmation Message", name: "confirmation_message", widget: "markdown" }
   - name: 'blog'
     label: 'Blog'
     folder: "content/posts"
