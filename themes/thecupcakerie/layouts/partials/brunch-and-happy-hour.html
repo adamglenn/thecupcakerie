@@ -1,16 +1,16 @@
 {{ $hours := "" }}
 <section aria-labelledby="brunch-and-happy-hour-label" class="py-5">
-  <div class="container px-5 px-xxl-0">
+  <div class="container">
     <h2 class="visually-hidden" id="brunch-and-happy-hour-label">Brunch and Happy Hour</h2>
     <div class="row gx-xxl-5">
-      <div class="col-xxl py-4 mb-xl-0">
+      <div class="col-xl py-4 mb-xl-0">
         <div class="triple-deco-container h-100">
           <div class="triple-deco-content h-100">
-            <div class="p-5 h-100 position-relative" style="background-image: url('/img/cocktail.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
+            <div class="p-4 p-xxl-5 h-100 position-relative" style="background-image: url('/img/cocktail.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -3rem;">
               {{ with site.Data.homepage.happyHour }}
                 {{ $hours = .hours }}
                 <div class="row">
-                  <div class="col-sm-9 col-lg-6 col-xl-7 col-xxl-11 col-xxl-10 me-xxl-auto">
+                  <div class="col-9 col-lg-6 col-xl-9 col-xxl-11 col-xxl-10 me-xxl-auto">
                     <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
                     <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                       {{ range $hours }}
@@ -31,14 +31,14 @@
           <div class="triple-deco-wide"></div>
         </div>
       </div>
-      <div class="col-xxl py-4 mb-xl-0">
+      <div class="col-xl py-4 mb-xl-0">
         <div class="triple-deco-container h-100">
           <div class="triple-deco-content h-100">
-            <div class="p-5 h-100 position-relative" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -6rem;">
+            <div class="p-4 p-xxl-5 h-100 position-relative" style="background-image: url('/img/bacon-eggs.svg'); background-size: 44%; background-repeat: no-repeat; background-position: top 2rem right -6rem;">
               {{ with site.Data.homepage.brunch }}
                 {{ $hours = .hours }}
                 <div class="row">
-                  <div class="col-sm-9 col-lg-6 col-xl-7 col-xxl-11 col-xxl-10 me-xxl-auto">
+                  <div class="col-9 col-lg-6 col-xl-9 col-xxl-11 col-xxl-10 me-xxl-auto">
                     <h3 class="flapjack-regular display-3 lh-1 mb-4 me-5">{{ .heading }}</h3>
                     <ul class="d-inline-block list-unstyled monograph-text-bold fs-5 text-uppercase">
                       {{ range $hours }}

@@ -1,16 +1,10 @@
 {{ $image := "" }}
-{{ with site.Data.private_events }}
+{{ with site.Data.order }}
   <main class="py-5">
     <div class="container mb-5">
       <h1 class="text-center flapjack-regular display-1 mb-4">{{ .title }}</h1>
-      <div class="row justify-content-center fs-5 gx-5 mt-5">        
-        {{ if .featured_image }}
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            {{ $image = resources.Get .featured_image }}
-            <img class="img-fluid" src='{{ ( $image.Fit "960x640 webp Center" ).RelPermalink }}' alt="" />
-          </div>
-        {{ end }}
-        <div class="col-lg-8 col-xl-6">
+      <div class="row justify-content-center fs-5 gx-5 mt-5">
+        <div class="col-lg-8 col-xl-6 mx-auto">
           <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Name <span class="text-danger"><sup>*</sup></span></label>
@@ -36,6 +30,9 @@
               <label for="exampleInputEmail1" class="form-label">Time <span class="text-danger"><sup>*</sup></span></label>
               <select class="form-select" aria-label="Default select example">
                 <option selected>Select Start Time</option>
+                <option value="1000">10:00 AM</option>
+                <option value="1030">10:30 AM</option>
+                <option value="1100">11:00 AM</option>
                 <option value="1130">11:30 AM</option>
                 <option value="1200">12:00 PM</option>
                 <option value="1230">12:30 PM</option>

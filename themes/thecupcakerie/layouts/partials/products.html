@@ -14,13 +14,13 @@
       <div class="row gx-4 mt-n5 position-relative">
         {{ range .products }}
           {{ $image := resources.Get .photo }}
-          <div class="col-xxl-6 mb-4">
+          <div class="col-md-6 mb-4">
             <div class="border border-2 border-dark bg-cc-strawberry">
               <div class="row gx-0">
-                <div class="col-lg-6">
+                <div class="col-xxl-6">
                   <img loading="lazy" class="img-fluid" src='{{ ( $image.Fill "960x640 webp Center" ).RelPermalink }}' alt="Photo of {{ .title }}" />
                 </div>
-                <div class="col-lg-6 d-flex align-items-center p-4">
+                <div class="col-xxl-6 d-flex align-items-center p-4">
                   <div>
                     <h3 class="flapjack-regular mb-3">{{ .title }}</h3>
                     <p>{{ .description }}</p>
