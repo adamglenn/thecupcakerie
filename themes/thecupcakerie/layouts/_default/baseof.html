@@ -20,6 +20,18 @@
 
     {{ if eq .Page.Title "Home" }}
       <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+
+      <script>
         let scrollpos = window.scrollY
         const header = document.querySelector(".navbar")
         const header_height = 1
