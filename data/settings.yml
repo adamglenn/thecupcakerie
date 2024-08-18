@@ -1,4 +1,7 @@
-description: Indulge in the sweetest moments at our cupcakerie and cafe! Join us for Happy Hour specials and delightful brunches, gourmet cupcakes, and more. Perfect for meeting friends, family gatherings, or a cozy escape. Come savor the joy of every bite!
+description: Indulge in the sweetest moments at our cupcakerie and cafe! Join us
+  for Happy Hour specials and delightful brunches, gourmet cupcakes, and more.
+  Perfect for meeting friends, family gatherings, or a cozy escape. Come savor
+  the joy of every bite!
 site_menu:
   - menu_item: Menu
     url: /menu
@@ -36,7 +39,7 @@ social_media_accounts:
     icon_code: tiktok
 hours:
   - hours_line: Sun. - Mon. 10AM - 2PM
-  - hours_line: Tues. - Sat. 10AM - 7PM
+  - hours_line: Tues. - Sat. 10AM - 8PM
 special_hours:
   show: true
   message: We will be closed on Thursday, July 4th.
