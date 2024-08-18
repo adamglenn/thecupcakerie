@@ -5,22 +5,23 @@
       <h1 class="text-center flapjack-regular display-1 mb-4">{{ .title }}</h1>
       <div class="row justify-content-center fs-5 gx-5 mt-5">
         <div class="col-lg-8 col-xl-6 mx-auto">
-          <form name="Order" action="/order-success" method="POST" data-netlify="true">
+          <form name="order" action="/order-success" method="POST" data-netlify="true">
+            <input type="hidden" name="subject" data-remove-prefix value="Order form inquiry from thecupcakerie.com" />
             <div class="mb-3">
               <label for="nameInput" class="form-label">Name <span class="text-danger"><sup>*</sup></span></label>
-              <input type="text" class="form-control" id="nameInput">
+              <input name="name" type="text" class="form-control" id="nameInput">
             </div>
             <div class="mb-3">
               <label for="phoneInput" class="form-label">Phone <span class="text-danger"><sup>*</sup></span></label>
-              <input type="tel" class="form-control" id="phoneInput">
+              <input name="phone" type="tel" class="form-control" id="phoneInput">
             </div>
             <div class="mb-3">
               <label for="emailInput" class="form-label">Email Address <span class="text-danger"><sup>*</sup></span></label>
-              <input type="email" class="form-control" id="emailInput">
+              <input name="email" type="email" class="form-control" id="emailInput">
             </div>
             <div class="mb-3">
               <label for="orderInput" class="form-label">Let Us Know What You Need</label>
-              <textarea class="form-control" id="orderInput" rows="3"></textarea>
+              <textarea name="message" class="form-control" id="orderInput" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-dark mb-3">Submit</button>
             <p class="mt-5"><span class="text-danger"><sup>*</sup></span> Required</p>
