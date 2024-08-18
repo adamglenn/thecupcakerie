@@ -41,5 +41,5 @@ hours:
   - hours_line: Sun. - Mon. 10AM - 2PM
   - hours_line: Tues. - Sat. 10AM - 8PM
 special_hours:
-  show: true
+  show: false
   message: We will be closed on Thursday, July 4th.
