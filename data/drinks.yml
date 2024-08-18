@@ -74,6 +74,35 @@ menus:
             options:
               - price: 35/105
         description: ""
+      - title: White
+        items:
+          - title: Oko Pinot Grigio
+            options:
+              - price: 10/30
+          - title: Ruffino Lumina Pinot Grigio
+            options:
+              - price: 10/30
+          - title: Ponga Sauvignon Blanc
+            options:
+              - price: 9/27
+          - title: Squealing Pig Sauvignon Blanc
+            options:
+              - price: 12/36
+          - title: William Hill Chardonnay
+            options:
+              - price: 9/36
+          - title: SLH Chenin Blanc
+            options:
+              - price: 18/54
+          - title: Pine Ridge Chenin Blanc + Viognier
+            options:
+              - price: 9/36
+          - title: A to Z Riesling
+            options:
+              - price: 12/36
+          - title: Terra Moscato
+            options:
+              - price: 10/30
     show_legend: false
   - menu_name: Coffee & Tea Bar
     menu_sections:
