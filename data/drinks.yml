@@ -161,6 +161,20 @@ menus:
           - title: Michelobe Ultra
             options:
               - price: "5.00"
+      - title: Non-Alcoholic
+        items:
+          - title: Coke, Dr. Pepper, Sprite
+            options:
+              - price: "3.00"
+          - title: Shirley Temple
+            options:
+              - price: "6.00"
+          - title: Iced Tea Unsweet/Sweet
+            options:
+              - price: "4.00"
+          - title: Orange, Cranberry, Apple, Pommegranate Juice
+            options:
+              - price: "4.00"
     show_legend: false
   - menu_name: Coffee & Tea Bar
     menu_sections:
