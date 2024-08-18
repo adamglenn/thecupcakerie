@@ -103,6 +103,7 @@
                               {{ range .options }}
                                 {{ $price := .price | urlize }}
                                 <li>
+                                  {{ if .quantity }}{{ .quantity }} for {{ end }}
                                   {{ if ne $price "mp" }}${{ end }}{{ .price }}
                                   {{ if .size }}
                                     / {{ .size }}
