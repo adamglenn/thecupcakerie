@@ -339,19 +339,6 @@ menus:
             options:
               - price: "11.00"
             description: Buckwheat Shortbread, Bourbon Peach Butter, Maple Candy
-          - title: Quantum Affogato
-            options:
-              - price: "12.00"
-            description: Almond Ice Cream, Espresso, Cookie
-          - title: Sorbet
-            designation:
-              - GF
-              - V
-            options:
-              - price: "9.00"
-            description: Seasonal Fruit Sorbet
-            feature: false
-            photo: ""
           - title: Pot De Creme
             options:
               - price: "10.00"
