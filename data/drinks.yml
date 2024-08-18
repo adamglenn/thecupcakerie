@@ -40,6 +40,7 @@ menus:
             options:
               - price: "8"
               - price: "20"
+                quantity: "3"
       - title: Cold Drinks
         items:
           - title: Cold Brew
