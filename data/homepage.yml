@@ -21,7 +21,7 @@ hours:
       
       Need to make **reservations**? Host a **special event**? Inquire about a **job opening** or **event sponsorship**?
   catch_us_on_the_road:
-    heading: Catch Us on the Road
+    heading: Upcoming Events
     no_events: Check back later for upcoming events.
     events:
       - title: Burger & Trivia Night
