@@ -103,6 +103,32 @@ menus:
           - title: Terra Moscato
             options:
               - price: 10/30
+      - title: Red
+        items:
+          - title: Grayson Cellars Merlot
+            options:
+              - price: 10/30
+          - title: Old Soul Petite Sirah
+            options:
+              - price: 11/33
+          - title: Elouan Pinot Noir
+            options:
+              - price: 14/45
+          - title: Terrazas Reserva Cabernet
+            options:
+              - price: 8/24
+          - title: Lodi Estates Cabernet Sauvignon
+            options:
+              - price: 16/48
+          - title: Old Soul Zinfandel
+            options:
+              - price: 11/33
+          - title: Indaba Mosaic Red Blend
+            options:
+              - price: 9/36
+          - title: Threadcount by Quilt Red Blend
+            options:
+              - price: 15/45
     show_legend: false
   - menu_name: Coffee & Tea Bar
     menu_sections:
