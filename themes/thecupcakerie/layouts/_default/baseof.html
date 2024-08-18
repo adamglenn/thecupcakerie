@@ -48,6 +48,24 @@
           console.log(scrollpos)
         })
       </script>
+    {{ else }}
+      <script>
+        let scrollpos = window.scrollY
+        const header = document.querySelector(".navbar")
+        const header_height = 1
+      
+        const add_class_on_scroll = () => header.classList.add("shrink-nav")
+        const remove_class_on_scroll = () => header.classList.remove("shrink-nav")
+      
+        window.addEventListener('scroll', function() { 
+          scrollpos = window.scrollY;
+      
+          if (scrollpos >= header_height) { add_class_on_scroll(); }
+          else { remove_class_on_scroll(); }
+      
+          console.log(scrollpos)
+        })
+      </script>
     {{ end }}
 
     {{ if or (eq .Page.Title "Menu") (eq .Page.Title "Drinks") (eq .Page.Title "Catering") }}
