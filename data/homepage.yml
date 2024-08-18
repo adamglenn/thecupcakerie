@@ -60,11 +60,11 @@ brunch:
     dishes, refreshing mimosas, and a cozy atmosphere. Our menu has something
     for everyone.
 specials:
-  heading: Slightly Sweet Wednesdays
+  heading: Join Us for Live Music
   details:
-    - line: Frosé Flight (3) for $10
-    - line: Add (3) mini cupcakes for $5
-  photo: /img/jodie-walton-vvx4kbkubti-unsplash.jpg
+    - line: Every Saturday
+    - line: 11AM - 3PM
+  photo: /img/kelli-mcclintock-dtf5vnfv1uu-unsplash.jpg
 brands:
   title: Friends
   subhead: We proudly source ingredients from local producers, ensuring every dish
@@ -108,7 +108,7 @@ special_event:
       photo_alt_text: Cupcakes
     - photo: /img/daniel-dvorsky-oqt3pafe9cg-unsplash.jpg
       photo_alt_text: Beer bottles
-  show: true
+  show: false
 catering:
   align: Left
   heading: Culinary Delights for Unforgettable Celebrations.
