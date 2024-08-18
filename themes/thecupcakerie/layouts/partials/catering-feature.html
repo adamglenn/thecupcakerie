@@ -5,7 +5,18 @@
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}
-  <section aria-labelledby="catering-label" class="py-5 bg-dark text-white" style="background-image: url('{{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }}'); background-size: cover; background-repeat: no-repeat;">
+  <section aria-labelledby="catering-label" class="py-5 bg-dark text-white">
+    {{ with .background_image }}
+      {{ $image := resources.Get . }}
+      <img
+        class="ag-bg-img"
+        srcset='{{ ( $image.Fill "576x248 webp Center" ).RelPermalink }} 576w, {{ ( $image.Fill "768x330 webp Center" ).RelPermalink }} 768w, {{ ( $image.Fill "992x427 webp Center" ).RelPermalink }} 992w, {{ ( $image.Fill "1200x516 webp Center" ).RelPermalink }} 1200w, {{ ( $image.Fill "1400x602 webp Center" ).RelPermalink }} 1400w, {{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }} 1800w'
+        sizes="(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1800px"
+        src='{{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }}'
+        alt=""
+        style="filter: brightness(0.3)"
+      />
+    {{ end }}
     <div class="d-flex align-items-center">
       <div class="container py-5">
         <div class="row py-5 gx-0">

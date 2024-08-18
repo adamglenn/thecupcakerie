@@ -119,7 +119,7 @@ catering:
     ingredients with impeccable service.
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
-    - button_text: Check Out Our Catering Menu
+    - button_text: Inquire About Catering
       url: /catering
     - button_text: Private Events
       url: /private-events
