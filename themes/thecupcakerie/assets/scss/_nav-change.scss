@@ -4,6 +4,7 @@
   content: '';
   height: 75px;
   width: 149px;
+  margin-top: -5px;
 }
 
 .home .navbar:before {
@@ -64,5 +65,7 @@
 }
 
 .navbar:not(.navbar-dark) .cc-logo-switch {
-  background-image: url(/cupcakerie-logo.svg)
+  background-image: url(/cupcakerie-logo.svg);
+  height: 54px;
+  width: 107px;
 }
