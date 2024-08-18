@@ -24,9 +24,17 @@ hours:
     heading: Catch Us on the Road
     no_events: Check back later for upcoming events.
     events:
-      - title: Test Event
+      - title: Burger & Trivia Night
         details:
-          - detail: Test detail.
+          - detail: August 23, 6pm - 8pm
+      - title: Bend ‘N Brunch
+        details:
+          - detail: Yoga with a Free Frosé!!!
+          - detail: August 25, 9am - 10am
+      - title: Wine Pairing Dinner
+        details:
+          - detail: Reservations Required
+          - detail: August 28, 6pm - 9pm
 happyHour:
   heading: Join Us for Happy Hour
   hours:
