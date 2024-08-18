@@ -34,31 +34,45 @@ menus:
           - title: Slights Bloody Mary
             description: Housemade Bloody Mary Mix & Tito's
             options:
-              - price: "10"
+              - price: "10.00"
           - title: Mimosa
             description: Choice of juice and Brut sparkling wine
             options:
-              - price: "8"
+              - price: "8.00"
               - price: "20"
                 quantity: "3"
-      - title: Cold Drinks
+      - title: Rosé & Sparkling
         items:
-          - title: Cold Brew
+          - title: Figuiere Rosé
             description: ""
             designation: null
             options:
-              - price: "5.00"
-                size: 16oz.
-              - size: 24oz.
-                price: "7.00"
+              - price: 10/30
+                size: null
             photo: ""
-          - title: Nitro Cold Brew
+          - title: Yes Way Rosé
             description: ""
             options:
-              - price: "7.00"
-                size: 16oz.
-              - size: 24oz.
-                price: "9.00"
+              - price: 11/33
+                size: null
+          - title: Simonet Sparkling Rosé
+            options:
+              - price: 7/21
+          - title: Simonet Brut
+            options:
+              - price: 7/21
+          - title: Zonin Gran Cuvée Brut
+            options:
+              - price: 6/24
+          - title: Risata Rosecco
+            options:
+              - price: 10/30
+          - title: Friexente Brut
+            options:
+              - price: 11/33
+          - title: Moet Imperial Brut
+            options:
+              - price: 35/105
         description: ""
     show_legend: false
   - menu_name: Coffee & Tea Bar
