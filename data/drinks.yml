@@ -2,7 +2,7 @@ title: Drinks
 meta_description: ""
 permalink: https://thecupcakerie.com/drinks/
 menus:
-  - menu_name: Drinks
+  - menu_name: Bar Menu
     menu_sections:
       - title: Hot Drinks
         description: ""
@@ -61,37 +61,47 @@ menus:
                 price: "9.00"
         description: ""
     show_legend: false
-  - menu_name: Wines by the Glass
+  - menu_name: Coffee & Tea Bar
     menu_sections:
-      - title: Sparkling
+      - title: Add-Ons
         items:
-          - title: Prosecco, Coste Petrai, Italy
+          - title: Almond, Coconut, Macadamia Nut, Oat, Soy
             options:
-              - price: "12"
-          - title: Mimosa, Coste Petrai Prosecco & Natalie's Orange Juice
+              - price: "0.75"
+          - title: Housemade Vanilla, Housemade Almond, Housemade Mocha Maple Syrup, Honey,
+              Rotating Flavor
             options:
-              - price: "12"
-      - title: Rosé
-        items:
-          - title: Rose, La Colombe, Provence, France
+              - price: "0.65"
+          - title: Add additional shot
             options:
-              - price: "12"
-      - title: White
-        items:
-          - title: Chardonnay, Domaine De Bernier, France
+              - price: "1.50"
+      - items:
+          - title: Quantum Bean Drip Coffee
+            description: Regular rotating single origin & decaf available
             options:
-              - price: "14"
-          - title: Sauvignon Blanc, Le Coeur De La Reine, France
+              - price: 3+
+          - title: Espresso - 19G Double Shot
             options:
-              - price: "14"
-          - title: Pinot Gris, King & Cannon, Oregon
+              - price: "3.25"
+          - title: Americano - Hot/Iced
+            description: Quantum Bean entanglement & filtered water
             options:
-              - price: "12"
-      - title: Red
-        items:
-          - title: Cabernet Sauvignon, Valravn, California
+              - price: 3.25+
+          - title: Latte - Hot/Iced
+            description: Quantum Bean entanglement espresso & milk
             options:
-              - price: "16"
-          - title: Pinot Noir, Bourgogne, France
+              - price: 4.00+
+          - title: Cappuccino
+            description: Quantum Bean entanglement espresso | Steamed milk | Foam
             options:
-              - price: "16"
+              - price: 4.00+
+          - title: Chai - Hot/Iced
+            description: Masala Chai concentrate | Milk | Cinnamon
+            options:
+              - price: 4.25+
+          - title: Matcha - Hot/Iced
+            description: Ceremonial grade unsweetened Matcha & milk
+            options:
+              - price: 4.50+
+        title: Coffee & Tea
+    description: ""
