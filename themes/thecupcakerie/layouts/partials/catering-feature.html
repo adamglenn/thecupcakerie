@@ -5,39 +5,40 @@
   {{ if eq .align "Right" }}
     {{ $align = "ms-auto" }}
   {{ end }}
-  <section aria-labelledby="catering-label" class="py-5 bg-dark text-white">
-    {{ with .background_image }}
-      {{ $image := resources.Get . }}
-      <img
-        class="ag-bg-img"
-        srcset='{{ ( $image.Fill "576x248 webp Center" ).RelPermalink }} 576w, {{ ( $image.Fill "768x330 webp Center" ).RelPermalink }} 768w, {{ ( $image.Fill "992x427 webp Center" ).RelPermalink }} 992w, {{ ( $image.Fill "1200x516 webp Center" ).RelPermalink }} 1200w, {{ ( $image.Fill "1400x602 webp Center" ).RelPermalink }} 1400w, {{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }} 1800w'
-        sizes="(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1800px"
-        src='{{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }}'
-        alt=""
-        style="filter: brightness(0.3)"
-      />
-    {{ end }}
-    <div class="d-flex align-items-center">
-      <div class="container py-5">
-        <div class="row py-5 gx-0">
-          <div class="col-xl-6 {{ $align }}">
-            <div class="p-5 bg-cc-strawberry text-dark position-relative h-100 d-flex justify-content-center flex-column" style="z-index: 999;">
-              <h2 id="catering-label" class="monograph-text-bold fs-3 text-cc-accent--gold text-uppercase"><span class="fa-regular fa-party-horn"></span> Catering and Private Events</h2>
-              <p class="flapjack-regular display-3 lh-1 mb-3 d-inline-block">{{ .heading }}</p>
-              {{ if .subheading }}
-                <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
-              {{ end }}
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="bg-cc-accent--gold cc-stripes cc-stripes-tint ps-5 text-white h-100">
-              <div class="bg-cc-accent--gold position-relative p-5 h-100">
-                <p class="lead mb-4 fs-5">{{ .lede }}</p>
-                {{ if .cta }}
-                  {{ range .cta }}
-                    <a class="text-cc-accent--momosa text-decoration-none fs-5 d-block mb-3" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
-                  {{ end }}
+  <section aria-labelledby="catering-label" class="py-5 bg-dark text-white position-relative w-100 h-100 d-flex align-items-center w-100">
+    <div class="w-100">
+      {{ with .background_image }}
+        {{ $image := resources.Get . }}
+        <img
+          class="ag-bg-img"
+          srcset='{{ ( $image.Fill "576x248 webp Center" ).RelPermalink }} 576w, {{ ( $image.Fill "768x330 webp Center" ).RelPermalink }} 768w, {{ ( $image.Fill "992x427 webp Center" ).RelPermalink }} 992w, {{ ( $image.Fill "1200x516 webp Center" ).RelPermalink }} 1200w, {{ ( $image.Fill "1400x602 webp Center" ).RelPermalink }} 1400w, {{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }} 1800w'
+          sizes="(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, (max-width: 1400px) 1400px, 1800px"
+          src='{{ ( $image.Fill "1800x771 webp Center" ).RelPermalink }}'
+          alt=""
+        />
+      {{ end }}
+      <div class="d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row py-5 gx-0">
+            <div class="col-xl-6 {{ $align }}">
+              <div class="p-5 bg-cc-strawberry text-dark position-relative h-100 d-flex justify-content-center flex-column" style="z-index: 999;">
+                <h2 id="catering-label" class="monograph-text-bold fs-3 text-cc-accent--gold text-uppercase"><span class="fa-regular fa-party-horn"></span> Catering and Private Events</h2>
+                <p class="flapjack-regular display-3 lh-1 mb-3 d-inline-block">{{ .heading }}</p>
+                {{ if .subheading }}
+                  <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
                 {{ end }}
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="bg-cc-accent--gold cc-stripes cc-stripes-tint ps-5 text-white h-100">
+                <div class="bg-cc-accent--gold position-relative p-5 h-100">
+                  <p class="lead mb-4 fs-5">{{ .lede }}</p>
+                  {{ if .cta }}
+                    {{ range .cta }}
+                      <a class="text-cc-accent--momosa text-decoration-none fs-5 d-block mb-3" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+                    {{ end }}
+                  {{ end }}
+                </div>
               </div>
             </div>
           </div>
