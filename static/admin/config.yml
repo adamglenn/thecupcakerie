@@ -606,4 +606,4 @@ collections:
             required: false
             fields:
               - { label: "Show", name: "show", widget: "boolean", required: false }
-              - { label: "Message", name: "message", widget: "text" }
+              - { label: "Message", name: "message", widget: "text", required: false }
