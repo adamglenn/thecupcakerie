@@ -15,13 +15,13 @@
   {{ $pageTitle = .title }}
 {{ end }}
 
-{{ if .meta_description }}
-  {{ $description = .meta_description }}
+{{ with .Page.Params.description }}
+  {{ $description = . }}
 {{ end }}
 
 <meta name="description" content="{{ $description }}">
 
-<meta name="twitter:card" content="{{ if .featured_image }}summary_large_image{{else}}summary{{end}}">
+<meta name="twitter:card" content="{{ if .Page.Params.featured_image }}summary_large_image{{else}}summary{{end}}">
 <meta name="twitter:title" content="{{ if eq .Title "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $description }}">
 
@@ -34,18 +34,18 @@
   {{- end -}}
 {{- end -}}
 
-{{- with .featured_image -}}
+{{- with .Page.Params.featured_image -}}
   {{ $featuredImg = resources.Get . }}
   <meta name="twitter:image" content='{{ ( $featuredImg.Fill "1600x900 Center" ).RelPermalink }}'>
 {{ end }}
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ if eq .title "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">
+<meta property="og:title" content="{{ if eq .Title "Home" }}{{ site.Title }}{{ else }}{{ $pageTitle }} &middot; {{ site.Title }}{{ end }}">
 <meta property="og:description" content="{{ $description }}">
 <meta property="og:url" content="{{ $permalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 
-{{ with .featured_image }}
+{{ with .Page.Params.featured_image }}
   {{ $featuredImg = resources.Get . }}
   <meta property="og:image" content='{{ ( $featuredImg.Fill "1200x628 Center" ).RelPermalink }}'>
   <meta property="og:image:secure_url" content='{{ ( $featuredImg.Fill "1200x628 Center" ).RelPermalink }}'>

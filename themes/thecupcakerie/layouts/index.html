@@ -1,23 +1,28 @@
+{{ define "social_meta_tags" }}
+  Test social meta tags.
+  {{ partial "social-meta-tags.html" . }}
+{{ end }}
+
 {{ define "main" }}
 
-{{ partial "hero.html" }}
+  {{ partial "hero.html" }}
 
-{{ partial "hours-and-location.html" }}
+  {{ partial "hours-and-location.html" }}
 
-{{ partial "brunch-and-happy-hour.html" }}
+  {{ partial "brunch-and-happy-hour.html" }}
 
-{{ partial "specials.html" }}
+  {{ partial "specials.html" }}
 
-{{ partial "brands.html" }}
+  {{ partial "brands.html" }}
 
-{{ partial "special-event.html" }}
+  {{ partial "special-event.html" }}
 
-{{ partial "catering-feature.html" . }}
+  {{ partial "catering-feature.html" . }}
 
-{{ partial "featured-dishes.html" }}
+  {{ partial "featured-dishes.html" }}
 
-{{ partial "products.html" . }}
+  {{ partial "products.html" . }}
 
-{{ partial "help-wanted.html" }}
+  {{ partial "help-wanted.html" }}
 
 {{ end }}
