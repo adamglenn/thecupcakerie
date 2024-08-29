@@ -1,13 +1,15 @@
 title: Home
-meta_description: Discover the ultimate café experience! Enjoy artisanal coffee,
-  delicious pastries, and refreshing frosé. Perfect for brunch, meetings, happy
-  hour or a cozy hangout.
+meta_description: Discover the ultimate café experience! Perfect for brunch,
+  business meetings, happy hour, private parties, and more!
 featured_image: /img/frose-flight.webp
 hero:
   heading: Mornings are made for brunch and evenings are meant for happy hour.
-  lede: "Nestled in the heart of Morgantown, West Virginia, our charming cafe
-    offers a unique experience that blends the best of both worlds: delightful
-    brunch offerings and a curated selection of fine wines."
+  lede: Welcome to The Cupcakerie Café & Frosé, nestled right in the heart of
+    Suncrest! The Cupcakerie Café is a full-service café and market. They take
+    pride in their artisan, made-from-scratch food with a local-centric focus to
+    offer an exquisite brunch, happening happy hour, gourmet shareables and
+    flatbreads, charcuterie, takeaway meals, coffee, beer, wine, Frosé (frozen
+    rosé wine), and…of course…cupcakes!
   photo: /img/micheile-henderson-6nNJOV8J1B4-unsplash.jpg
   cta:
     - button_text: Check Out Our Menu
@@ -28,15 +30,15 @@ hours:
     events:
       - title: Burger & Trivia Night
         details:
-          - detail: August 23, 6pm - 8pm
+          - detail: August 30, 6pm - 8pm
       - title: Bend ‘N Brunch
         details:
           - detail: Yoga with a Free Frosé!!!
-          - detail: August 25, 9am - 10am
+          - detail: September Date Coming Soon!
       - title: Wine Pairing Dinner
         details:
           - detail: Reservations Required
-          - detail: August 28, 6pm - 9pm
+          - detail: September 25, 6pm - 9pm
 happyHour:
   heading: Join Us for Happy Hour
   hours:
@@ -95,7 +97,7 @@ special_event:
   logo_alt_text: Beer Fest logo
   details:
     - icon: ""
-      detail: Saturday, April 27, 2024
+      detail: Saturday, April 26, 2025
     - detail: 12PM - 6PM
     - icon: ""
       detail: Downtown Morgantown, Courthouse Square
