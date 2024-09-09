@@ -37,11 +37,7 @@ hours:
           - detail: September Date Coming Soon!
       - title: New Trail Beer Pairing Dinner
         details:
-          - detail: <a class="wx-button"
-              href="https://thecupcakeriecafefrose.ticketspice.com/monthly-pairing-event"
-              style="background:rgba(53,62,71,1);color:white;padding:10px
-              20px;text-decoration:none;font-weight:bold;" target="_blank">Get
-              Tickets</a>
+          - detail: https://thecupcakeriecafefrose.ticketspice.com/monthly-pairing-event
           - detail: September 25, 6pm - 9pm
 happyHour:
   heading: Join Us for Happy Hour
