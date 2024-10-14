@@ -1,7 +1,61 @@
-title: Home
 meta_description: Discover the ultimate café experience! Perfect for brunch,
   business meetings, happy hour, private parties, and more!
 featured_image: /img/frose-flight.webp
+happyHour:
+  heading: Join Us for Happy Hour
+  hours:
+    - days: Tues. - Sat.
+      hours: 4PM - 8PM
+  description: "Looking for the perfect spot to unwind after a long day? Look no
+    further. Our Happy Hour promises to make your evenings brighter and your
+    taste buds happier! "
+  cta:
+    buttonText: View Happy Hour Menu
+    link: /menu/?menu=happy-hour
+products:
+  title: Check Out Our Delicious Selection.
+  description: Our diverse selection of artisanal coffees, teas, and freshly baked
+    treats means there's something for everyone.
+  products:
+    - title: Beer
+      description: Discover our diverse beer selection! Enjoy craft brews, local
+        favorites, and seasonal specials. Cheers to great taste!
+      photoAltText: Pint of beer
+      photo: /img/giovanna-gomes-_8kv86shhpo-unsplash.jpg
+    - title: Wine
+      description: Indulge in our exquisite wine selection, featuring fine reds,
+        whites, and sparkling options. Cheers to elegance!
+      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
+    - title: Cigars
+      description: Savor the finest cigars, where quality and luxury meet. Enjoy a
+        premium selection for true connoisseurs.
+      photo: /img/rich-smith-ze3k2vwynrk-unsplash-1-.jpg
+    - title: Gift Baskets
+      description: Delight with our curated gift baskets, featuring premium wines,
+        gourmet treats, and elegant packaging. Perfect gifts!
+      photo: /img/nurlan-isazade-b5i23qpt1sa-unsplash-1-.jpg
+    - title: Coffee
+      description: Experience the best brews with our diverse coffee selection, from
+        rich espressos to smooth lattes. Sip joyfully!
+      photo: /img/brooke-cagle-x4rjg4ani8o-unsplash.jpg
+    - title: Desserts
+      description: Indulge in sweet delights, where every dessert is a masterpiece.
+        From cakes to pastries, treat yourself!
+      photo: /img/red-cupcakes.webp
+    - title: Market
+      description: Discover a diverse selection at our store! From essentials to
+        unique finds, we offer something for everyone.
+      photo: /img/market.webp
+      photoAltText: Goods from our market
+help:
+  heading: Join Our Team!
+  job: Line/Prep Cook
+  description: We’re looking for experienced food truck and restaurant staff to
+    join our team. Contact
+    [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com) to apply.
+  show: true
+permalink: https://thecupcakerie.com/
+title: Home
 hero:
   heading: Mornings are made for brunch and evenings are meant for happy hour.
   lede: Welcome to The Cupcakerie Café & Frosé, nestled right in the heart of
@@ -30,26 +84,14 @@ hours:
     events:
       - title: Burger & Trivia Night
         details:
-          - detail: September 13, 6pm - 8pm
-      - title: Bend ‘N Brunch
+          - detail: Every Friday, 6pm - 8pm
+      - title: Alzheimers Association Tailgate
         details:
-          - detail: Yoga with a Free Frosé!!!
-          - detail: September 25 @ 9am
-      - title: New Trail Beer Pairing Dinner
+          - detail: October 17, 5pm - 8pm
+      - title: 19 Crimes Murder Mystery Pairing Dinner
         details:
           - detail: https://thecupcakeriecafefrose.ticketspice.com/monthly-pairing-event
-          - detail: September 25, 6pm - 9pm
-happyHour:
-  heading: Join Us for Happy Hour
-  hours:
-    - days: Tues. - Sat.
-      hours: 4PM - 8PM
-  description: "Looking for the perfect spot to unwind after a long day? Look no
-    further. Our Happy Hour promises to make your evenings brighter and your
-    taste buds happier! "
-  cta:
-    buttonText: View Happy Hour Menu
-    link: /menu/?menu=happy-hour
+          - detail: October 30, 6pm - 9pm
 brunch:
   heading: Brunch Daily
   hours:
@@ -130,46 +172,3 @@ catering:
     - button_text: Rent Our Frose Machine
       url: /frose-machine
   background_image: /img/saile-ilyas-siwrpbnxdww-unsplash.jpg
-products:
-  title: Check Out Our Delicious Selection.
-  description: Our diverse selection of artisanal coffees, teas, and freshly baked
-    treats means there's something for everyone.
-  products:
-    - title: Beer
-      description: Discover our diverse beer selection! Enjoy craft brews, local
-        favorites, and seasonal specials. Cheers to great taste!
-      photoAltText: Pint of beer
-      photo: /img/giovanna-gomes-_8kv86shhpo-unsplash.jpg
-    - title: Wine
-      description: Indulge in our exquisite wine selection, featuring fine reds,
-        whites, and sparkling options. Cheers to elegance!
-      photo: /img/hermes-rivera-ak6wgqxyhfw-unsplash.jpg
-    - title: Cigars
-      description: Savor the finest cigars, where quality and luxury meet. Enjoy a
-        premium selection for true connoisseurs.
-      photo: /img/rich-smith-ze3k2vwynrk-unsplash-1-.jpg
-    - title: Gift Baskets
-      description: Delight with our curated gift baskets, featuring premium wines,
-        gourmet treats, and elegant packaging. Perfect gifts!
-      photo: /img/nurlan-isazade-b5i23qpt1sa-unsplash-1-.jpg
-    - title: Coffee
-      description: Experience the best brews with our diverse coffee selection, from
-        rich espressos to smooth lattes. Sip joyfully!
-      photo: /img/brooke-cagle-x4rjg4ani8o-unsplash.jpg
-    - title: Desserts
-      description: Indulge in sweet delights, where every dessert is a masterpiece.
-        From cakes to pastries, treat yourself!
-      photo: /img/red-cupcakes.webp
-    - title: Market
-      description: Discover a diverse selection at our store! From essentials to
-        unique finds, we offer something for everyone.
-      photo: /img/market.webp
-      photoAltText: Goods from our market
-help:
-  heading: Join Our Team!
-  job: Line/Prep Cook
-  description: We’re looking for experienced food truck and restaurant staff to
-    join our team. Contact
-    [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com) to apply.
-  show: true
-permalink: https://thecupcakerie.com/
