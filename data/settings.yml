@@ -38,8 +38,8 @@ social_media_accounts:
     url: https://www.tiktok.com/@thecupcakeriewv
     icon_code: tiktok
 hours:
-  - hours_line: Sun. - Mon. 10AM - 2PM
-  - hours_line: Tues. - Sat. 10AM - 8PM
+  - hours_line: Sun. - Wed. 8AM - 2PM
+  - hours_line: Thurs. - Sat. 8AM - 8PM
 special_hours:
   show: false
   message: We will be closed on Thursday, July 4th.
