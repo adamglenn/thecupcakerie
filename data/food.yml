@@ -1,12 +1,12 @@
 title: Menu
-meta_description: Brunch, happy hour, desserts, and kids’ menu.
+meta_description: Breakfast, brunch, lunch, happy hour, Charcuterie, desserts, and kids’ menu.
 permalink: https://thecupcakerie.com/menu/
 featured_image: /img/mon-valley-mushroom-melt.webp
 cupcake_message: Our cupcake menu changes often, offering new flavors and treats
   to savor with every visit! Inquire at about our cupcake menu at
   [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com).
 menus:
-  - menu_name: Brunch
+  - menu_name: Main Menu
     menu_sections:
       - title: Brunch Plates
         description: ""
@@ -14,49 +14,55 @@ menus:
           - title: Classic Eggs Benedict
             description: English Muffin, smoked ham, Hollandaise
             options:
-              - price: "13.00"
+              - price: "15.00"
             photo: ""
             feature: false
             note: Served with Hash Browns or Fresh Fruit.
           - title: Avocado Benedict
             description: English Muffin, Avocado, Poached Eggs Hollandaise
             options:
-              - price: "13.00"
+              - price: "15.00"
             note: Served with Hash Browns or Fresh Fruit.
           - title: The Mountaineer
             description: Two eggs your way, sausage or applewood smoked bacon, toast
             options:
-              - price: "12.00"
+              - price: "14.00"
             note: Served with Hash Browns or Fresh Fruit.
-          - title: Monte Cristo
-            description: Ham, Swiss, Mustard, French Toast Battered, Raspberry Compote
+          - title: Croque Madame
+            description: Sourdough, Smoked Ham, Swiss Cheese, Beer Cheese, Sunny Side Up Egg
             options:
-              - price: "13.00"
-            note: Served with Hash Browns or Fresh Fruit
-          - title: Romney Peach Stack Cakes
-            description: Buckwheat cakes, choice of bacon or sausage, roasted peaches,
+              - price: "17.00"
+            note: ""
+          - title: Apple Stack Cakes
+            description: Buckwheat cakes, choice of bacon or sausage, roasted apples,
               cinnamon, bourbon maple, smoked butter
             options:
               - price: "14.00"
-          - title: Pepperoni Hash
-            description: Hash Browns, Fried Pepperoni, Banana Peppers, Pickled Onion,
-              Parmesan, 2 Fried Eggs, Hollandaise
+          - title: The Western Hash
+            description: Hash Browns, Smoked Ham, Peppadew Peppers, Caramelized Onion, White
+              Cheddar, 2 Fried Eggs, Hollandaise
+            options:
+              - price: "16.00"
+          - title: Breakfast Club
+            description: Sourdough, Two Fried Eggs, Bacon, Provolone, Sriracha, Garlic
+              Aioli, Hashbrowns
             options:
               - price: "13.00"
-          - title: Parfait
-            description: Yogurt, honey walnut granola, fresh berries & cream.
+            note: Served with Hash Browns or Fresh Fruit.
+          - title: Steel Cut Oat Risotto
+            description: Caramelized Apples, Butter, Bourbon Maple, Toasted Almonds, Whipped
+              Cream
             options:
-              - price: "8.00"
-          - title: Peaches and Cream Steel Cut Oal Risotto
-            description: Caramelized Peaches, Butter, Bourbon Maple, Whipped Cream, Walnuts
+              - price: "10.00"
+          - title: Avacado Benedict
+            description: English Muffin, Mon Valley Mushrooms, Peppadew Peppers, Poached
+              Eggs, Hollandaise
+            note: Served with hash browns or fresh fruit.
             options:
-              - price: "8.00"
+              - price: "15.00"
       - title: A La Carte
         items:
           - title: (2) Eggs Your Way
-            options:
-              - price: "4.00"
-          - title: Honey Walnut Granola
             options:
               - price: "4.00"
           - title: (3) Slices of Bacon
@@ -84,30 +90,29 @@ menus:
         items:
           - title: Weekly Feature Soup
             options:
-              - price: "4.00"
-                option: Cup
               - price: "6.00"
+                option: Cup
+              - price: "8.00"
                 option: Bowl
           - title: Soup and Half Sandwich
             description: Soup of the Day, Chef’s Choice Half Sandwich
             options:
               - price: MP
-          - title: Peach Caprese
-            description: Fresh Peaches, Burrata Cheese, JQ Dickinson Salt
+          - title: Stuffed Peppadew Peppers
+            description: Goat Cheese, Applewood Smoked Bacon, Arugula, Peppadew Pepper Jam
             designation:
               - GF
-              - V
             options:
-              - price: "16.00"
-            photo: /img/peach-caprese.webp
+              - price: "9.00"
+            photo: ""
             feature: true
           - title: Grilled Caesar
             description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
               Shaved Parmesan, Croutons, Creamy Caesar
             options:
-              - price: "7.00"
+              - price: "10.00"
                 option: Half
-              - price: "14.00"
+              - price: "15.00"
                 option: Full
             photo: ""
             feature: true
@@ -117,9 +122,9 @@ menus:
             designation:
               - GF
             options:
-              - price: "8.00"
+              - price: "12.00"
                 option: Half
-              - price: "16.00"
+              - price: "18.00"
                 option: Full
             photo: /img/harvest-cobb.webp
             feature: true
@@ -130,7 +135,16 @@ menus:
               - GF
               - V
             options:
-              - price: "15.00"
+              - price: "16.00"
+          - title: Chef's Italian Cobb
+            description: Romaine & Arugula Blend, Smoked Ham, Salami, Pepperoni, White
+              Cheddar & Mozzarella, Banana Peppers, Tomatoes, Cucumbers, Hard
+              Boiled Eggs, House Italian Dressing
+            options:
+              - option: Half
+                price: "12.00"
+              - option: Full
+                price: "18.00"
         postscript:
           - line: Add Chicken 6 | Add Steak 8 | Add Salmon 9
           - line: "Dressings: Maple Basalmic Vinaigrette, Sundried Tomato Italian, Creamy
@@ -171,179 +185,36 @@ menus:
               - price: "14.00"
             photo: /img/mon-valley-mushroom-melt.webp
             feature: true
+          - title: Giovanni Patty Melt
+            description: Local WV Burger, Sourdough, Rozy's Peppers, Provolone Cheese
+            options:
+              - price: "17.00"
     show_legend: true
     postscript:
       - line: "Farms: Hawthorne Valley Farms, Mon Valley Mushrooms, JQ Dickinson Salt
           Works, Mal’s Fresh Produce, Quantum Bean, Dawson Orchards Inc."
-  - menu_name: Happy Hour
+  - menu_name: Charcuterie
     menu_sections:
-      - title: Weekly Slights
-        items:
-          - title: Tuesday
-            description: 2 Chef’s Tacos
-            options:
-              - price: "12.00"
-          - title: Wednesday
-            description: 3 Frose Flight, 3 Mini Cupcake Flight
-            options:
-              - price: "25.00"
-          - title: Thursday
-            description: 3 Wine Flight, Chef’s Choice Charcuterie
-            options:
-              - price: "38.00"
-          - title: Friday
-            description: Burger Night
-            options:
-              - price: MP
-      - title: Charcuterie Boards
-        description: Mixed Nuts, House Pickles, Dates, Toasted Sourdough
-        items:
-          - title: 2 Meats, 2 Cheeses
+      - items:
+          - title: 2 Meats & 2 Cheeses
             options:
               - price: "18.00"
-          - title: 3 Meats, 3 Cheeses
+          - title: 3 Meats & 3 Cheeses
             options:
               - price: "24.00"
-          - title: Add Extra Bread
-            options:
-              - price: "6.00"
-      - title: Soups & Salads
-        items:
-          - title: Weekly Feature Soup
-            options:
-              - price: "4.00"
-                option: Cup
-              - price: "6.00"
-                option: Bowl
-          - title: Soup and Half Sandwich
-            description: Soup of the Day, Chef’s Choice Half Sandwich
-            options:
-              - price: MP
-          - title: Peach Caprese
-            description: Fresh Peaches, Burrata Cheese, JQ Dickinson Salt
-            designation:
-              - GF
-            options:
-              - price: "16.00"
-            photo: /img/peach-caprese.webp
-          - title: Grilled Caesar
-            description: Grilled Romaine Hearts, Pickled Red Onions, Blistered Tomatoes,
-              Shaved Parmesan, Croutons, Creamy Caesar
-            designation:
-              - V
-            options:
-              - price: "7.00"
-                option: Half
-              - price: "14.00"
-                option: Full
-            photo: ""
-            feature: true
-          - title: Harvest Cobb
-            description: Romaine and Arugula Mix, Chicken, Bacon, Bleu Cheese, Gala Apples,
-              Craisins, Walnuts, Maple Basalmic Vinaigrette
-            designation:
-              - GF
-            options:
-              - price: "8.00"
-                option: Half
-              - price: "16.00"
-                option: Full
-            photo: /img/harvest-cobb.webp
-          - title: The Greek (One Size)
-            description: Greek Potato Salad, Romaine Mix, Blistered Tomatoes, Marinated Red
-              Onions & Cucumbers, Oregano, Feta, Kalamata Olives
-            designation:
-              - GF
-              - V
-            options:
-              - price: "15.00"
-      - title: Bites
-        items:
-          - title: Stuffed Peppadew Peppers
-            description: Goat Cheese, Applewood Smoked Bacon, Arugula, Peppadew Pepper Jam
-            designation:
-              - GF
-            options:
-              - price: "8.00"
-          - title: Pork Belly Steam Buns
-            description: Hoisin, Pickled Cucumbers, Scallions, Sesame Seeds, Siracha
-            options:
-              - price: "14.00"
-          - title: Spinach and Artichoke Dip
-            description: Sauteed Spinach, Artichoke Hearts, White Cheddar, Ranch, Dill,
-              Toasted Flatbread
-            options:
-              - price: "15.00"
-      - title: Flatbreads
-        items:
-          - title: The Mane
-            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew
-              Peppers
-            designation:
-              - V
-            options:
-              - price: "14.00"
-          - title: The Classic
-            description: Pepperoni, Mozzarella & White Cheddar, Marinara
-            options:
-              - price: "13.00"
-          - title: The Buffalo
-            description: Oven Roasted Chicken, Siracha Buffalo, Bleu Cheese, Red Onions
-            options:
-              - price: "14.00"
-      - title: Handhelds
-        description: Served with chips or seasonal fruit.
-        items:
-          - title: B.E.L.T.
-            description: Applewood Smoked Bacon, Over Medium Egg, Lettuce, Tomato, Roasted
-              Pepper Aoli, Wheatberry Bread
-            options:
-              - price: "14.00"
-          - title: B.L.T.
-            description: Applewood Smoked Bacon, Lettuce, Tomato, Roasted Pepper Aoli,
-              Wheatberry Bread
-            options:
-              - price: "13.00"
-            photo: ""
-            feature: false
-          - title: The Hot Italian
-            description: Pepperoni, Smoked Ham, Salami, Shredded Lettuce, Tomato, Banana
-              Peppers, Pickled Red Onion, Sun Dried Tomato Italian, Baguette
-            options:
-              - price: "16.00"
-          - title: The Chef’s Cubano
-            description: Smoked Ham, Pork Belly, House Pickles, Honey Dijon, Swiss, Baguette
-            options:
-              - price: "16.00"
-          - title: The Dagwood Club
-            description: Shaved Chicken, Avocado, Applewood Smoked Bacon, Swiss, Lettuce,
-              Tomato, Red Onion, Garlic Aoli, Sourdough
-            options:
-              - price: "15.00"
-          - title: The Mon Mushroom Melt
-            description: Swiss, Arugula, Mon Valley Mushrooms, Caramelized Onion, Peppadew
-              Peppers, Sourdough
-            designation:
-              - V
-            options:
-              - price: "14.00"
-            photo: /img/mon-valley-mushroom-melt.webp
-    show_legend: true
-    postscript:
-      - line: "Farms: Hawthorne Valley Farms, Mon Valley Mushrooms, JQ Dickinson Salt
-          Works, Mal’s Fresh Produce, Quantum Bean, Dawson Orchards Inc."
+    description: Mixed Nuts, House Pickles, Dates, Toasted Sourdough
   - menu_name: Desserts
     menu_sections:
       - title: ""
         items:
-          - title: Romney Peach Stack Cake
+          - title: Rotating Crème Brûlée
             options:
-              - price: "11.00"
-            description: Buckwheat Shortbread, Bourbon Peach Butter, Maple Candy
-          - title: Pot De Creme
+              - price: "8.00"
+            description: ""
+          - title: Filthy Cherry Bread Pudding
             options:
               - price: "10.00"
-            description: Vanilla Cream, Strawberry, Buckwheat Shortbread Crumble
+            description: Bourbon Crème Anglaise, Almond Brittle
     show_legend: true
   - menu_name: Kids Menu
     menu_sections:
@@ -363,8 +234,4 @@ menus:
             description: Peanut Butter, Strawberry Jelly, Grilled Sourdough
             options:
               - price: "8.00"
-          - title: Slight Cupcakes
-            description: (3) Mini Cupcakes of Your Choice
-            options:
-              - price: "6.00"
     show_legend: true
