@@ -37,15 +37,11 @@ hours:
           - detail: https://thecupcakeriecafefrose.ticketspice.com/monthly-pairing-event
           - detail: November 27, 6pm - 9pm
 happyHour:
-  heading: Join Us for Happy Hour
-  hours:
-    - days: Thurs. - Sat.
-      hours: 4PM - 8PM
-  description: "Looking for the perfect spot to unwind after a long day? Look no
-    further. Our Happy Hour promises to make your evenings brighter and your
-    taste buds happier! "
+  heading: Order your Christmas Dinner today!!!
+  hours: []
+  description: "Let us help take care of Christmas Dinner this year! "
   cta:
-    buttonText: View Happy Hour Menu
+    buttonText: View Christmas Dinner Menu
     link: /menu/?menu=happy-hour
 brunch:
   heading: Breakfast & Brunch Daily
