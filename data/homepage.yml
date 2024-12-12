@@ -46,48 +46,12 @@ happyHour:
   cta:
     buttonText: View Happy Hour Menu
     link: /menu/?menu=happy-hour
-brunch:
-  heading: Breakfast & Brunch Daily
-  hours:
-    - days: Tues. - Sat.
-      hours: 8AM - 4PM
-    - days: Sun. - Mon.
-      hours: 8AM - 2PM
-  cta:
-    buttonText: View Brunch Menu
-    link: /menu/?menu=brunch
-  description: Indulge in the ultimate brunch experience! Join us for delightful
-    dishes, refreshing mimosas, and a cozy atmosphere. Our menu has something
-    for everyone.
 specials:
   heading: Join Us for Live Music
   details:
     - line: Every Saturday
     - line: 11AM - 3PM
   photo: /img/kelli-mcclintock-dtf5vnfv1uu-unsplash.jpg
-brands:
-  title: Friends
-  subhead: We proudly source ingredients from local producers, ensuring every dish
-    is vibrant and delicious.
-  logos:
-    - brand: Hawthorne Valley Farms
-      logo: /img/hawthorne-logo.webp
-      url: https://farm.hawthornevalley.org/
-    - brand: Mon Valley Mushrooms
-      logo: /img/mon-valley-mushrooms.webp
-      url: https://monvalleymushrooms.com/
-    - brand: JQ Dickinson Salt Works
-      logo: /img/jqd-logo.webp
-      url: https://www.jqdsalt.com/
-    - brand: Mal’s Fresh Produce
-      logo: /img/mal-s-logo.webp
-      url: https://www.malsfreshproduce.com/
-    - brand: Quantum Bean
-      logo: /img/quantum-logo.webp
-      url: https://www.quantumbean.com/
-    - brand: Dawson’s Orchards Inc.
-      logo: /img/dawson-s-logo.webp
-      url: https://www.dawsonsorchards.com/
 special_event:
   logo: /img/festival-logo.svg
   logo_alt_text: Beer Fest logo
@@ -164,8 +128,44 @@ products:
 help:
   heading: Join Our Team!
   job: Line/Prep Cook
-  description: We’re looking for experienced food truck and restaurant staff to
-    join our team. Contact
-    [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com) to apply.
+  description: We’re looking for experienced restaurant staff to join our team.
+    Contact [orders@thecupcakerie.com](mailto:orders@thecupcakerie.com) to
+    apply.
   show: true
 permalink: https://thecupcakerie.com/
+brunch:
+  heading: Breakfast & Brunch Daily
+  hours:
+    - days: Tues. - Sat.
+      hours: 8AM - 4PM
+    - days: Sun. - Mon.
+      hours: 8AM - 2PM
+  cta:
+    buttonText: View Brunch Menu
+    link: /menu/?menu=brunch
+  description: Indulge in the ultimate brunch experience! Join us for delightful
+    dishes, refreshing mimosas, and a cozy atmosphere. Our menu has something
+    for everyone.
+brands:
+  title: Friends
+  subhead: We proudly source ingredients from local producers, ensuring every dish
+    is vibrant and delicious.
+  logos:
+    - brand: Hawthorne Valley Farms
+      logo: /img/hawthorne-logo.webp
+      url: https://farm.hawthornevalley.org/
+    - brand: Mon Valley Mushrooms
+      logo: /img/mon-valley-mushrooms.webp
+      url: https://monvalleymushrooms.com/
+    - brand: JQ Dickinson Salt Works
+      logo: /img/jqd-logo.webp
+      url: https://www.jqdsalt.com/
+    - brand: Mal’s Fresh Produce
+      logo: /img/mal-s-logo.webp
+      url: https://www.malsfreshproduce.com/
+    - brand: Quantum Bean
+      logo: /img/quantum-logo.webp
+      url: https://www.quantumbean.com/
+    - brand: Dawson’s Orchards Inc.
+      logo: /img/dawson-s-logo.webp
+      url: https://www.dawsonsorchards.com/
