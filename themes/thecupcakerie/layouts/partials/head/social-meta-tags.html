@@ -35,8 +35,14 @@
 {{- end -}}
 
 {{- with .featured_image -}}
-  {{ $featuredImg = resources.Get . }}
-  <meta name="twitter:image" content='{{ ( $featuredImg.Fill "1600x900 Center" ).RelPermalink }}'>
+  {{ if hasPrefix . "http"}}
+    {{ $featuredImg = resources.GetRemote . }}
+  {{ else }}
+    {{ $featuredImg = resources.Get . }}
+  {{ end }}
+  {{ if eq $featuredImg.MediaType.MainType "image" }}
+    <meta name="twitter:image" content='{{ ( $featuredImg.Fill "1600x900 Center" ).RelPermalink }}'>
+  {{ end }}
 {{ end }}
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">

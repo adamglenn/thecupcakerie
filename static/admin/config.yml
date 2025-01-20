@@ -19,7 +19,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Hero"
             name: "hero"
@@ -28,7 +28,7 @@ collections:
             fields:
               - { label: "Heading", name: 'heading', widget: 'string' }
               - { label: "Lede", name: 'lede', widget: 'text' }
-              - { label: "Background Image", name: "featured_image", widget: "image" }
+              - { label: "Background Image", name: "featured_image", widget: "image", choose_url: false }
               - label: "Call to Action"
                 name: "cta"
                 widget: list
@@ -149,7 +149,7 @@ collections:
                 collapse: true
                 fields:
                   - { label: "brand", name: "brand", widget: "string" }
-                  - { label: "logo", name: "logo", widget: "image" }
+                  - { label: "logo", name: "logo", widget: "image", choose_url: false }
                   - { label: "url", name: "url", widget: "string", required: false }
           - label: "Special Event"
             name: "special_event"
@@ -164,6 +164,7 @@ collections:
                 name: "logo"
                 widget: "image"
                 required: false
+                choose_url: false
               - label: "Logo Alt Text"
                 name: "logo_alt_text"
                 widget: "text"
@@ -179,7 +180,7 @@ collections:
                 name: "photos"
                 widget: "list"
                 fields:
-                  - { label: "Photo", name: "photo", widget: "image" }
+                  - { label: "Photo", name: "photo", widget: "image", choose_url: false }
                   - { label: "Photo Alt Text", name: "photo_alt_text", widget: "string" }
                 max: 3
                 required: false
@@ -191,6 +192,7 @@ collections:
               - label: "Background Image"
                 name: "background_image"
                 widget: "image"
+                choose_url: false
               - label: "Align"
                 name: "align"
                 widget: "select"
@@ -227,6 +229,7 @@ collections:
                   - label: "Photo"
                     name: "photo"
                     widget: "image"
+                    choose_url: false
                   - label: "Photo Alt Text"
                     name: "photoAltText"
                     widget: "string"
@@ -257,7 +260,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Cupcake Message", name: "cupcake_message", widget: "markdown", required: false }
           - label: "Menus"
@@ -347,7 +350,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
@@ -406,7 +409,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - label: "Menus"
             name: "menus"
@@ -474,7 +477,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown", required: false }
       - label: "Frosé Machine"
@@ -485,7 +488,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown" }
       - label: "Order"
@@ -496,7 +499,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown", required: false }
       - label: "About"
@@ -507,7 +510,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Content", name: "content", widget: "markdown" }
       - label: "Blog"
@@ -518,7 +521,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "text", hint: "Used by search engines.", required: false }
-          - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+          - { label: "Featured Image", name: "featured_image", widget: "image", required: false, choose_url: false }
           - { label: "Featured Image Alt", name: "featured_image_alt", widget: "string", required: false }
           - { label: "Intro", name: "intro", widget: "markdown", hint: "Create blog articles from the Collections panel under Blog. This is just for the intro copy of the Blog landing page.", required: false }
       - label: "Event Confirmation"
@@ -548,7 +551,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Featured Image', name: 'featured_image', widget: 'image', required: false }
+      - { label: 'Featured Image', name: 'featured_image', widget: 'image', required: false, choose_url: false }
       - { label: 'Featured Image Alt', name: 'featured_image_alt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: "Settings"
