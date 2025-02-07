@@ -15,8 +15,8 @@ menus:
             description: English Muffin, smoked ham, Hollandaise
             options:
               - price: "15.00"
-            photo: ""
-            feature: false
+            photo: /img/screen-shot-2025-02-07-at-10.19.30-am.png
+            feature: true
             note: Served with Hash Browns or Fresh Fruit.
           - title: Avocado Benedict
             description: English Muffin, Avocado, Poached Eggs Hollandaise
