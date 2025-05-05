@@ -4,18 +4,11 @@
   <div class="container mb-5 text-center">
     <div class="row">
       <div class="col-xl-8 text-center mx-auto">
-        <h2 id="brands-label" class="h4 text-uppercase cc-text-letter-spacing-2">{{ .title }}</h2>
-        <p class="flapjack-regular fs-1 lh-1">{{ .subhead }}</p>
+        <h2 id="brands-label" class="display-3 text-cc-accent--frose supa-mega-fantastic-script">{{ .title }}</h2>
+        <p class="supa-mega-fantastic-caps display-5 lh-1">{{ .subhead }}</p>
       </div>
     </div>
     
-    <div class="triple-diamond-deco-container container mt-4 mb-5">
-      <div class="left-line"></div>
-      <div class="right-line"></div>
-      <div class="small-diamond-left"></div>
-      <div class="small-diamond-right"></div>
-      <div class="large-diamond"></div>
-    </div>
     <div class="row justify-content-center">
       {{ range .logos }}
         {{ $image = resources.Get .logo }}

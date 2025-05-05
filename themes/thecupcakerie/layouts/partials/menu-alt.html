@@ -4,18 +4,18 @@
     {{ if eq .Page.Title "Home" }}
       <a class="navbar-brand py-2 py-3 mt-n1" href="/"><div class="cc-logo-switch"></div><span class="visually-hidden">{{ site.Title }}</span></a>
     {{ else }}
-      <a class="navbar-brand py-2 mt-n1" href="/"><img class="cc-logo" loading="lazy" src="/cupcakerie-logo.svg" width="149px" alt="The Cupcakerie Logo" /><span class="visually-hidden">{{ site.Title }}</span></a>
+      <a class="navbar-brand py-2 mt-n1" href="/"><img class="cc-logo" loading="lazy" src="/cr-logo-full-color-rgb.svg" width="149px" alt="The Cupcakerie Logo" /><span class="visually-hidden">{{ site.Title }}</span></a>
     {{ end }}
-    <button class="navbar-toggler flapjack-regular py-2 mb-2 text-dark rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler supa-mega-fantastic-caps py-2 mb-2 text-dark rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa-regular fa-bars"></span> Menu
     </button>
     <div class="w-100">
       <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-xl-0 flapjack-regular fs-5 me-4">
+        <ul class="navbar-nav mb-2 mb-xl-0 supa-mega-fantastic-caps fs-5 me-4">
           {{- with site.Data.settings.site_menu }}
             {{- range . }}
               <li class="nav-item">
-                <a class='nav-link {{ if ne .Page.Title "Home" }}text-dark{{ end }} {{ if eq $pageTitle .menu_item }}border-bottom border-2 border-cc-accent--gold{{ end }}' href="{{ .url }}">{{ .menu_item }}</a>
+                <a class='nav-link h4 {{ if ne .Page.Title "Home" }}text-dark{{ end }} {{ if eq $pageTitle .menu_item }}border-bottom border-2 border-cc-accent--gold{{ end }}' href="{{ .url }}">{{ .menu_item }}</a>
               </li>
             {{- end }}
           {{ end }}

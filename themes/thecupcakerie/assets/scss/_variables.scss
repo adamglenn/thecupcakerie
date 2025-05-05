@@ -3,6 +3,10 @@
 $monograph-text-regular: 'Monograf-Text-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
 $monograph-text-bold: 'Monograf-Text-Bold', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
 $flapjack-regular: 'OTRFlapjack-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+
+$asfallt-regular: 'ASFALLT-Sans-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$supa-mega-fantastic-caps: 'SupaMegaFantasticCaps', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
+$supa-mega-fantastic-script: 'SupaMegaFantasticScript', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
 // $bosten-regular: 'Bosten-Regular', 'Helvetica CY', Arial, 'Lucida Grande', sans-serif !default;
 
 // Color
@@ -41,13 +45,13 @@ $light:         $gray-100;
 $dark:          $gray-900;
 
 // Primary
-$cc-strawberry: #fde9e6;
-$cc-strawberry-tint: #f5ddda;
+$cc-strawberry: #f8eeed;
+$cc-strawberry-tint: #f5eae9;
 
-$cc-accent--gold: #a37941;
-$cc-accent--frose: #B71F3A;
-$cc-accent--pink: #E56E89; // #F05689 will be final
-$cc-accent--mojito: #72D679;
+$cc-accent--gold: #c4c488;
+$cc-accent--frose: #ec6767;
+$cc-accent--pink: #ba7276; // #F05689 will be final
+$cc-accent--mojito: #4aa370;
 $cc-accent--manhattan: #EE2B28;
 $cc-accent--momosa: #FFD13A;
 

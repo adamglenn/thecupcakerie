@@ -11,57 +11,46 @@
 // }
 
 @font-face {
-	font-family: 'Monograf-Text-Bold';
-	src: url('/fonts/monograf-text-bold.eot');
-	src: url('/fonts/monograf-text-bold.eot?#iefix') format('embedded-opentype'),
-             url('/fonts/monograf-text-bold.woff2') format('woff2'),
-	     url('/fonts/monograf-text-bold.woff') format('woff'),
-	     url('/fonts/monograf-text-bold.ttf') format('truetype'),
-	     url('/fonts/monograf-text-bold.svg#youworkforthem') format('svg');
+	font-family: 'ASFALLT-Sans-Regular';
+	src: url('/fonts/Asfallt-Sans-Type/asfallt-sans-regular-webfont.woff2');
+	src: url('/fonts/Asfallt-Sans-Type/asfallt-sans-regular-webfont.woff2') format('woff2'),
+	     url('/fonts/Asfallt-Sans-Type/asfallt-sans-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Monograf-Text-Regular';
-	src: url('/fonts/monograf-text-regular.eot');
-	src: url('/fonts/monograf-text-regular.eot?#iefix') format('embedded-opentype'),
-             url('/fonts/monograf-text-regular.woff2') format('woff2'),
-	     url('/fonts/monograf-text-regular.woff') format('woff'),
-	     url('/fonts/monograf-text-regular.ttf') format('truetype'),
-	     url('/fonts/monograf-text-regular.svg#youworkforthem') format('svg');
+	font-family: 'SupaMegaFantasticCaps';
+	src: url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticcaps-webfont.woff2');
+	src: url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticcaps-webfont.woff2') format('woff2'),
+	     url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticcaps-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'OTRFlapjack-Regular';
-	src: url('/fonts/otr-flapjack-regular.eot');
-	src: url('/fonts/otr-flapjack-regular.eot?#iefix') format('embedded-opentype'),
-             url('/fonts/otr-flapjack-regular.woff2') format('woff2'),
-	     url('/fonts/otr-flapjack-regular.woff') format('woff'),
-	     url('/fonts/otr-flapjack-regular.ttf') format('truetype'),
-	     url('/fonts/otr-flapjack-regular.svg#youworkforthem') format('svg');
+	font-family: 'SupaMegaFantasticScript';
+	src: url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticscript-webfont.woff2');
+	src: url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticscript-webfont.woff2') format('woff2'),
+	     url('/fonts/Supa-Mega-Fantastic-Font-Duo/supamegafantasticscript-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-// .bosten-regular {
-//   font-family: $bosten-regular !important;
-// }
-
-.flapjack-regular {
-  font-family: $flapjack-regular !important;
-  text-transform: lowercase !important;
+.asfallt-regular {
+  font-family: $asfallt-regular !important;
 }
 
-.monograph-text-bold {
-  font-family: $monograph-text-bold !important;
+.supa-mega-fantastic-caps {
+  font-family: $supa-mega-fantastic-caps !important;
 }
 
-.monograph-text-regular {
-  font-family: $monograph-text-regular !important;
-  strong {
-    font-family: $monograph-text-bold !important;
-  }
+.supa-mega-fantastic-script {
+  font-family: $supa-mega-fantastic-script !important;
+}
+
+.ledger-regular {
+  font-family: "Ledger", serif;
+  font-weight: 400;
+  font-style: normal;
 }

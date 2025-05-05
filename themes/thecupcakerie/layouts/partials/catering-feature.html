@@ -22,20 +22,20 @@
           <div class="row py-5 gx-0">
             <div class="col-xl-6 {{ $align }}">
               <div class="p-5 bg-cc-strawberry text-dark position-relative h-100 d-flex justify-content-center flex-column" style="z-index: 999;">
-                <h2 id="catering-label" class="monograph-text-bold fs-3 text-cc-accent--gold text-uppercase"><span class="fa-regular fa-party-horn"></span> Catering and Private Events</h2>
-                <p class="flapjack-regular display-3 lh-1 mb-3 d-inline-block">{{ .heading }}</p>
+                <h2 id="catering-label" class="asfallt-regular fs-5 text-cc-accent--frose text-uppercase"><span class="fa-regular fa-party-horn"></span> Catering and Private Events</h2>
+                <p class="asfallt-regular display-5 lh-1 mb-3 d-inline-block">{{ .heading }}</p>
                 {{ if .subheading }}
                   <p class="monograph-text-bold fs-2">{{ .subheading }}</p>
                 {{ end }}
               </div>
             </div>
             <div class="col-xl-6">
-              <div class="bg-cc-accent--gold cc-stripes cc-stripes-tint ps-5 text-white h-100">
+              <div class="bg-cc-accent--gold text-dark cc-stripes cc-stripes-tint ps-5 h-100">
                 <div class="bg-cc-accent--gold position-relative p-5 h-100">
                   <p class="lead mb-4 fs-5">{{ .lede }}</p>
                   {{ if .cta }}
                     {{ range .cta }}
-                      <a class="text-cc-accent--momosa text-decoration-none fs-5 d-block mb-3" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
+                      <a class="text-decoration-none fs-5 d-block mb-3" href="{{ .url }}">{{ .button_text }} <span class="fas fa-arrow-right"></span></a>
                     {{ end }}
                   {{ end }}
                 </div>

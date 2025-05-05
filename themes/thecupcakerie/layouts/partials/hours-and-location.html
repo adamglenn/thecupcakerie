@@ -1,24 +1,24 @@
-<section aria-labelledby="hours-and-location-label" class="bg-dark text-white py-5">
+<section aria-labelledby="hours-and-location-label" class="bg-cc-strawberry-tint text-dark py-5">
   <div class="container position-relative">
     <h2 class="visually-hidden" id="hours-and-location-label">Hours of Operation, Contact Info and Food Truck Info</h2>
     <div class="row position-relative py-3 gx-xl-5 justify-content-center">      
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
           {{ with site.Data.homepage.hours }}
-            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .title }}</h3>
+            <h3 class="h2 supa-mega-fantastic-script cc-text-letter-spacing-2 mb-3">{{ .title }}</h3>
           {{ end }}
           {{ with site.Data.settings }}
             <address class="ms-4 position-relative">
-              <span class="fas fa-map-marker-alt text-cc-accent--gold position-absolute ms-n4"></span>
+              <span class="fas fa-map-marker-alt text-cc-accent--pink position-absolute ms-n4"></span>
               {{ range .address }}
                 <span class="d-block">{{ .line }}</span>
               {{ end }}
             </address>
             {{ if .map_link }}
-              <p class="ms-4 mt-n2"><a class="text-white" href="{{ .map_link }}">View on Map</a></p>
+              <p class="ms-4 mt-n2"><a class="" href="{{ .map_link }}">View on Map</a></p>
             {{ end }}
             <p class="ms-4 position-relative">
-              <span class="fas fa-clock text-cc-accent--gold position-absolute ms-n4"></span>
+              <span class="fas fa-clock text-cc-accent--pink position-absolute ms-n4"></span>
               {{ range .hours }}
                 <span class="d-block">{{ .hours_line }}</span>
               {{ end }}
@@ -32,7 +32,7 @@
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
           {{ with site.Data.homepage.hours.get_ahold_of_us }}
-            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>
+            <h3 class="h2 supa-mega-fantastic-script cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>
             {{ $markdown := .copy | markdownify }}
             {{ if not ( strings.Contains $markdown "<p>" ) }}
               <p>{{ $markdown }}</p>
@@ -42,10 +42,10 @@
           {{ end }}
           <ul class="list-unstyled">
             {{ with site.Data.settings.phone }}
-              <li class="ms-4"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ . }}">{{ . }}</a></li>
+              <li class="ms-4"><span class="fas fa-phone text-cc-accent--pink position-absolute ms-n4"></span> <a class="" href="tel:{{ . }}">{{ . }}</a></li>
             {{ end }}
             {{ with site.Data.settings.email }}
-              <li class="ms-4"><span class="fas fa-envelope text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ . }}">{{ . }}</a></li>
+              <li class="ms-4"><span class="fas fa-envelope text-cc-accent--pink position-absolute ms-n4"></span> <a class="" href="mailto:{{ . }}">{{ . }}</a></li>
             {{ end }}
           </ul>
         </div>
@@ -53,12 +53,12 @@
       <div class="col-lg-4 mb-5 mb-lg-0">
         <div class="small h-100">
           {{ with site.Data.homepage.hours.catch_us_on_the_road }}
-            <h3 class="h4 monograph-text-bold text-uppercase text-cc-strawberry cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>          
+            <h3 class="h2 supa-mega-fantastic-script cc-text-letter-spacing-2 mb-3">{{ .heading }}</h3>          
             {{ if .events }}
               <ul class="list-unstyled">
                 {{ range .events }}
                   <li class="ms-4 mb-3">
-                    <span class="d-block"><span class="fas fa-calendar text-cc-accent--gold position-absolute ms-n4"></span> <strong class="monograph-text-bold">{{ .title }}</strong></span>
+                    <span class="d-block"><span class="fas fa-calendar text-cc-accent--pink position-absolute ms-n4"></span> <strong class="monograph-text-bold">{{ .title }}</strong></span>
                     {{ range .details }}
                       <span class="d-block">{{ .detail }}</span>
                     {{ end }}

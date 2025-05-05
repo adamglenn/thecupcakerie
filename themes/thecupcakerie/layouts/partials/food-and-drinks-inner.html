@@ -11,14 +11,6 @@
           <div class="stair-deco-content">
             <p class="mb-0 p-3">{{ . | markdownify }}</p>
           </div>
-          <div class="stair-deco-outer-left"></div>
-          <div class="stair-deco-outer-right"></div>
-          <div class="stair-deco-mid-left"></div>
-          <div class="stair-deco-mid-right"></div>
-          <div class="stair-deco-mid-top"></div>
-          <div class="stair-deco-mid-bottom"></div>
-          <div class="stair-deco-inner-top"></div>
-          <div class="stair-deco-inner-bottom"></div>
         </div>
       </div>
     </div>
@@ -52,8 +44,8 @@
         <div class="row gx-xl-4 food-content position-relative w-100">
           {{ range .menu_sections }}      
             <div class="col-xl-6 menu-section mb-4">
-              <div class="triple-deco-container">
-                <div class="triple-deco-content p-5">
+              <div class="">
+                <div class="p-5">
                   {{ if .title }}
                     <h2 class="monograph-text-bold">{{ .title }}</h2>
                   {{ end }}
@@ -81,7 +73,7 @@
                                 </div>
                               {{ end }}
                               <div class="col">
-                                <h3 class="h4 flapjack-regular lh-1 mb-0">{{ .title }}</h3>
+                                <h3 class="h4 supa-mega-fantastic-caps lh-1 mb-0">{{ .title }}</h3>
                                 <p class="mb-0 mt-2">
                                   {{ if .description }}
                                     {{ .description }}
@@ -124,9 +116,6 @@
                     {{ end }}
                   {{ end }}
                 </div>
-                <div class="triple-deco-tall"></div>
-                <div class="triple-deco-mid"></div>
-                <div class="triple-deco-wide"></div>
               </div>
             </div>
           {{ end }}

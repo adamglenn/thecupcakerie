@@ -1,22 +1,19 @@
 {{ with site.Data.settings }}
-  <footer class="pb-5 bg-dark text-white">
-    <div class="cc-pattern cc-pattern-tint cc-pattern-accent--gold py-5">
-      <div class="py-5"></div>
-    </div>
-    <div class="container position-relative py-5 small">
+  <footer class="py-6 bg-cc-accent--pink text-white">
+    <div class="container position-relative small">
       <div class="row">
         <div class="col-md-5 col-lg-6 col-xl-3 mb-5 mb-xl-0">
           <div class="row">
             <div class="col-6 col-md-8">
-              <a href="/"><img loading="lazy" src="/cupcakerie-logo-white.svg" class="mb-4" alt="The Cupcakerie Logo (light color version)" /></a>
+              <a href="/"><img loading="lazy" src="/img/cr-logo-white-rgb.svg" class="mb-4" alt="Café Rosé Logo" /></a>
             </div>
           </div>
-          <p>Copyright &copy; The Cupcakerie {{ now.Year }}. All rights reserved.</p>
+          <p>Copyright &copy; Café Rosé {{ now.Year }}. All rights reserved.</p>
         </div>
         <div class="col-xl-7 ms-auto">
           <div class="row">
             <div class="col-md mb-5 mb-xl-0">
-              <h3 class="flapjack-regular text-cc-strawberry">Contact</h3>
+              <h3 class="supa-mega-fantastic-caps text-cc-strawberry">Contact</h3>
               <address class="ms-4 position-relative mb-2">
                 <span class="fas fa-map-marker-alt text-cc-accent--gold position-absolute ms-n4"></span>
                 {{ range .address }}
@@ -30,7 +27,7 @@
                 <li class="ms-4 mb-2"><span class="fas fa-phone text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="tel:{{ .phone }}">{{ .phone }}</a></li>
                 <li class="ms-4"><span class="fas fa-envelope text-cc-accent--gold position-absolute ms-n4"></span> <a class="text-white" href="mailto:{{ .email }}">{{ .email }}</a></li>
               </ul>
-              <h3 class="flapjack-regular text-cc-strawberry mt-5">Hours</h3>              
+              <h3 class="supa-mega-fantastic-caps text-cc-strawberry mt-5">Hours</h3>              
               <p class="ms-4 position-relative">
                 <span class="fas fa-clock text-cc-accent--gold position-absolute ms-n4"></span>
                 {{ range .hours }}
@@ -43,7 +40,7 @@
             </div>
             <div class="col-md mb-5 mb-xl-0">
               <div>
-                <h3 class="flapjack-regular text-cc-strawberry">Menu</h3>
+                <h3 class="supa-mega-fantastic-caps text-cc-strawberry">Menu</h3>
                 <ul class="list-unstyled">
                   <li><a class="text-white text-decoration-none" href="/">Home</a></li>
                   {{ range .site_menu }}
@@ -53,7 +50,7 @@
               </div>
             </div>
             <div class="col-md mb-5 mb-xl-0">
-              <h3 class="flapjack-regular text-cc-strawberry">Follow Us</h3>
+              <h3 class="supa-mega-fantastic-caps text-cc-strawberry">Follow Us</h3>
               <ul class="list-unstyled">
                 {{ range .social_media_accounts }}
                   <li><a class="text-white text-decoration-none" href="{{ .url }}"><span class="fab fa-{{ .icon_code }} text-cc-accent--gold me-1"></span> {{ .platform }}</a></li>
