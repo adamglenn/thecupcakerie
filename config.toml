@@ -1,4 +1,6 @@
-baseURL = 'https://thecupcakerie.netlify.app/'
+baseURL = 'https://thecupcakerie.com/'
 languageCode = 'en-us'
 title = 'The Cupcakerie'
 theme = 'thecupcakerie'
+
+enableRobotsTXT = true
