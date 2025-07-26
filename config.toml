@@ -2,3 +2,5 @@ baseURL = 'https://thecupcakerie.netlify.app/'
 languageCode = 'en-us'
 title = 'Café Rosé'
 theme = 'thecupcakerie'
+
+enableRobotsTXT = true
